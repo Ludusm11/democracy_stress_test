@@ -37,15 +37,6 @@ select { display: block; width: 100%; height: 43px; margin-top: 7px; padding: 0 
 .point-readout { min-height: 36px; margin: 7px 0 0 !important; padding: 8px 10px; border: 1px solid #d8e4ed; border-radius: 5px; background: #f3f7fa; color: #334b5d !important; font-size: 13px !important; }
 .point-readout.pinned { border-color: #81a9c6; background: #eaf3f9; font-weight: 700; }
 .chart-card .empty { padding: 26px 5px; font-size: 14px; }
-.episode-heading { border-top: 1px solid #d5dee5; padding-top: 23px; }
-.timing-key { display: flex; align-items: baseline; gap: 7px; }
-.band-swatch { display: inline-block; flex: 0 0 15px; height: 11px; background: #ffe7dc; border-left: 2px solid #bf583b; border-right: 2px solid #bf583b; }
-.band-swatch.is-line { flex-basis: 3px; width: 3px; background: #bf583b; border: 0; }
-.more-data { border-top: 1px solid #d5dee5; margin-top: 25px; padding-top: 23px; }
-.more-data > p { color: #5a6874; font-size: 14px; margin: 7px 0 16px; }
-.more-data .controls { margin-bottom: 14px; }
-#extra-chart { display: block; max-width: 800px; }
-#extra-note { max-width: 800px; }
 .method-note { margin-top: 24px; }
 .method-note h2 { font-size: 18px; }
 .method-note p { font-size: 14px; margin: 8px 0 0; color: #4e5f6b; }
@@ -55,12 +46,35 @@ select { display: block; width: 100%; height: 43px; margin-top: 7px; padding: 0 
 .legend { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; font-size: 13px; }
 .legend span { display: inline-flex; align-items: center; gap: 7px; }
 .legend i { display: inline-block; width: 17px; height: 4px; }
-.controls.three { grid-template-columns: 1.5fr 1fr 1fr; }
 .scenario-info + .method-note { margin-top: 14px; border-left: 5px solid #245f91; }
 .chart-card .legend { margin-top: 6px; font-size: 12px; }
 .links { display: flex; gap: 18px; flex-wrap: wrap; margin: 10px 0 0 !important; font-size: 13px; font-weight: 700; }
 .links a { color: #1a5f94; }
+.scenario-buttons { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.scenario-buttons button { border: 1px solid #bfcbd4; border-radius: 6px; background: white; padding: 9px 13px; cursor: pointer; font: inherit; font-size: 14px; color: #34495a; text-align: left; }
+.scenario-buttons button b { color: #245f91; margin-right: 4px; }
+.scenario-buttons button em { font-style: normal; font-size: 11px; color: #7a8792; margin-left: 4px; }
+.scenario-buttons button.active { background: #245f91; border-color: #245f91; color: white; }
+.scenario-buttons button.active b, .scenario-buttons button.active em { color: white; }
+.planned { color: #7a5a1e; font-weight: 700; }
+.summary { background: #eef4f8; border-radius: 7px; margin: 18px 0; padding: 14px 20px 14px 36px; }
+.summary li { line-height: 1.5; margin: 3px 0; font-size: 15px; }
+.table-wrap { overflow-x: auto; background: white; border: 1px solid #dfe6eb; border-radius: 7px; }
+.shock-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.shock-table th, .shock-table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #edf1f4; white-space: nowrap; vertical-align: top; }
+.shock-table thead th { font-size: 12px; color: #5b6975; background: #f7f9fa; }
+.shock-table td small { display: block; color: #6a7883; font-size: 12px; margin-top: 2px; }
+.shock-table td.down { color: #a1402a; font-weight: 700; }
+.shock-table td.up { color: #1d5c8c; font-weight: 700; }
+.shock-table td.down small, .shock-table td.up small { font-weight: 400; }
+.shock-table td.none { color: #a4afb7; }
+.shock-table tbody tr { cursor: pointer; }
+.shock-table tbody tr:hover { background: #f5f8fa; }
+.shock-table tbody tr.selected { background: #fff3ec; box-shadow: inset 4px 0 #c45d3f; }
+.episode-detail { border-top: 1px solid #d5dee5; margin-top: 24px; padding-top: 20px; }
+.facts { background: white; border: 1px solid #dfe6eb; border-radius: 7px; padding: 6px 18px; margin: 12px 0 16px; }
+.facts p { font-size: 14px; margin: 8px 0; }
 @media (max-width: 780px) {
   main { padding: 24px 14px 50px; }
-  .controls, .controls.three, .explore-controls, .charts { grid-template-columns: 1fr; }
+  .controls, .explore-controls, .charts { grid-template-columns: 1fr; }
 }

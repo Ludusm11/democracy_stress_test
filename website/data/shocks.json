@@ -1,0 +1,1038 @@
+[
+ {
+  "id": "S1_BE_2010",
+  "shock": "S1",
+  "country": "Belgium",
+  "label": "Belgium 2010–11",
+  "start": "2010-04",
+  "end": "2011-12",
+  "startYear": 2010,
+  "endYear": 2011,
+  "note": "Leterme II falls Apr 2010; Di Rupo govt Dec 2011. Turnout excluded: compulsory voting.",
+  "trust": [
+   {
+    "institution": "National parliament",
+    "before": 39.5,
+    "beforeWaves": "Jun 2009 and Oct 2009",
+    "lowest": 28.0,
+    "lowestWave": "May 2010",
+    "after": 46.0,
+    "afterWave": "May 2012",
+    "change": -11.5,
+    "euChange": 0.0,
+    "beyondEu": -11.5
+   },
+   {
+    "institution": "National government",
+    "before": 35.5,
+    "beforeWaves": "Jun 2009 and Oct 2009",
+    "lowest": 22.0,
+    "lowestWave": "May 2010",
+    "after": 44.0,
+    "afterWave": "May 2012",
+    "change": -13.5,
+    "euChange": -1.5,
+    "beyondEu": -12.0
+   },
+   {
+    "institution": "Political parties",
+    "before": 24.5,
+    "beforeWaves": "Jun 2009 and Oct 2009",
+    "lowest": 20.0,
+    "lowestWave": "May 2010",
+    "after": 32.0,
+    "afterWave": "May 2012",
+    "change": -4.5,
+    "euChange": 0.5,
+    "beyondEu": -5.0
+   }
+  ],
+  "elections": {
+   "before": {
+    "date": "Jun 2007",
+    "turnout": null,
+    "parties": 9.864
+   },
+   "after": {
+    "date": "Jun 2010",
+    "turnout": null,
+    "parties": 9.944
+   },
+   "countedBy": "party",
+   "gains": [
+    {
+     "name": "N-VA",
+     "change": 14.313
+    },
+    {
+     "name": "PS",
+     "change": 2.84
+    },
+    {
+     "name": "PP",
+     "change": 1.287
+    }
+   ],
+   "losses": [
+    {
+     "name": "CD&V",
+     "change": -4.58
+    },
+    {
+     "name": "VB",
+     "change": -4.227
+    },
+    {
+     "name": "MR",
+     "change": -3.239
+    }
+   ]
+  },
+  "economy": {
+   "yearBefore": 2009,
+   "endYear": 2011,
+   "worstGrowth": 1.9,
+   "worstGrowthYear": 2011,
+   "unemploymentBefore": 8.0,
+   "unemploymentPeak": 8.4,
+   "unemploymentPeakYear": 2010,
+   "debtBefore": 99.9,
+   "debtEnd": 102.8
+  },
+  "vdem": {
+   "yearBefore": 2009,
+   "before": 0.899,
+   "yearAfter": 2012,
+   "after": 0.9,
+   "change": 0.001,
+   "clear": false
+  }
+ },
+ {
+  "id": "S1_ES_2015",
+  "shock": "S1",
+  "country": "Spain",
+  "label": "Spain 2015–16",
+  "start": "2015-12",
+  "end": "2016-10",
+  "startYear": 2015,
+  "endYear": 2016,
+  "note": "Hung parliament Dec 2015, repeat election Jun 2016, Rajoy invested Oct 2016.",
+  "trust": [
+   {
+    "institution": "National parliament",
+    "before": 11.0,
+    "beforeWaves": "Feb 2015 and Nov 2015",
+    "lowest": 15.0,
+    "lowestWave": "May 2016",
+    "after": 17.0,
+    "afterWave": "Nov 2016",
+    "change": 4.0,
+    "euChange": -3.0,
+    "beyondEu": 7.0
+   },
+   {
+    "institution": "National government",
+    "before": 14.0,
+    "beforeWaves": "Feb 2015 and Nov 2015",
+    "lowest": 14.0,
+    "lowestWave": "May 2016",
+    "after": 20.0,
+    "afterWave": "Nov 2016",
+    "change": 0.0,
+    "euChange": -5.0,
+    "beyondEu": 5.0
+   },
+   {
+    "institution": "Political parties",
+    "before": 6.0,
+    "beforeWaves": "Nov 2014 and Nov 2015",
+    "lowest": 6.0,
+    "lowestWave": "May 2016",
+    "after": 10.0,
+    "afterWave": "Nov 2016",
+    "change": 0.0,
+    "euChange": 0.5,
+    "beyondEu": -0.5
+   }
+  ],
+  "elections": {
+   "before": {
+    "date": "Nov 2011",
+    "turnout": 68.94,
+    "parties": 3.331
+   },
+   "after": {
+    "date": "Jun 2016",
+    "turnout": 66.48,
+    "parties": 5.012
+   },
+   "countedBy": "list",
+   "gains": [
+    {
+     "name": "Podemos–IU and allies",
+     "change": 14.13
+    },
+    {
+     "name": "C's",
+     "change": 13.061
+    },
+    {
+     "name": "CDC",
+     "change": 2.01
+    }
+   ],
+   "losses": [
+    {
+     "name": "PP",
+     "change": -12.234
+    },
+    {
+     "name": "PSOE",
+     "change": -6.531
+    },
+    {
+     "name": "UPyD",
+     "change": -4.551
+    }
+   ]
+  },
+  "economy": {
+   "yearBefore": 2014,
+   "endYear": 2016,
+   "worstGrowth": 2.9,
+   "worstGrowthYear": 2016,
+   "unemploymentBefore": 24.5,
+   "unemploymentPeak": 22.1,
+   "unemploymentPeakYear": 2015,
+   "debtBefore": 104.4,
+   "debtEnd": 102.0
+  },
+  "vdem": {
+   "yearBefore": 2014,
+   "before": 0.871,
+   "yearAfter": 2017,
+   "after": 0.835,
+   "change": -0.036,
+   "clear": false
+  }
+ },
+ {
+  "id": "S1_FR_2024",
+  "shock": "S1",
+  "country": "France",
+  "label": "France 2024–25",
+  "start": "2024-06",
+  "end": "2025-10",
+  "startYear": 2024,
+  "endYear": 2025,
+  "note": "Dissolution Jun 2024 to Lecornu govt Oct 2025. Left out when back-testing S1 on France.",
+  "trust": [
+   {
+    "institution": "National parliament",
+    "before": 27.0,
+    "beforeWaves": "Oct 2023 and Apr 2024",
+    "lowest": 12.0,
+    "lowestWave": "Oct 2025",
+    "after": 23.0,
+    "afterWave": "Mar 2026",
+    "change": -15.0,
+    "euChange": -3.5,
+    "beyondEu": -11.5
+   },
+   {
+    "institution": "National government",
+    "before": 22.5,
+    "beforeWaves": "Oct 2023 and Apr 2024",
+    "lowest": 9.0,
+    "lowestWave": "Oct 2025",
+    "after": 21.0,
+    "afterWave": "Mar 2026",
+    "change": -13.5,
+    "euChange": -1.5,
+    "beyondEu": -12.0
+   },
+   {
+    "institution": "Political parties",
+    "before": 9.0,
+    "beforeWaves": "May 2023 and Apr 2024",
+    "lowest": 7.0,
+    "lowestWave": "Oct 2025",
+    "after": 12.0,
+    "afterWave": "Mar 2026",
+    "change": -2.0,
+    "euChange": 5.0,
+    "beyondEu": -7.0
+   }
+  ],
+  "elections": {
+   "before": {
+    "date": "Jun 2022",
+    "turnout": 47.506,
+    "parties": 5.419
+   },
+   "after": {
+    "date": "Jun 2024",
+    "turnout": 66.708,
+    "parties": 4.141
+   },
+   "countedBy": "list",
+   "gains": [
+    {
+     "name": "RN et Alliés",
+     "change": 14.535
+    },
+    {
+     "name": "DVD",
+     "change": 3.602
+    },
+    {
+     "name": "NFP",
+     "change": 2.548
+    }
+   ],
+   "losses": [
+    {
+     "name": "LR",
+     "change": -4.723
+    },
+    {
+     "name": "Ensemble",
+     "change": -4.477
+    },
+    {
+     "name": "R",
+     "change": -3.496
+    }
+   ]
+  },
+  "economy": {
+   "yearBefore": 2023,
+   "endYear": 2025,
+   "worstGrowth": 0.8,
+   "worstGrowthYear": 2025,
+   "unemploymentBefore": 7.4,
+   "unemploymentPeak": 7.7,
+   "unemploymentPeakYear": 2025,
+   "debtBefore": 109.5,
+   "debtEnd": 115.7
+  },
+  "vdem": {
+   "yearBefore": 2023,
+   "before": 0.871,
+   "yearAfter": 2025,
+   "after": 0.865,
+   "change": -0.006,
+   "clear": false
+  }
+ },
+ {
+  "id": "S2_ES_2008",
+  "shock": "S2",
+  "country": "Spain",
+  "label": "Spain 2008–13",
+  "start": "2008-09",
+  "end": "2013-12",
+  "startYear": 2008,
+  "endYear": 2013,
+  "note": "Euro area crisis; start = Lehman collapse.",
+  "trust": [
+   {
+    "institution": "National parliament",
+    "before": 50.5,
+    "beforeWaves": "Sep 2007 and Mar 2008",
+    "lowest": 7.0,
+    "lowestWave": "May 2013",
+    "after": 9.0,
+    "afterWave": "Mar 2014",
+    "change": -43.5,
+    "euChange": -8.5,
+    "beyondEu": -35.0
+   },
+   {
+    "institution": "National government",
+    "before": 52.0,
+    "beforeWaves": "Sep 2007 and Mar 2008",
+    "lowest": 8.0,
+    "lowestWave": "May 2013",
+    "after": 10.0,
+    "afterWave": "Mar 2014",
+    "change": -44.0,
+    "euChange": -8.0,
+    "beyondEu": -36.0
+   },
+   {
+    "institution": "Political parties",
+    "before": 36.0,
+    "beforeWaves": "Sep 2007 and Mar 2008",
+    "lowest": 5.0,
+    "lowestWave": "May 2013",
+    "after": 8.0,
+    "afterWave": "Mar 2014",
+    "change": -31.0,
+    "euChange": -2.0,
+    "beyondEu": -29.0
+   }
+  ],
+  "elections": {
+   "before": {
+    "date": "Mar 2008",
+    "turnout": 73.847,
+    "parties": 2.811
+   },
+   "after": {
+    "date": "Nov 2011",
+    "turnout": 68.94,
+    "parties": 3.331
+   },
+   "countedBy": "list",
+   "gains": [
+    {
+     "name": "PP",
+     "change": 5.31
+    },
+    {
+     "name": "UPyD",
+     "change": 3.571
+    },
+    {
+     "name": "Podemos–IU and allies",
+     "change": 3.252
+    }
+   ],
+   "losses": [
+    {
+     "name": "PSOE",
+     "change": -14.705
+    },
+    {
+     "name": "CA",
+     "change": -0.267
+    },
+    {
+     "name": "EA",
+     "change": -0.196
+    }
+   ]
+  },
+  "economy": {
+   "yearBefore": 2007,
+   "endYear": 2013,
+   "worstGrowth": -3.8,
+   "worstGrowthYear": 2009,
+   "unemploymentBefore": 8.2,
+   "unemploymentPeak": 26.1,
+   "unemploymentPeakYear": 2013,
+   "debtBefore": 35.7,
+   "debtEnd": 100.0
+  },
+  "vdem": {
+   "yearBefore": 2007,
+   "before": 0.876,
+   "yearAfter": 2014,
+   "after": 0.871,
+   "change": -0.005,
+   "clear": false
+  }
+ },
+ {
+  "id": "S2_GR_2008",
+  "shock": "S2",
+  "country": "Greece",
+  "label": "Greece 2008–13",
+  "start": "2008-09",
+  "end": "2013-12",
+  "startYear": 2008,
+  "endYear": 2013,
+  "note": "Euro area crisis; most severe case.",
+  "trust": [
+   {
+    "institution": "National parliament",
+    "before": 50.5,
+    "beforeWaves": "Sep 2007 and Mar 2008",
+    "lowest": 9.0,
+    "lowestWave": "Nov 2012",
+    "after": 10.0,
+    "afterWave": "Mar 2014",
+    "change": -41.5,
+    "euChange": -6.5,
+    "beyondEu": -35.0
+   },
+   {
+    "institution": "National government",
+    "before": 40.0,
+    "beforeWaves": "Sep 2007 and Mar 2008",
+    "lowest": 6.0,
+    "lowestWave": "May 2012",
+    "after": 9.0,
+    "afterWave": "Mar 2014",
+    "change": -34.0,
+    "euChange": -5.0,
+    "beyondEu": -29.0
+   },
+   {
+    "institution": "Political parties",
+    "before": 19.0,
+    "beforeWaves": "Sep 2007 and Mar 2008",
+    "lowest": 4.0,
+    "lowestWave": "May 2013",
+    "after": 6.0,
+    "afterWave": "Mar 2014",
+    "change": -15.0,
+    "euChange": -2.0,
+    "beyondEu": -13.0
+   }
+  ],
+  "elections": {
+   "before": {
+    "date": "Sep 2007",
+    "turnout": 74.152,
+    "parties": 3.016
+   },
+   "after": {
+    "date": "Jun 2012",
+    "turnout": 62.494,
+    "parties": 5.164
+   },
+   "countedBy": "list",
+   "gains": [
+    {
+     "name": "SYRIZA",
+     "change": 21.841
+    },
+    {
+     "name": "ANEL",
+     "change": 7.512
+    },
+    {
+     "name": "XA",
+     "change": 6.921
+    }
+   ],
+   "losses": [
+    {
+     "name": "PASOK",
+     "change": -25.814
+    },
+    {
+     "name": "ND",
+     "change": -12.179
+    },
+    {
+     "name": "KKE",
+     "change": -3.65
+    }
+   ]
+  },
+  "economy": {
+   "yearBefore": 2007,
+   "endYear": 2013,
+   "worstGrowth": -9.9,
+   "worstGrowthYear": 2011,
+   "unemploymentBefore": 8.4,
+   "unemploymentPeak": 27.8,
+   "unemploymentPeakYear": 2013,
+   "debtBefore": 104.6,
+   "debtEnd": 180.4
+  },
+  "vdem": {
+   "yearBefore": 2007,
+   "before": 0.895,
+   "yearAfter": 2014,
+   "after": 0.889,
+   "change": -0.006,
+   "clear": false
+  }
+ },
+ {
+  "id": "S2_PT_2008",
+  "shock": "S2",
+  "country": "Portugal",
+  "label": "Portugal 2008–13",
+  "start": "2008-09",
+  "end": "2013-12",
+  "startYear": 2008,
+  "endYear": 2013,
+  "note": "Euro area crisis; bailout 2011.",
+  "trust": [
+   {
+    "institution": "National parliament",
+    "before": 36.5,
+    "beforeWaves": "Sep 2007 and Mar 2008",
+    "lowest": 13.0,
+    "lowestWave": "May 2013",
+    "after": 13.0,
+    "afterWave": "Mar 2014",
+    "change": -23.5,
+    "euChange": -8.5,
+    "beyondEu": -15.0
+   },
+   {
+    "institution": "National government",
+    "before": 31.0,
+    "beforeWaves": "Sep 2007 and Mar 2008",
+    "lowest": 10.0,
+    "lowestWave": "May 2013",
+    "after": 14.0,
+    "afterWave": "Mar 2014",
+    "change": -21.0,
+    "euChange": -8.0,
+    "beyondEu": -13.0
+   },
+   {
+    "institution": "Political parties",
+    "before": 17.0,
+    "beforeWaves": "Sep 2007 and Mar 2008",
+    "lowest": 9.0,
+    "lowestWave": "May 2013",
+    "after": 9.0,
+    "afterWave": "Mar 2014",
+    "change": -8.0,
+    "euChange": -2.0,
+    "beyondEu": -6.0
+   }
+  ],
+  "elections": {
+   "before": {
+    "date": "Feb 2005",
+    "turnout": 64.261,
+    "parties": 3.148
+   },
+   "after": {
+    "date": "Jun 2011",
+    "turnout": 58.03,
+    "parties": 3.684
+   },
+   "countedBy": "party",
+   "gains": [
+    {
+     "name": "PSD",
+     "change": 10.668
+    },
+    {
+     "name": "CDS-PP",
+     "change": 4.742
+    },
+    {
+     "name": "PAN",
+     "change": 1.083
+    }
+   ],
+   "losses": [
+    {
+     "name": "PSP",
+     "change": -17.157
+    },
+    {
+     "name": "BE",
+     "change": -1.149
+    },
+    {
+     "name": "ID",
+     "change": -1.11
+    }
+   ]
+  },
+  "economy": {
+   "yearBefore": 2007,
+   "endYear": 2013,
+   "worstGrowth": -4.1,
+   "worstGrowthYear": 2012,
+   "unemploymentBefore": 8.1,
+   "unemploymentPeak": 17.2,
+   "unemploymentPeakYear": 2013,
+   "debtBefore": 72.7,
+   "debtEnd": 130.8
+  },
+  "vdem": {
+   "yearBefore": 2007,
+   "before": 0.894,
+   "yearAfter": 2014,
+   "after": 0.886,
+   "change": -0.008,
+   "clear": false
+  }
+ },
+ {
+  "id": "S2_IE_2008",
+  "shock": "S2",
+  "country": "Ireland",
+  "label": "Ireland 2008–13",
+  "start": "2008-09",
+  "end": "2013-12",
+  "startYear": 2008,
+  "endYear": 2013,
+  "note": "Euro area crisis; bailout 2010.",
+  "trust": [
+   {
+    "institution": "National parliament",
+    "before": 37.5,
+    "beforeWaves": "Sep 2007 and Mar 2008",
+    "lowest": 12.0,
+    "lowestWave": "Nov 2010",
+    "after": 20.0,
+    "afterWave": "Mar 2014",
+    "change": -25.5,
+    "euChange": -3.5,
+    "beyondEu": -22.0
+   },
+   {
+    "institution": "National government",
+    "before": 34.5,
+    "beforeWaves": "Sep 2007 and Mar 2008",
+    "lowest": 10.0,
+    "lowestWave": "Nov 2010",
+    "after": 23.0,
+    "afterWave": "Mar 2014",
+    "change": -24.5,
+    "euChange": -5.0,
+    "beyondEu": -19.5
+   },
+   {
+    "institution": "Political parties",
+    "before": 24.5,
+    "beforeWaves": "Sep 2007 and Mar 2008",
+    "lowest": 9.0,
+    "lowestWave": "Nov 2010",
+    "after": 14.0,
+    "afterWave": "Mar 2014",
+    "change": -15.5,
+    "euChange": -3.0,
+    "beyondEu": -12.5
+   }
+  ],
+  "elections": {
+   "before": {
+    "date": "May 2007",
+    "turnout": 67.03,
+    "parties": 3.729
+   },
+   "after": {
+    "date": "Feb 2011",
+    "turnout": 69.897,
+    "parties": 4.468
+   },
+   "countedBy": "party",
+   "gains": [
+    {
+     "name": "ILP",
+     "change": 9.322
+    },
+    {
+     "name": "FG",
+     "change": 8.781
+    },
+    {
+     "name": "Independents/Non-Partisans",
+     "change": 6.97
+    }
+   ],
+   "losses": [
+    {
+     "name": "FF",
+     "change": -24.115
+    },
+    {
+     "name": "GP",
+     "change": -2.844
+    },
+    {
+     "name": "PD",
+     "change": -2.73
+    }
+   ]
+  },
+  "economy": {
+   "yearBefore": 2007,
+   "endYear": 2013,
+   "worstGrowth": -5.1,
+   "worstGrowthYear": 2009,
+   "unemploymentBefore": 5.0,
+   "unemploymentPeak": 15.5,
+   "unemploymentPeakYear": 2012,
+   "debtBefore": 24.0,
+   "debtEnd": 117.8
+  },
+  "vdem": {
+   "yearBefore": 2007,
+   "before": 0.891,
+   "yearAfter": 2014,
+   "after": 0.895,
+   "change": 0.004,
+   "clear": false
+  }
+ },
+ {
+  "id": "S3_AT_2019",
+  "shock": "S3",
+  "country": "Austria",
+  "label": "Austria 2019",
+  "start": "2019-05",
+  "end": "2019-09",
+  "startYear": 2019,
+  "endYear": 2019,
+  "note": "Ibiza video May 2019, snap election Sep 2019. Also a government collapse: counted under S3 only.",
+  "trust": [
+   {
+    "institution": "National parliament",
+    "before": 57.5,
+    "beforeWaves": "Nov 2018 and Mar 2019",
+    "lowest": 54.0,
+    "lowestWave": "Nov 2019",
+    "after": 54.0,
+    "afterWave": "Nov 2019",
+    "change": -3.5,
+    "euChange": 0.5,
+    "beyondEu": -4.0
+   },
+   {
+    "institution": "National government",
+    "before": 55.5,
+    "beforeWaves": "Nov 2018 and Mar 2019",
+    "lowest": 50.0,
+    "lowestWave": "Jun 2019",
+    "after": 50.0,
+    "afterWave": "Nov 2019",
+    "change": -5.5,
+    "euChange": 0.5,
+    "beyondEu": -6.0
+   },
+   {
+    "institution": "Political parties",
+    "before": 37.0,
+    "beforeWaves": "Nov 2018 and Mar 2019",
+    "lowest": 33.0,
+    "lowestWave": "Jun 2019",
+    "after": 33.0,
+    "afterWave": "Nov 2019",
+    "change": -4.0,
+    "euChange": 0.5,
+    "beyondEu": -4.5
+   }
+  ],
+  "elections": {
+   "before": {
+    "date": "Oct 2017",
+    "turnout": null,
+    "parties": 4.081
+   },
+   "after": {
+    "date": "Sep 2019",
+    "turnout": null,
+    "parties": 4.208
+   },
+   "countedBy": "party",
+   "gains": [
+    {
+     "name": "Grüne",
+     "change": 10.101
+    },
+    {
+     "name": "ÖVP",
+     "change": 5.987
+    },
+    {
+     "name": "NEOS",
+     "change": 2.807
+    }
+   ],
+   "losses": [
+    {
+     "name": "FPÖ",
+     "change": -9.792
+    },
+    {
+     "name": "SPÖ",
+     "change": -5.678
+    },
+    {
+     "name": "JETZT",
+     "change": -2.543
+    }
+   ]
+  },
+  "economy": {
+   "yearBefore": 2018,
+   "endYear": 2019,
+   "worstGrowth": 1.8,
+   "worstGrowthYear": 2019,
+   "unemploymentBefore": 5.2,
+   "unemploymentPeak": 4.8,
+   "unemploymentPeakYear": 2019,
+   "debtBefore": 74.6,
+   "debtEnd": 71.0
+  },
+  "vdem": {
+   "yearBefore": 2018,
+   "before": 0.851,
+   "yearAfter": 2020,
+   "after": 0.858,
+   "change": 0.007,
+   "clear": false
+  }
+ },
+ {
+  "id": "S3_ES_2018",
+  "shock": "S3",
+  "country": "Spain",
+  "label": "Spain 2018",
+  "start": "2018-05",
+  "end": "2018-06",
+  "startYear": 2018,
+  "endYear": 2018,
+  "note": "Gurtel verdict May 2018, Rajoy ousted Jun 2018. Also a government change: counted under S3 only.",
+  "trust": [
+   {
+    "institution": "National parliament",
+    "before": 17.5,
+    "beforeWaves": "Nov 2017 and Mar 2018",
+    "lowest": 15.0,
+    "lowestWave": "Nov 2018",
+    "after": 15.0,
+    "afterWave": "Nov 2018",
+    "change": -2.5,
+    "euChange": 0.5,
+    "beyondEu": -3.0
+   },
+   {
+    "institution": "National government",
+    "before": 19.5,
+    "beforeWaves": "Nov 2017 and Mar 2018",
+    "lowest": 19.0,
+    "lowestWave": "Nov 2018",
+    "after": 19.0,
+    "afterWave": "Nov 2018",
+    "change": -0.5,
+    "euChange": 0.0,
+    "beyondEu": -0.5
+   },
+   {
+    "institution": "Political parties",
+    "before": 8.0,
+    "beforeWaves": "Nov 2017 and Mar 2018",
+    "lowest": 8.0,
+    "lowestWave": "Nov 2018",
+    "after": 8.0,
+    "afterWave": "Nov 2018",
+    "change": 0.0,
+    "euChange": -0.5,
+    "beyondEu": 0.5
+   }
+  ],
+  "elections": {
+   "before": {
+    "date": "Jun 2016",
+    "turnout": null,
+    "parties": 5.012
+   },
+   "after": {
+    "date": "Apr 2019",
+    "turnout": null,
+    "parties": 6.088
+   },
+   "countedBy": "list",
+   "gains": [
+    {
+     "name": "VOX",
+     "change": 10.142
+    },
+    {
+     "name": "PSOE",
+     "change": 6.263
+    },
+    {
+     "name": "C's",
+     "change": 2.922
+    }
+   ],
+   "losses": [
+    {
+     "name": "PP",
+     "change": -16.194
+    },
+    {
+     "name": "Podemos–IU and allies",
+     "change": -6.724
+    },
+    {
+     "name": "CDC",
+     "change": -2.01
+    }
+   ]
+  },
+  "economy": {
+   "yearBefore": 2017,
+   "endYear": 2018,
+   "worstGrowth": 2.4,
+   "worstGrowthYear": 2018,
+   "unemploymentBefore": 17.2,
+   "unemploymentPeak": 15.3,
+   "unemploymentPeakYear": 2018,
+   "debtBefore": 101.2,
+   "debtEnd": 99.8
+  },
+  "vdem": {
+   "yearBefore": 2017,
+   "before": 0.835,
+   "yearAfter": 2019,
+   "after": 0.871,
+   "change": 0.036,
+   "clear": false
+  }
+ },
+ {
+  "id": "S3_IT_1992",
+  "shock": "S3",
+  "country": "Italy",
+  "label": "Italy 1992–94",
+  "start": "1992-02",
+  "end": "1994-03",
+  "startYear": 1992,
+  "endYear": 1994,
+  "note": "Mani pulite. Vote and party system only: no comparable Eurobarometer trust data before 1997; confounded by 1993 electoral reform.",
+  "trust": [],
+  "elections": {
+   "before": {
+    "date": "Jun 1987",
+    "turnout": null,
+    "parties": 4.615
+   },
+   "after": {
+    "date": "Mar 1994",
+    "turnout": null,
+    "parties": 7.536
+   },
+   "countedBy": "party",
+   "gains": [
+    {
+     "name": "FI",
+     "change": 21.037
+    },
+    {
+     "name": "LN",
+     "change": 8.387
+    },
+    {
+     "name": "AN",
+     "change": 7.566
+    }
+   ],
+   "losses": [
+    {
+     "name": "PPI",
+     "change": -23.248
+    },
+    {
+     "name": "SI",
+     "change": -12.083
+    },
+    {
+     "name": "DS",
+     "change": -6.221
+    }
+   ]
+  },
+  "economy": null,
+  "vdem": null
+ }
+]

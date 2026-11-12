@@ -5,20 +5,11 @@
     "title": "Government collapse and institutional deadlock",
     "trigger": "A government falls or prolonged negotiations prevent a stable governing coalition.",
     "focus": "Trust in parliament and government; election turnout.",
-    "gap": "Changes in trust and turnout after the reference episodes still need to be measured against comparable countries.",
-    "episodes": [
-      {"country": "Belgium", "start": 2010, "end": 2011, "label": "Belgium, 2010–11"},
-      {"country": "Spain", "start": 2015, "end": 2016, "label": "Spain, 2015–16"},
-      {"country": "France", "start": 2024, "end": 2025, "label": "France, 2024–25"}
-    ],
     "charts": [
       {"dataset": "eurobarometer", "metric": "trust_pct", "group": "National parliament"},
       {"dataset": "eurobarometer", "metric": "trust_pct", "group": "National government"},
       {"dataset": "turnout", "metric": "registered_turnout_pct", "group": "Parliamentary"},
-      {"dataset": "eurobarometer", "metric": "trust_pct", "group": "Political parties"},
-      {"dataset": "vdem", "metric": "v2x_polyarchy"},
-      {"dataset": "freedom", "metric": "freedom_score"},
-      {"dataset": "economy", "metric": "nama_10_gdp_real_growth"}
+      {"dataset": "eurobarometer", "metric": "trust_pct", "group": "Political parties"}
     ]
   },
   {
@@ -26,24 +17,12 @@
     "phase": "Board 1",
     "title": "Systemic financial crisis",
     "trigger": "A severe financial crisis weakens the economy and public finances.",
-    "focus": "Political trust, turnout, party fragmentation and radical vote share.",
-    "gap": "Radical vote shares around these episodes are in notebook 03_radical_voting.ipynb, not yet on this site; the team still has to decide how to count Les Républicains and the 2024 New Popular Front.",
-    "episodes": [
-      {"country": "Spain", "start": 2008, "end": 2013, "label": "Spain, 2008–13"},
-      {"country": "Ireland", "start": 2008, "end": 2013, "label": "Ireland, 2008–13"},
-      {"country": "Greece", "start": 2008, "end": 2013, "label": "Greece, 2008–13"},
-      {"country": "Portugal", "start": 2008, "end": 2013, "label": "Portugal, 2008–13"}
-    ],
+    "focus": "Economy, political trust, turnout and party fragmentation. Radical vote shares are in notebook 03.",
     "charts": [
-      {"dataset": "economy", "metric": "nama_10_gdp_real_growth"},
       {"dataset": "economy", "metric": "une_rt_a_unemployment"},
+      {"dataset": "economy", "metric": "nama_10_gdp_real_growth"},
       {"dataset": "eurobarometer", "metric": "trust_pct", "group": "National parliament"},
-      {"dataset": "economy", "metric": "prc_hicp_aind_inflation"},
-      {"dataset": "economy", "metric": "gov_10dd_edpt1_debt_gdp"},
-      {"dataset": "eurobarometer", "metric": "trust_pct", "group": "Political parties"},
-      {"dataset": "turnout", "metric": "registered_turnout_pct", "group": "Parliamentary"},
-      {"dataset": "vdem", "metric": "v2x_polyarchy"},
-      {"dataset": "freedom", "metric": "freedom_score"}
+      {"dataset": "economy", "metric": "gov_10dd_edpt1_debt_gdp"}
     ]
   },
   {
@@ -52,59 +31,26 @@
     "title": "Integrity scandal at the top",
     "trigger": "A major scandal reaches the head of government or governing parties.",
     "focus": "Trust in parties and government; changes in the party system.",
-    "gap": "Comparable party-system effects have not yet been estimated, and the Italy episode predates most prepared chart series.",
-    "episodes": [
-      {"country": "Austria", "start": 2019, "end": 2019, "label": "Austria, 2019 (Ibiza)"},
-      {"country": "Spain", "start": 2018, "end": 2018, "label": "Spain, 2018"},
-      {"country": "Italy", "start": 1992, "end": 1994, "label": "Italy, 1992–94"}
-    ],
     "charts": [
       {"dataset": "eurobarometer", "metric": "trust_pct", "group": "Political parties"},
       {"dataset": "eurobarometer", "metric": "trust_pct", "group": "National government"},
-      {"dataset": "vdem", "metric": "v2x_polyarchy"},
-      {"dataset": "eurobarometer", "metric": "trust_pct", "group": "National parliament"},
-      {"dataset": "turnout", "metric": "registered_turnout_pct", "group": "Parliamentary"},
-      {"dataset": "freedom", "metric": "freedom_score"}
-    ]
-  },
-  {
-    "id": "S4",
-    "phase": "Planned for Board 2",
-    "title": "Electoral-integrity shock or foreign interference",
-    "trigger": "A major challenge to the integrity or validity of an election.",
-    "focus": "Trust in elections and institutional constraints.",
-    "gap": "The prepared chart data do not yet include a direct trust-in-elections measure or a tested transmission method.",
-    "episodes": [
-      {"country": "Romania", "start": 2024, "end": 2024, "label": "Romania, 2024"}
-    ],
-    "charts": [
-      {"dataset": "vdem", "metric": "v2x_polyarchy"},
-      {"dataset": "freedom", "metric": "freedom_score"},
-      {"dataset": "turnout", "metric": "registered_turnout_pct", "group": "Presidential"},
-      {"dataset": "vdem", "metric": "v2x_libdem"},
-      {"dataset": "turnout", "metric": "registered_turnout_pct", "group": "Parliamentary"},
       {"dataset": "eurobarometer", "metric": "trust_pct", "group": "National parliament"}
     ]
   },
   {
+    "id": "S4",
+    "phase": "Board 2",
+    "title": "Electoral-integrity shock or foreign interference",
+    "trigger": "A major challenge to the integrity or validity of an election.",
+    "focus": "Trust in elections and institutional constraints.",
+    "planned": "Reference episode: Romania 2024."
+  },
+  {
     "id": "S5",
-    "phase": "Planned for Board 2",
+    "phase": "Board 2",
     "title": "Concentration of executive power",
     "trigger": "Executive power expands over time, weakening checks and constraints.",
     "focus": "Executive constraints and democratic quality.",
-    "gap": "Executive-constraint variables still need to be prepared from V-Dem; the charts here show wider democracy indicators only.",
-    "episodes": [
-      {"country": "Hungary", "start": 2010, "openEnded": true, "label": "Hungary, from 2010"},
-      {"country": "Poland", "start": 2015, "end": 2023, "label": "Poland, 2015–23"}
-    ],
-    "charts": [
-      {"dataset": "vdem", "metric": "v2x_libdem"},
-      {"dataset": "vdem", "metric": "v2x_polyarchy"},
-      {"dataset": "freedom", "metric": "freedom_score"},
-      {"dataset": "freedom", "metric": "political_rights"},
-      {"dataset": "freedom", "metric": "civil_liberties"},
-      {"dataset": "eurobarometer", "metric": "trust_pct", "group": "National parliament"},
-      {"dataset": "turnout", "metric": "registered_turnout_pct", "group": "Parliamentary"}
-    ]
+    "planned": "Reference episodes: Hungary from 2010, Poland 2015–23."
   }
 ]

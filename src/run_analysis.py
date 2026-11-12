@@ -33,7 +33,7 @@ if missing:
         print(f"  {path}\n    from {url}")
     sys.exit(1)
 
-for script in ("audit_data.py", "full_data_workbench.py", "build_site_data.py"):
+for script in ("audit_data.py", "full_data_workbench.py", "build_site_data.py", "build_shock_numbers.py"):
     subprocess.run([sys.executable, str(root / "src" / script)], cwd=root, check=True)
 
 print("Done. Read outputs/data_audit/report.md to see the results.")

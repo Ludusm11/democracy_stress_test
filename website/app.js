@@ -6,7 +6,7 @@ const loading = {};
 let view = 'scenario';
 
 async function fetchJson(name) {
-  const response = await fetch('data/' + name + '.json?v=site2');
+  const response = await fetch('data/' + name + '.json?v=site4');
   if (!response.ok) throw new Error(name + ': HTTP ' + response.status);
   return response.json();
 }
@@ -23,9 +23,6 @@ function option(select, value, label) {
 
 function catalog(id) { return data.catalog.find(item => item.id === id); }
 function metric(dataset, key) { return catalog(dataset).metrics.find(item => item.key === key); }
-function scenario() { return data.scenarios.find(item => item.id === $('scenario-select').value); }
-function currentEpisode() { return scenario().episodes[Number($('episode-select').value) || 0]; }
-function episodeWindow(episode) { return [episode.start - 5, Math.min(2026, (episode.end ?? 2025) + 5)]; }
 function displayDate(row) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(row.date || '')) return String(row.year);
   return new Date(row.date + 'T00:00:00Z').toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC'});
@@ -92,7 +89,7 @@ function chartSvg(series, meta, from, to, marked = null) {
       } else {
         svg += `<line class="episode-marker" x1="${x(start)}" x2="${x(start)}" y1="${top}" y2="${H - bottom}" stroke="#bf583b" stroke-width="3" pointer-events="none"/>`;
       }
-      const markerLabel = marked.openEnded ? `from ${start}` : end === start ? String(start) : end === start + 1 ? `${start}–${String(end).slice(-2)}` : `${start}–${end}`;
+      const markerLabel = marked.label || (marked.openEnded ? `from ${start}` : end === start ? String(start) : end === start + 1 ? `${start}–${String(end).slice(-2)}` : `${start}–${end}`);
       svg += `<text x="${x(start) + 6}" y="${top + 16}" fill="#913d29" font-size="12" font-weight="700">${markerLabel}</text>`;
     }
   }
@@ -243,99 +240,142 @@ function setView(next) {
   }
   history.replaceState(null, '', '#' + next);
 }
-function updateScenarioChoices() {
-  const selected = scenario();
-  const select = $('episode-select');
-  select.replaceChildren();
-  selected.episodes.forEach((episode, i) => option(select, String(i), episode.label));
-  renderScenario();
+let currentScenario = 'S1', currentEpisodeId = null;
+function scenario() { return data.scenarios.find(item => item.id === currentScenario); }
+function episodesOf(id) { return data.shocks.filter(ep => ep.shock === id); }
+const signed = (value, digits = 1) => (value >= 0 ? '+' : '−') + Math.abs(value).toFixed(digits);
+const pct = value => Math.round(value) + '%';
+
+// Table columns per scenario: what the scenario is about, in the order worth reading.
+function trustColumn(institution, label) {
+  return {label, cell: ep => {
+    const t = ep.trust.find(row => row.institution === institution);
+    if (!t) return null;
+    const sub = t.change < 0 ? `${signed(t.change, 0)} pts · EU ${signed(t.euChange, 0)}` : 'no fall';
+    return [`${pct(t.before)} → ${pct(t.lowest)}`, sub, t.beyondEu <= -3 ? 'down' : ''];
+  }};
 }
+const COLUMNS = {
+  turnout: {label: 'Turnout', cell: ep => {
+    const e = ep.elections;
+    if (!e || e.before.turnout == null) return null;
+    const change = e.after.turnout - e.before.turnout;
+    return [`${pct(e.before.turnout)} → ${pct(e.after.turnout)}`, `${signed(change)} pts`, change <= -3 ? 'down' : ''];
+  }},
+  parties: {label: 'Parties', cell: ep => {
+    const e = ep.elections;
+    if (!e) return null;
+    const change = e.after.parties - e.before.parties;
+    return [`${e.before.parties.toFixed(1)} → ${e.after.parties.toFixed(1)}`, `${e.before.date} → ${e.after.date}`, change >= 0.5 ? 'up' : ''];
+  }},
+  gain: {label: 'Biggest gain', cell: ep => ep.elections && [ep.elections.gains[0].name, signed(ep.elections.gains[0].change) + ' pts']},
+  loss: {label: 'Biggest loss', cell: ep => ep.elections && [ep.elections.losses[0].name, signed(ep.elections.losses[0].change) + ' pts']},
+  unemployment: {label: 'Unemployment', cell: ep => {
+    const e = ep.economy;
+    if (!e || e.unemploymentBefore == null) return null;
+    return [`${e.unemploymentBefore.toFixed(1)}% → ${e.unemploymentPeak.toFixed(1)}%`, `${e.yearBefore} → peak ${e.unemploymentPeakYear}`, 'down'];
+  }},
+  growth: {label: 'Worst GDP year', cell: ep => ep.economy && ep.economy.worstGrowth != null && [`${signed(ep.economy.worstGrowth)}%`, String(ep.economy.worstGrowthYear), ep.economy.worstGrowth < 0 ? 'down' : '']},
+  debt: {label: 'Public debt', cell: ep => {
+    const e = ep.economy;
+    if (!e || e.debtBefore == null) return null;
+    return [`${pct(e.debtBefore)} → ${pct(e.debtEnd)}`, `% of GDP, ${e.yearBefore} → ${e.endYear}`, e.debtEnd - e.debtBefore >= 20 ? 'down' : ''];
+  }},
+};
+const TABLES = {
+  S1: [trustColumn('National parliament', 'Trust in parliament'), trustColumn('National government', 'Trust in government'), COLUMNS.turnout, COLUMNS.parties, COLUMNS.gain],
+  S2: [COLUMNS.unemployment, COLUMNS.growth, COLUMNS.debt, trustColumn('National parliament', 'Trust in parliament'), COLUMNS.parties, COLUMNS.gain],
+  S3: [trustColumn('Political parties', 'Trust in parties'), trustColumn('National government', 'Trust in government'), COLUMNS.parties, COLUMNS.gain, COLUMNS.loss],
+};
+
+function summaryLines(id) {
+  const eps = episodesOf(id);
+  const institution = id === 'S3' ? 'Political parties' : 'National parliament';
+  const trust = eps.map(ep => ep.trust.find(row => row.institution === institution)).filter(Boolean);
+  const lines = [];
+  if (trust.length) {
+    const fell = trust.filter(t => t.beyondEu <= -3);
+    const lo = Math.round(-Math.max(...fell.map(t => t.beyondEu))), hi = Math.round(-Math.min(...fell.map(t => t.beyondEu)));
+    const range = fell.length ? ` (by ${lo === hi ? lo : lo + ' to ' + hi} points)` : '';
+    lines.push(`<strong>Trust in ${institution === 'Political parties' ? 'parties' : 'parliament'}</strong> fell at least 3 points more than the EU average in <strong>${fell.length} of ${trust.length}</strong> episodes${range}.`);
+  }
+  if (id === 'S2') {
+    const econ = eps.map(ep => ep.economy).filter(e => e && e.unemploymentPeak != null);
+    lines.push(`<strong>Unemployment</strong> peaked at ${Math.round(Math.min(...econ.map(e => e.unemploymentPeak)))}–${Math.round(Math.max(...econ.map(e => e.unemploymentPeak)))}%, and <strong>public debt</strong> reached ${Math.round(Math.min(...econ.map(e => e.debtEnd)))}–${Math.round(Math.max(...econ.map(e => e.debtEnd)))}% of GDP by 2013.`);
+  }
+  const elections = eps.map(ep => ep.elections).filter(Boolean);
+  const rose = elections.filter(e => e.after.parties - e.before.parties >= 0.5).length;
+  lines.push(`<strong>The party system fragmented</strong> (by half a party or more) in ${rose} of ${elections.length} episodes; the biggest single swing was ${Math.round(Math.max(...elections.map(e => Math.max(e.gains[0].change, -e.losses[0].change))))} points.`);
+  const vdem = eps.map(ep => ep.vdem).filter(Boolean);
+  if (vdem.length) lines.push(`<strong>V-Dem electoral democracy</strong> moved beyond its uncertainty range in ${vdem.filter(v => v.clear).length} of ${vdem.length} episodes.`);
+  return lines;
+}
+
+function renderScenarioButtons() {
+  const box = $('scenario-buttons');
+  box.replaceChildren(...data.scenarios.map(item => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = item.id === currentScenario ? 'active' : '';
+    button.innerHTML = `<b>${item.id}</b> ${escapeHtml(item.title)}${item.phase === 'Board 1' ? '' : ' <em>Board 2</em>'}`;
+    button.addEventListener('click', () => { currentScenario = item.id; currentEpisodeId = null; renderScenario(); });
+    return button;
+  }));
+}
+
 function renderScenario() {
   const selected = scenario();
-  const episode = currentEpisode();
-  $('scenario-code').textContent = selected.id + ' · ' + selected.phase + ' · France case study';
+  renderScenarioButtons();
+  $('scenario-code').textContent = selected.id + ' · ' + (selected.phase === 'Board 1' ? 'Board 1 · France case study' : 'Planned for Board 2');
   $('scenario-title').textContent = selected.title;
   $('scenario-trigger').textContent = selected.trigger;
   $('scenario-focus').textContent = selected.focus;
-  $('scenario-gap').textContent = selected.gap;
-  $('episode-heading').textContent = 'Reference episode · ' + episode.label;
-  const isLine = episode.openEnded || episode.start === episode.end;
-  $('episode-key').classList.toggle('is-line', isLine);
-  const timing = episode.openEnded ? `Red line marks the start in ${episode.start}; no end year is specified.`
-    : isLine ? `Red line marks ${episode.start}.`
-    : `Red band runs from the ${episode.start} gridline to the ${episode.end} gridline.`;
-  $('episode-timing').textContent = `${timing} Dates are year-level unless a source reports a day. Timing alone does not establish causation.`;
-  const references = $('episode-charts');
-  const [from, to] = episodeWindow(episode);
-  const available = selected.charts.filter(spec => dataRows(spec, episode.country).some(row => row.year >= from && row.year <= to));
-  references.replaceChildren(...available.map(spec => chartCard(spec, episode.country, from, to, episode, $('episode-compare').value)));
-  if (!available.length) references.textContent = 'No prepared indicators have observations in this period.';
-  const sources = new Set(available.map(spec => spec.dataset)).size;
-  const missing = selected.charts.length - available.length;
-  $('episode-coverage').textContent = `${available.length} chart${available.length === 1 ? '' : 's'} from ${sources} dataset${sources === 1 ? '' : 's'}${missing ? ` · ${missing} other relevant indicators have no observations in this period` : ''}.`;
-  updateExtraGroup();
+  $('scenario-planned').textContent = selected.planned || '';
+  $('scenario-planned').hidden = !selected.planned;
+  const eps = episodesOf(selected.id);
+  $('scenario-body').hidden = !eps.length;
+  if (!eps.length) return;
+  if (!eps.some(ep => ep.id === currentEpisodeId)) currentEpisodeId = eps[0].id;
+
+  $('scenario-summary').innerHTML = summaryLines(selected.id).map(line => `<li>${line}</li>`).join('');
+  const columns = TABLES[selected.id];
+  const head = `<thead><tr><th>Episode</th>${columns.map(c => `<th>${c.label}</th>`).join('')}</tr></thead>`;
+  const body = eps.map(ep => `<tr data-id="${ep.id}" tabindex="0" class="${ep.id === currentEpisodeId ? 'selected' : ''}"><th>${escapeHtml(ep.label)}</th>${columns.map(c => {
+    const cell = c.cell(ep);
+    return cell ? `<td class="${cell[2] || ''}">${escapeHtml(cell[0])}<small>${escapeHtml(cell[1])}</small></td>` : '<td class="none">–</td>';
+  }).join('')}</tr>`).join('');
+  const table = $('shock-table');
+  table.innerHTML = head + '<tbody>' + body + '</tbody>';
+  table.querySelectorAll('tbody tr').forEach(row => {
+    const pick = () => { currentEpisodeId = row.dataset.id; renderScenario(); };
+    row.addEventListener('click', pick);
+    row.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); pick(); } });
+  });
+  renderEpisode(eps.find(ep => ep.id === currentEpisodeId));
 }
 
-async function updateExtraDataset() {
-  const id = $('extra-dataset').value;
-  if (id && !data[id]) {
-    $('extra-chart').textContent = 'Loading ' + catalog(id).title + '…';
-    await ensure([id]);
-    if ($('extra-dataset').value !== id) return;
+function renderEpisode(ep) {
+  $('episode-heading').textContent = ep.label;
+  $('episode-note').textContent = ep.note;
+  const facts = [];
+  ep.trust.forEach(t => facts.push(`<b>Trust in ${t.institution.replace('National ', '').toLowerCase()}:</b> ${pct(t.before)} before (${t.beforeWaves}) → lowest ${pct(t.lowest)} (${t.lowestWave})${t.after != null ? ` → ${pct(t.after)} at the first wave after (${t.afterWave})` : ''}. EU average over the same waves: ${signed(t.euChange, 0)} pts.`));
+  const e = ep.elections;
+  if (e) {
+    const list = moves => moves.map(m => `${escapeHtml(m.name)} ${signed(m.change)}`).join(', ');
+    facts.push(`<b>Elections ${e.before.date} → ${e.after.date}:</b> ${e.before.turnout != null ? `turnout ${pct(e.before.turnout)} → ${pct(e.after.turnout)}; ` : ''}effective parties ${e.before.parties.toFixed(1)} → ${e.after.parties.toFixed(1)} (counted by ${e.countedBy}).`);
+    facts.push(`<b>Biggest gains:</b> ${list(e.gains)}. <b>Biggest losses:</b> ${list(e.losses)} (vote share, points).`);
   }
-  $('extra-metric-label').hidden = !id;
-  const select = $('extra-metric');
-  select.replaceChildren();
-  if (id) catalog(id).metrics.forEach(item => option(select, item.key, item.label));
-  updateExtraGroup();
-}
-function updateExtraGroup() {
-  const id = $('extra-dataset').value;
-  const label = $('extra-group-label'), select = $('extra-group');
-  const previous = select.value;
-  select.replaceChildren();
-  if (!id) {
-    label.hidden = true;
-    $('extra-chart').replaceChildren();
-    $('extra-note').textContent = '';
-    return;
-  }
-  const item = catalog(id);
-  label.hidden = !item.groupLabel;
-  if (item.groupLabel) {
-    label.firstChild.textContent = item.groupLabel;
-    const episode = currentEpisode();
-    const [from, to] = episodeWindow(episode);
-    const grouped = new Map();
-    data[id].filter(row => row.country === episode.country && row.metric === $('extra-metric').value)
-      .forEach(row => {
-        const current = grouped.get(row.group) || {inWindow: false, year: 0, value: 0};
-        current.inWindow ||= row.year >= from && row.year <= to;
-        if (row.year > current.year || row.year === current.year && row.value > current.value) {
-          current.year = row.year;
-          current.value = row.value;
-        }
-        grouped.set(row.group, current);
-      });
-    const groups = [...grouped.keys()].sort((a, b) => Number(grouped.get(b).inWindow) - Number(grouped.get(a).inWindow)
-      || grouped.get(b).year - grouped.get(a).year || grouped.get(b).value - grouped.get(a).value || a.localeCompare(b));
-    groups.forEach(group => option(select, group, group));
-    if (groups.includes(previous)) select.value = previous;
-    else if (groups.includes('National parliament')) select.value = 'National parliament';
-    else if (groups.includes('Parliamentary')) select.value = 'Parliamentary';
-  }
-  renderExtra();
-}
-function renderExtra() {
-  const id = $('extra-dataset').value;
-  if (!id) return;
-  const episode = currentEpisode();
-  const [from, to] = episodeWindow(episode);
-  const item = catalog(id);
-  const spec = {dataset: id, metric: $('extra-metric').value};
-  if (item.groupLabel) spec.group = $('extra-group').value;
-  $('extra-chart').replaceChildren(chartCard(spec, episode.country, from, to, episode, $('episode-compare').value));
-  $('extra-note').textContent = item.note + (id === 'ches' || id === 'ppeg' ? ' This chart shows one selected party or alliance, not total radical vote share.' : '');
+  if (ep.vdem) facts.push(`<b>V-Dem electoral democracy:</b> ${ep.vdem.before.toFixed(3)} (${ep.vdem.yearBefore}) → ${ep.vdem.after.toFixed(3)} (${ep.vdem.yearAfter}), ${ep.vdem.clear ? 'a change larger than its uncertainty range' : 'within its uncertainty range: no clear change'}.`);
+  $('episode-facts').innerHTML = facts.map(f => `<p>${f}</p>`).join('');
+
+  const from = ep.startYear - 4, to = Math.min(2026, ep.endYear + 3);
+  // Band from the first day of the start month to the last day of the end month.
+  const month = text => Number(text.slice(0, 4)) + (Number(text.slice(5, 7)) - 1) / 12;
+  const marked = {start: month(ep.start), end: month(ep.end) + 1 / 12, label: ep.label.replace(ep.country + ' ', '')};
+  const specs = scenario().charts.filter(spec => dataRows(spec, ep.country).some(row => row.year >= from && row.year <= to));
+  const charts = $('episode-charts');
+  charts.replaceChildren(...specs.map(spec => chartCard(spec, ep.country, from, to, marked, 'European Union')));
+  if (!specs.length) charts.innerHTML = '<p class="small">The prepared chart series start after this episode. Its election numbers are above.</p>';
 }
 
 async function updateDataset() {
@@ -431,11 +471,9 @@ function renderExplore() {
 async function start() {
   try {
     [data.catalog, data.scenarios] = await Promise.all([fetchJson('catalog'), fetchJson('scenarios'), ensure(coreIds)]);
-    data.scenarios.forEach(item => option($('scenario-select'), item.id, item.id + ' · ' + item.title + (item.phase === 'Board 1' ? '' : ' · later')));
+    data.shocks = await fetchJson('shocks');
     data.catalog.forEach(item => option($('dataset-select'), item.id, item.title));
-    option($('extra-dataset'), '', 'Choose a dataset');
-    data.catalog.forEach(item => option($('extra-dataset'), item.id, item.title));
-    updateScenarioChoices();
+    renderScenario();
     updateDataset();
     $('status').hidden = true;
     setView(location.hash === '#explore' ? 'explore' : 'scenario');
@@ -446,12 +484,6 @@ async function start() {
 
 $('scenario-tab').addEventListener('click', () => setView('scenario'));
 $('explore-tab').addEventListener('click', () => setView('explore'));
-$('scenario-select').addEventListener('change', updateScenarioChoices);
-$('episode-select').addEventListener('change', renderScenario);
-$('episode-compare').addEventListener('change', renderScenario);
-$('extra-dataset').addEventListener('change', updateExtraDataset);
-$('extra-metric').addEventListener('change', updateExtraGroup);
-$('extra-group').addEventListener('change', renderExtra);
 $('dataset-select').addEventListener('change', updateDataset);
 $('metric-select').addEventListener('change', updateGroup);
 $('country-select').addEventListener('change', updateCountry);

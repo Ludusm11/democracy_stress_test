@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Democracy Stress Test · Prototype</title>
-  <link rel="stylesheet" href="styles.css?v=site3">
+  <link rel="stylesheet" href="styles.css?v=site4">
 </head>
 <body>
   <main>
@@ -23,45 +23,28 @@
 
     <section id="scenario-view" hidden>
       <div class="intro">
-        <h2>Choose a scenario for France</h2>
-        <p>Three scenarios are in the Board 1 plan; two more are planned for Board 2. Historical episodes show what we plan to study, not estimates of what will happen in France.</p>
+        <h2>What happened in past shocks</h2>
+        <p>Each scenario is studied through past European episodes. The table shows what was observed before and during each one. These are <strong>observations, not effects and not forecasts</strong> for France.</p>
       </div>
-      <div class="controls three">
-        <label>Scenario<select id="scenario-select"></select></label>
-        <label>Reference episode<select id="episode-select"></select></label>
-        <label>Compare charts with<select id="episode-compare">
-          <option value="European Union">EU average (where the source has one)</option>
-          <option value="France">France</option>
-          <option value="">No comparison</option>
-        </select></label>
-      </div>
+      <div id="scenario-buttons" class="scenario-buttons" aria-label="Scenario"></div>
       <article class="scenario-info">
         <p id="scenario-code" class="eyebrow"></p>
         <h3 id="scenario-title"></h3>
         <p><strong>Trigger:</strong> <span id="scenario-trigger"></span></p>
-        <p><strong>What we would measure:</strong> <span id="scenario-focus"></span></p>
-        <p class="small">Scenario catalogue: Scope Review, slide 16. Board 1 focus: MVP update, page 2.</p>
+        <p><strong>What we look at:</strong> <span id="scenario-focus"></span></p>
+        <p id="scenario-planned" class="planned"></p>
       </article>
-      <article class="method-note">
-        <h2>How to read this page</h2>
-        <p>These are <strong>observations, not predictions</strong>. The charts show what happened around past episodes; they do not yet say how France would respond. A change at the time of an episode does not prove the episode caused it. <span id="scenario-gap"></span></p>
-      </article>
-
-      <div class="section-heading episode-heading">
-        <div><h2 id="episode-heading"></h2><p class="timing-key"><span id="episode-key" class="band-swatch" aria-hidden="true"></span><span id="episode-timing"></span></p><p id="episode-coverage"></p></div>
+      <div id="scenario-body">
+        <ul id="scenario-summary" class="summary"></ul>
+        <div class="table-wrap"><table id="shock-table" class="shock-table"></table></div>
+        <p class="small"><strong>How to read:</strong> trust is the Eurobarometer share who “tend to trust”: the average of the two waves before the episode → the lowest wave during it (or just after it). “EU” is how the EU average moved between the same waves. Turnout and parties compare the last election before the episode with the last one during it (or up to a year after). “Parties” is the effective number of parties: higher means votes are spread more thinly. Click a row for details and charts.</p>
+        <section class="episode-detail">
+          <h2 id="episode-heading"></h2>
+          <p id="episode-note" class="small"></p>
+          <div id="episode-facts" class="facts"></div>
+          <div id="episode-charts" class="charts"></div>
+        </section>
       </div>
-      <div id="episode-charts" class="charts"></div>
-      <section class="more-data" aria-label="More data around this episode">
-        <h2>More data around this episode</h2>
-        <p>Choose any prepared dataset to see it on the same timeline, including party positions and election results.</p>
-        <div class="controls explore-controls">
-          <label>Dataset<select id="extra-dataset"></select></label>
-          <label id="extra-metric-label" hidden>Measure<select id="extra-metric"></select></label>
-          <label id="extra-group-label">Group<select id="extra-group"></select></label>
-        </div>
-        <div id="extra-chart" class="charts"></div>
-        <p id="extra-note" class="small"></p>
-      </section>
     </section>
 
     <section id="explore-view" hidden>
@@ -87,6 +70,6 @@
       <p id="explore-detail" class="small"></p>
     </section>
   </main>
-  <script src="app.js?v=site3"></script>
+  <script src="app.js?v=site4"></script>
 </body>
 </html>
