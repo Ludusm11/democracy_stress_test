@@ -10,11 +10,21 @@ We are building a way to explain how democracies might hold up under pressure. F
 4. Open [the shock numbers notebook](notebooks/02_shock_numbers.ipynb) for quotable figures around each reference episode: trust, turnout, party system, economy and V-Dem, next to the EU and France today. Observations, not effects.
 5. Open [the radical voting notebook](notebooks/03_radical_voting.ipynb) for far-right and far-left vote shares: France since 1978, around each episode, and the eight countries today. The party classification is in [data/reference/radical_parties.csv](data/reference/radical_parties.csv).
 
+To open the website, run this from the project folder.
+
+Windows (PowerShell):
+
 ```powershell
 .\.venv\Scripts\python.exe -m http.server 8765 --directory website
 ```
 
-Open **http://127.0.0.1:8765** in your browser. Press `Ctrl+C` in PowerShell to stop the website. It runs only on your computer; no data are uploaded.
+macOS (Terminal):
+
+```bash
+.venv/bin/python -m http.server 8765 --directory website
+```
+
+Open **http://127.0.0.1:8765** in your browser. Press `Ctrl+C` in the terminal to stop the website. It runs only on your computer; no data are uploaded.
 
 The website's scenario catalogue follows the Scope Review: government collapse, systemic financial crisis, integrity scandal, electoral-integrity shock, and concentration of executive power. The Board 1 MVP update makes the first three the immediate focus; the last two are labelled as later scenarios. The Shocks view shows a compact France baseline, several relevant charts around each reference episode, and a selector for any other prepared dataset on the same timeline. A red band runs from the labelled start-year gridline to the labelled end-year gridline. A single-year or open-ended episode has a red line at its year; exact event days are not encoded. France's full historical trends are in Explore data. **These are observations, not stressed outcomes:** the effect ranges and severity levels still need a documented method.
 
