@@ -84,7 +84,7 @@ On a later day, start with `cd democracy_stress_test` and run only the second bl
 
 In VS Code, open the folder and select the **Capstone (.venv Python 3.12)** kernel at the top right of a notebook.
 
-**Get teammates' changes / share yours:** `git pull` before you start; `git add -A`, `git commit -m "what changed"` and `git push` when you are done.
+**Get teammates' changes / share yours:** `git pull` before you start; `git add -A`, `git commit -m "what changed"` and `git push` when you are done. (or just ask ai to commit and push to GitHub for you)
 
 ## What remains open
 
