@@ -36,19 +36,35 @@ The project brief is `Scope_Review_Capstone_Democracy_v2(1).pptx` in this folder
 
 ## Rebuild the analysis
 
-The required packages are already installed in `.venv` on this computer. In PowerShell, from this folder, run:
+You need [Python 3.12](https://www.python.org/downloads/) and Git. All raw data is in the repository, so nothing else needs downloading.
+
+**First time only.** Clone the repository, create the environment, install the packages and register the notebook kernel. In PowerShell (Windows):
+
+```powershell
+git clone https://github.com/Ludusm11/democracy_stress_test.git
+cd democracy_stress_test
+py -3.12 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m ipykernel install --sys-prefix --name capstone-democracy --display-name "Capstone (.venv Python 3.12)"
+```
+
+On macOS or Linux, use `python3.12 -m venv .venv` and replace `.\.venv\Scripts\python.exe` with `.venv/bin/python` in every command.
+
+**Rebuild the processed tables, outputs and website data:**
 
 ```powershell
 .\.venv\Scripts\python.exe src\run_analysis.py
 ```
 
-To open the notebook for editing, run:
+**Open the notebooks:**
 
 ```powershell
 .\.venv\Scripts\python.exe -m jupyter lab
 ```
 
-In VS Code, select the **Capstone (.venv Python 3.12)** kernel. On a new computer, install Python 3.12, create a virtual environment, then install `requirements.txt`.
+In VS Code, open the folder and select the **Capstone (.venv Python 3.12)** kernel at the top right of a notebook.
+
+**Get teammates' changes / share yours:** `git pull` before you start; `git add -A`, `git commit -m "what changed"` and `git push` when you are done.
 
 ## What remains open
 
