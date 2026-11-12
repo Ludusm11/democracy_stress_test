@@ -1,0 +1,2 @@
+# Raw data are stored byte for byte: no line-ending conversion between Windows and Mac.
+data/raw/** -text

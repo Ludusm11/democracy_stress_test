@@ -4,7 +4,7 @@ This is a first data prototype for the Democracy Stress Test. It describes what 
 
 ## What is ready
 
-- We have 60 original files. Every file is listed in `raw_file_inventory.csv`. Of the Our World in Data download we keep only the two Freedom House tables; they are checked in `owid_file_audit.csv`.
+- We have 59 original files. Every file is listed in `raw_file_inventory.csv`. Of the Our World in Data download we keep only the two Freedom House tables; they are checked in `owid_file_audit.csv`.
 - We can chart France's democracy scores, election turnout, party positions, government changes and public trust. The figures are in `figures/`.
 - Eurobarometer gives a trust trend from 2005 to 2026. In its latest French wave, 12% tended to trust political parties, 21% the national government and 23% parliament.
 - The 2026 CEVIPOF report also gives French trust figures. We copied seven published values into a small table and recorded the question and PDF page for each.

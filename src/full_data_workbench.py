@@ -44,10 +44,14 @@ def family(path: Path) -> str:
     return part
 
 
+# Local-only files (not in the repository, see .gitignore): left out so every computer gets the same inventory.
+LOCAL_ONLY = {"evs_wvs_joint_2017_2022_v5/EVS_WVS_Joint_Csv_v5_0.csv"}
+
+
 def inventory() -> pd.DataFrame:
     rows = []
-    for path in sorted(RAW.rglob("*")):
-        if not path.is_file():
+    for path in sorted(RAW.rglob("*"), key=lambda p: p.relative_to(RAW).as_posix()):
+        if not path.is_file() or path.relative_to(RAW).as_posix() in LOCAL_ONLY:
             continue
         digest = hashlib.sha256()
         with path.open("rb") as stream:
@@ -56,7 +60,7 @@ def inventory() -> pd.DataFrame:
         ext = path.suffix.lower()
         role = ("table" if ext in {".csv", ".tsv", ".tab", ".xlsx", ".db", ".json"}
                 else "archive" if ext == ".zip" else "documentation/metadata")
-        rows.append(dict(source_family=family(path), relative_path=str(path.relative_to(RAW)),
+        rows.append(dict(source_family=family(path), relative_path=path.relative_to(RAW).as_posix(),
                          extension=ext, role=role, bytes=path.stat().st_size, sha256=digest.hexdigest()))
     result = pd.DataFrame(rows)
     result.to_csv(OUT / "raw_file_inventory.csv", index=False)
