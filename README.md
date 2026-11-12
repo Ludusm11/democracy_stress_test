@@ -38,7 +38,9 @@ The project brief is `Scope_Review_Capstone_Democracy_v2(1).pptx` in this folder
 
 You need [Python 3.12](https://www.python.org/downloads/) and Git. All raw data is in the repository, so nothing else needs downloading.
 
-**First time only.** Clone the repository, create the environment, install the packages and register the notebook kernel. In PowerShell (Windows):
+### Windows (PowerShell)
+
+First time only: clone the repository, create the environment, install the packages and register the notebook kernel.
 
 ```powershell
 git clone https://github.com/Ludusm11/democracy_stress_test.git
@@ -48,19 +50,37 @@ py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m ipykernel install --sys-prefix --name capstone-democracy --display-name "Capstone (.venv Python 3.12)"
 ```
 
-On macOS or Linux, use `python3.12 -m venv .venv` and replace `.\.venv\Scripts\python.exe` with `.venv/bin/python` in every command.
-
-**Rebuild the processed tables, outputs and website data:**
+Rebuild the processed tables, outputs and website data, then open the notebooks:
 
 ```powershell
 .\.venv\Scripts\python.exe src\run_analysis.py
-```
-
-**Open the notebooks:**
-
-```powershell
 .\.venv\Scripts\python.exe -m jupyter lab
 ```
+
+### macOS (Terminal)
+
+If `python3.12 --version` fails, install Python 3.12 from [python.org](https://www.python.org/downloads/macos/) or with `brew install python@3.12`. Git comes with the Xcode command line tools (`xcode-select --install`).
+
+First time only: clone the repository, create the environment, install the packages and register the notebook kernel.
+
+```bash
+git clone https://github.com/Ludusm11/democracy_stress_test.git
+cd democracy_stress_test
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python -m ipykernel install --sys-prefix --name capstone-democracy --display-name "Capstone (.venv Python 3.12)"
+```
+
+Rebuild the processed tables, outputs and website data, then open the notebooks:
+
+```bash
+.venv/bin/python src/run_analysis.py
+.venv/bin/python -m jupyter lab
+```
+
+On a later day, start with `cd democracy_stress_test` and run only the second block.
+
+### Both
 
 In VS Code, open the folder and select the **Capstone (.venv Python 3.12)** kernel at the top right of a notebook.
 
