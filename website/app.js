@@ -265,41 +265,6 @@ function renderScenario() {
     : isLine ? `Red line marks ${episode.start}.`
     : `Red band runs from the ${episode.start} gridline to the ${episode.end} gridline.`;
   $('episode-timing').textContent = `${timing} Dates are year-level unless a source reports a day. Timing alone does not establish causation.`;
-  const baseline = $('baseline');
-  baseline.replaceChildren();
-  const baselineSpecs = [{dataset: 'vdem', metric: 'v2x_polyarchy'}, ...selected.charts.slice(0, 3)]
-    .filter((spec, index, list) => list.findIndex(other => other.dataset === spec.dataset && other.metric === spec.metric && other.group === spec.group) === index);
-  baselineSpecs.forEach(spec => {
-    const rows = dataRows(spec, 'France');
-    const last = rows.at(-1), measure = metric(spec.dataset, spec.metric);
-    const card = document.createElement('article');
-    card.className = 'baseline-card';
-    const title = document.createElement('h3');
-    title.textContent = measure.label + (spec.group ? ' · ' + spec.group : '');
-    const value = document.createElement('strong');
-    value.textContent = last ? number(last.value, measure.unit) : 'No data';
-    const note = document.createElement('p');
-    note.textContent = last ? displayDate(last) + ' · ' + catalog(spec.dataset).source + (Number.isFinite(last.low) ? ' · uncertainty ' + number(last.low, measure.unit) + '–' + number(last.high, measure.unit) : '') : catalog(spec.dataset).source;
-    card.append(title, value, note);
-    if (last) {
-      const context = [];
-      const eu = dataRows(spec, 'European Union').find(row => last.date ? row.date === last.date : row.year === last.year);
-      if (eu) context.push('EU: ' + number(eu.value, measure.unit));
-      const previous = spec.dataset === 'turnout' ? rows.filter(row => row.year < last.year).at(-1) : rows.at(-2); // turnout: previous election, not the other round
-      if (previous) {
-        const change = last.value - previous.value;
-        const digits = measure.unit === 'score (0–1)' ? 3 : 1;
-        context.push('Previous (' + displayDate(previous) + '): ' + number(previous.value, measure.unit) + ', ' + (change >= 0 ? '+' : '−') + Math.abs(change).toFixed(digits));
-      }
-      if (context.length) {
-        const extra = document.createElement('p');
-        extra.className = 'context';
-        extra.textContent = context.join(' · ');
-        card.append(extra);
-      }
-    }
-    baseline.append(card);
-  });
   const references = $('episode-charts');
   const [from, to] = episodeWindow(episode);
   const available = selected.charts.filter(spec => dataRows(spec, episode.country).some(row => row.year >= from && row.year <= to));

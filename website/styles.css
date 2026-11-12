@@ -28,11 +28,7 @@ select { display: block; width: 100%; height: 43px; margin-top: 7px; padding: 0 
 .small { color: #5b6975; font-size: 13px; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; margin: 27px 0 12px; }
 .section-heading p { margin: 5px 0 0; font-size: 13px; }
-.baseline { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
-.baseline-card, .chart-card { background: white; border: 1px solid #dfe6eb; border-radius: 7px; padding: 16px; }
-.baseline-card h3 { font-size: 14px; font-weight: 600; color: #485967; }
-.baseline-card strong { display: block; font-size: 27px; }
-.baseline-card p { color: #61717e; font-size: 12px; margin: 5px 0 0; }
+.chart-card { background: white; border: 1px solid #dfe6eb; border-radius: 7px; padding: 16px; }
 .charts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; }
 .chart-card h3 { font-size: 17px; }
 .chart-card p { color: #61717e; font-size: 12px; margin: 0 0 8px; }
@@ -60,12 +56,11 @@ select { display: block; width: 100%; height: 43px; margin-top: 7px; padding: 0 
 .legend span { display: inline-flex; align-items: center; gap: 7px; }
 .legend i { display: inline-block; width: 17px; height: 4px; }
 .controls.three { grid-template-columns: 1.5fr 1fr 1fr; }
-.baseline-card p.context { color: #2f4a5e; font-size: 12px; margin-top: 8px; padding-top: 7px; border-top: 1px solid #edf1f4; }
 .scenario-info + .method-note { margin-top: 14px; border-left: 5px solid #245f91; }
 .chart-card .legend { margin-top: 6px; font-size: 12px; }
 .links { display: flex; gap: 18px; flex-wrap: wrap; margin: 10px 0 0 !important; font-size: 13px; font-weight: 700; }
 .links a { color: #1a5f94; }
 @media (max-width: 780px) {
   main { padding: 24px 14px 50px; }
-  .controls, .controls.three, .explore-controls, .baseline, .charts { grid-template-columns: 1fr; }
+  .controls, .controls.three, .explore-controls, .charts { grid-template-columns: 1fr; }
 }
