@@ -1,0 +1,11 @@
+shock,episode_id,country,iso3,start,end,use_trust,use_turnout,use_radical_vote,note
+S1,S1_BE_2010,Belgium,BEL,2010-04,2011-12,1,0,1,"Leterme II falls Apr 2010; Di Rupo govt Dec 2011. Turnout excluded: compulsory voting."
+S1,S1_ES_2015,Spain,ESP,2015-12,2016-10,1,1,1,"Hung parliament Dec 2015, repeat election Jun 2016, Rajoy invested Oct 2016."
+S1,S1_FR_2024,France,FRA,2024-06,2025-10,1,1,1,"Dissolution Jun 2024 to Lecornu govt Oct 2025. Left out when back-testing S1 on France."
+S2,S2_ES_2008,Spain,ESP,2008-09,2013-12,1,1,1,"Euro area crisis; start = Lehman collapse."
+S2,S2_GR_2008,Greece,GRC,2008-09,2013-12,1,1,1,"Euro area crisis; most severe case."
+S2,S2_PT_2008,Portugal,PRT,2008-09,2013-12,1,1,1,"Euro area crisis; bailout 2011."
+S2,S2_IE_2008,Ireland,IRL,2008-09,2013-12,1,1,1,"Euro area crisis; bailout 2010."
+S3,S3_AT_2019,Austria,AUT,2019-05,2019-09,1,0,1,"Ibiza video May 2019, snap election Sep 2019. Also a government collapse: counted under S3 only."
+S3,S3_ES_2018,Spain,ESP,2018-05,2018-06,1,0,1,"Gurtel verdict May 2018, Rajoy ousted Jun 2018. Also a government change: counted under S3 only."
+S3,S3_IT_1992,Italy,ITA,1992-02,1994-03,0,0,1,"Mani pulite. Vote and party system only: no comparable Eurobarometer trust data before 1997; confounded by 1993 electoral reform."

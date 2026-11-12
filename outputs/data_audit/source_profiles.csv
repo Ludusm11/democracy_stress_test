@@ -1,0 +1,24 @@
+source,grain,rows,columns,france_rows,first_year,last_year,duplicate_key_rows,missing_key_rows,note
+V-Dem v16,country-year,4636.0,9.0,26.0,2000.0,2025.0,0.0,0.0,
+OWID democracy,chart/explorer export,9814.0,,47.0,,,0.0,,2 CSV files; 0 read errors
+ParlGov view_party,party,1707.0,23.0,80.0,,,0.0,0.0,2024 release
+ParlGov view_election,election,9016.0,16.0,392.0,1900.0,2023.0,0.0,0.0,2024 release
+ParlGov view_cabinet,cabinet,12659.0,19.0,1113.0,1900.0,2023.0,7.0,0.0,2024 release
+PPEG parl,parl,12577.0,45.0,269.0,1942.0,2025.0,0.0,0.0,
+PPEG pres,pres,2829.0,38.0,115.0,1945.0,2025.0,2.0,23.0,
+PPEG gov,gov,5864.0,35.0,327.0,1942.0,2025.0,0.0,0.0,
+PPEG comb,comb,25107.0,36.0,970.0,1942.0,2025.0,4.0,0.0,Combined archive overlaps the component archives
+IDEA turnout,country-election,3947.0,25.0,69.0,1945.0,2026.0,0.0,22.0,
+PopuList 4.0,party,268.0,31.0,10.0,,,0.0,0.0,
+CHES trend,party-wave,1441.0,90.0,71.0,1999.0,2024.0,0.0,0.0,France country code 6 verified in 2024 codebook
+CHES 2024,party-wave,279.0,53.0,10.0,2024.0,2024.0,0.0,0.0,
+Manifesto MPDS 2026a,party-manifesto,5330.0,175.0,125.0,1920.0,2025.0,0.0,0.0,
+Manifesto party list,party-name period,1753.0,47.0,44.0,1924.0,2025.0,324.0,0.0,
+EVS/WVS joint v5,respondent,156658.0,7.0,1870.0,2017.0,2023.0,0.0,0.0,Selected audit columns; source CSV has 231
+Eurobarometer 105.2,country-question-wave aggregate,8.0,6.0,8.0,2025.0,2026.0,0.0,0.0,184 sheets in comparison workbook; 8 selected cells audited
+Eurostat nama_10_gdp_real_growth,geo-year,1112.0,4.0,26.0,2000.0,2025.0,0.0,0.0,
+Eurostat une_rt_a_unemployment,geo-year,618.0,4.0,23.0,2003.0,2025.0,0.0,0.0,
+Eurostat prc_hicp_aind_inflation,geo-year,1082.0,4.0,26.0,2000.0,2025.0,0.0,0.0,
+Eurostat gov_10dd_edpt1_debt_gdp,geo-year,806.0,4.0,26.0,2000.0,2025.0,0.0,0.0,
+CEVIPOF wave 17,published PDF aggregates,,,,2026.0,2026.0,,,169 pages; no respondent file
+ESS,documentation only,,,,,,,,Questionnaire and weighting guide only; no respondent file

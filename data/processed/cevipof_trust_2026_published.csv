@@ -1,0 +1,8 @@
+country,question,institution,trust_pct,pdf_page,france_sample_n,wave,measure,source_file
+France,Q13,National Assembly,20,28,3166.0,"Wave 17, January–February 2026",Published percent expressing confidence,Barometre_confiance_CEVIPOFVague17_fev2026_vd1.pdf
+France,Q13,Government,17,28,3166.0,"Wave 17, January–February 2026",Published percent expressing confidence,Barometre_confiance_CEVIPOFVague17_fev2026_vd1.pdf
+France,Q25,Political parties,15,40,3166.0,"Wave 17, January–February 2026",Published percent expressing confidence,Barometre_confiance_CEVIPOFVague17_fev2026_vd1.pdf
+Germany,Q25,Political parties,35,43,,"Wave 17, January–February 2026",Published percent expressing confidence,Barometre_confiance_CEVIPOFVague17_fev2026_vd1.pdf
+Italy,Q25,Political parties,26,43,,"Wave 17, January–February 2026",Published percent expressing confidence,Barometre_confiance_CEVIPOFVague17_fev2026_vd1.pdf
+United Kingdom,Q25,Political parties,31,43,,"Wave 17, January–February 2026",Published percent expressing confidence,Barometre_confiance_CEVIPOFVague17_fev2026_vd1.pdf
+Romania,Q25,Political parties,18,43,,"Wave 17, January–February 2026",Published percent expressing confidence,Barometre_confiance_CEVIPOFVague17_fev2026_vd1.pdf

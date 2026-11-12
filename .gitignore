@@ -1,0 +1,9 @@
+/.venv/
+/.jupyter/
+**/.ipynb_checkpoints/
+**/__pycache__/
+*.pyc
+outputs/.matplotlib/
+*.bak
+# Over GitHub's 100 MB limit; the pipeline reads the same CSV from F00012158-EVS_WVS_Joint_Csv_v5_0.zip
+data/raw/evs_wvs_joint_2017_2022_v5/EVS_WVS_Joint_Csv_v5_0.csv

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Democracy Stress Test · Prototype</title>
+  <link rel="stylesheet" href="styles.css?v=site2">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Capstone · Board 1 prototype</p>
+      <h1>Democracy Stress Test</h1>
+     
+    </header>
+
+    <nav class="tabs" aria-label="Dashboard views">
+      <button id="scenario-tab" class="active" type="button" aria-controls="scenario-view" aria-current="page">Shocks</button>
+      <button id="explore-tab" type="button" aria-controls="explore-view">Explore data</button>
+    </nav>
+
+    <p id="status" role="status">Loading the data…</p>
+
+    <section id="scenario-view" hidden>
+      <div class="intro">
+        <h2>Choose a scenario for France</h2>
+        <p>Three scenarios are in the Board 1 plan; two more are planned for Board 2. Historical episodes show what we plan to study, not estimates of what will happen in France.</p>
+      </div>
+      <div class="controls three">
+        <label>Scenario<select id="scenario-select"></select></label>
+        <label>Reference episode<select id="episode-select"></select></label>
+        <label>Compare charts with<select id="episode-compare">
+          <option value="European Union">EU average (where the source has one)</option>
+          <option value="France">France</option>
+          <option value="">No comparison</option>
+        </select></label>
+      </div>
+      <article class="scenario-info">
+        <p id="scenario-code" class="eyebrow"></p>
+        <h3 id="scenario-title"></h3>
+        <p><strong>Trigger:</strong> <span id="scenario-trigger"></span></p>
+        <p><strong>What we would measure:</strong> <span id="scenario-focus"></span></p>
+        <p class="small">Scenario catalogue: Scope Review, slide 16. Board 1 focus: MVP update, page 2.</p>
+      </article>
+      <article class="method-note">
+        <h2>How to read this page</h2>
+        <p>These are <strong>observations, not predictions</strong>. The charts show what happened around past episodes; they do not yet say how France would respond. A change at the time of an episode does not prove the episode caused it. <span id="scenario-gap"></span></p>
+      </article>
+
+      <div class="section-heading">
+        <div><h2>France today</h2><p>Latest value for France, the EU figure from the same survey or year where the source has one, and the previous reading.</p></div>
+      </div>
+      <div id="baseline" class="baseline"></div>
+      <div class="section-heading episode-heading">
+        <div><h2 id="episode-heading"></h2><p class="timing-key"><span id="episode-key" class="band-swatch" aria-hidden="true"></span><span id="episode-timing"></span></p><p id="episode-coverage"></p></div>
+      </div>
+      <div id="episode-charts" class="charts"></div>
+      <section class="more-data" aria-label="More data around this episode">
+        <h2>More data around this episode</h2>
+        <p>Choose any prepared dataset to see it on the same timeline, including party positions and election results.</p>
+        <div class="controls explore-controls">
+          <label>Dataset<select id="extra-dataset"></select></label>
+          <label id="extra-metric-label" hidden>Measure<select id="extra-metric"></select></label>
+          <label id="extra-group-label">Group<select id="extra-group"></select></label>
+        </div>
+        <div id="extra-chart" class="charts"></div>
+        <p id="extra-note" class="small"></p>
+      </section>
+    </section>
+
+    <section id="explore-view" hidden>
+      <div class="intro">
+        <h2>Explore the prepared datasets</h2>
+        <p>Choose a source and measure, then read its chart with the source note. The datasets remain separate because they measure different things.</p>
+      </div>
+      <div class="controls explore-controls">
+        <label>Dataset<select id="dataset-select"></select></label>
+        <label>Measure<select id="metric-select"></select></label>
+        <label>Country<select id="country-select"></select></label>
+        <label id="group-label">Group<select id="group-select"></select></label>
+        <label>Compare with (optional)<select id="compare-select"></select></label>
+      </div>
+      <article class="dataset-info">
+        <p id="dataset-source" class="eyebrow"></p>
+        <h3 id="dataset-title"></h3>
+        <p id="dataset-meaning"></p>
+        <p id="dataset-note" class="small"></p>
+        <p class="links"><a id="dataset-link" target="_blank" rel="noopener">Original source ↗</a><a id="download-csv" href="#" download>Download this chart's data (CSV)</a></p>
+      </article>
+      <div id="explore-chart" class="explore-chart"></div>
+      <p id="explore-detail" class="small"></p>
+    </section>
+  </main>
+  <script src="app.js?v=site2"></script>
+</body>
+</html>

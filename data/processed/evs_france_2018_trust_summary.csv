@@ -1,0 +1,4 @@
+source,year,institution,weighted_confident_pct,valid_n,missing_n
+EVS/WVS,2018,Parliament,34.74009483997052,1785,85
+EVS/WVS,2018,Government,31.628370644786635,1816,54
+EVS/WVS,2018,Political parties,11.826776714488005,1815,55

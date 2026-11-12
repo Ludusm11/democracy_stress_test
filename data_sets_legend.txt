@@ -1,0 +1,97 @@
+THE DATA, IN PLAIN ENGLISH
+Updated 12 November 2026
+
+Original downloads are in data/raw. We keep them unchanged. Smaller tables made
+for analysis are in data/processed. The website described in README.md lets
+you browse charts and countries. The short report in outputs/data_audit/report.md
+explains the findings and open questions.
+
+DEMOCRACY AND ELECTIONS
+
+V-Dem (V-Dem-CY-FullOthers-v16_csv.zip)
+Democracy scores for each country and year, with uncertainty ranges. Useful
+for tracking a country over time. A score is an expert estimate, not a poll.
+Source: https://v-dem.net/data/the-v-dem-dataset/
+
+Our World in Data (owid_democracy/)
+Only the two Freedom House tables we use (political rights, civil liberties).
+The other 268 downloaded tables were removed; index.csv still lists the full
+original download with each file's URL.
+Source: https://ourworldindata.org/democracy
+
+International IDEA (idea_export_voter_turnout_database_region.xlsx)
+Election turnout. Useful for seeing whether people voted. Some dates appear
+to stand for a year rather than a precise day; three reported turnout rates
+are above 100%. These are flagged in the working table.
+Source: https://www.idea.int/data-tools/data/voter-turnout-database
+
+PARTIES AND GOVERNMENTS
+
+ParlGov (parlgov_2024/)
+Parties, election results and cabinets. Useful for political history and
+party IDs. This download does not cover the latest French governments.
+Source: https://www.parlgov.org/
+
+PPEG (ppeg_2025v1/)
+More recent elections, parties and governments. Useful for the French 2024
+election and 2025 government changes. Some election rows are alliances, so
+their votes cannot simply be assigned to one party.
+Source: https://ppeg.wzb.eu/
+
+PopuList (The PopuList 4.0.csv)
+Labels European parties as populist, far right, far left or Eurosceptic.
+An unlisted party should not automatically be treated as the opposite.
+Source: https://popu-list.org/
+
+CHES (ches/)
+Experts' ratings of party positions on economic, social and European issues.
+Measured in survey waves, not every year. Party names and IDs need checking
+before joining CHES to election votes.
+Source: https://www.chesdata.eu/
+
+Manifesto Project (manifesto_2026a/)
+Measures what parties wrote in election manifestos. The newest French
+manifesto in this download is from 2022. Its source terms restrict sharing
+the raw data without authorization.
+Source: https://manifesto-project.wzb.eu/
+
+PUBLIC OPINION
+
+EVS/WVS joint survey (evs_wvs_joint_2017_2022_v5/)
+Answers from individual people, including 1,870 French interviews in 2018.
+Useful for confidence in parliament, government and parties. Missing answers
+and survey weights need care. The raw data have sharing restrictions.
+Source: https://www.worldvaluessurvey.org/WVSEVSjoint2017.jsp
+
+Eurobarometer (eurobarometer_std105_2026/)
+Published percentages from European opinion surveys. This download includes
+a longer trust trend and a recent France comparison. It is not a file of
+individual responses; question wording matters when comparing surveys.
+Source: https://europa.eu/eurobarometer/surveys/detail/3613
+
+CEVIPOF (cevipof_bcp_2026/)
+A 2026 report on political trust. We copied a few published figures and kept
+their question and page numbers. We do not have its respondent data.
+Source: https://www.sciencespo.fr/cevipof/
+
+ESS (ess/)
+Only a questionnaire and weighting guide are in this folder. There is no
+respondent file yet, so ESS is not part of the current analysis.
+Source: https://ess.sikt.no/en/data-builder/
+
+ECONOMIC CONTEXT
+
+Eurostat (eurostat_macro_annual/)
+Annual growth, unemployment, inflation and public-debt figures. Useful for
+describing the 2008 financial crisis and other background conditions. These
+country figures alone do not show what caused a change in trust or voting.
+Source: https://ec.europa.eu/eurostat/
+
+UNUSED DOWNLOADS (shocks/)
+
+World Bank GDP growth, EM-DAT disaster deaths and UCDP organized violence were
+downloaded for a shock timeline that is not part of the current website or
+pipeline (src/build_shocks.py is not run). They are kept for later work.
+Sources: https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG
+https://ourworldindata.org/grapher/natural-disasters-deaths
+https://ucdp.uu.se/downloads/

@@ -1,0 +1,62 @@
+iso3,party_id,initials,family,first_year,last_year,source,note
+FRA,FR29,FN/RN,far_right,1900,2100,PopuList 4.0,
+FRA,FR88,UXD,far_right,1900,2100,PopuList 4.0,Ciotti's UDR candidates allied with RN in 2024
+FRA,FR80,R,far_right,1900,2100,PopuList 4.0,Reconquete
+FRA,FR41,MPF/CNI,far_right,1900,2100,PopuList 4.0,
+FRA,FR58,DLF,far_right,1900,2100,PopuList 4.0,
+FRA,FR16,AED,far_right,1900,2100,team,PPEG 'Other extreme right'; not a PopuList party
+FRA,FR33,UMP/LR,far_right,1900,2100,PopuList 4.0,DISPUTED: PopuList 4.0 codes LR far right for all years. Team decision needed; results are also reported without it
+FRA,FR14,RPR,far_right,1976,2001,team,"DISPUTED: RPR (1976-2002), predecessor of UMP/LR. PopuList 4.0 codes LR far right for all years; RPR is added so the disputed series covers the same party line before 2002"
+FRA,FR72,FI,far_left,1900,2100,PopuList 4.0,
+FRA,FR9,PCF,far_left,1900,2100,PopuList 4.0,
+FRA,FR18,AEG,far_left,1900,2100,team,PPEG 'Other extreme left' (includes LO); LO is PopuList far left
+FRA,FR601,FDG,far_left,1900,2100,team,Left Front 2012: PCF + Parti de Gauche
+FRA,FR604,NFP,far_left,1900,2100,team,"PARTIAL: NFP 2024 is one alliance row containing radical (LFI, PCF) and non-radical (PS, Ecologists) parties; analyses show it as a range"
+ESP,ES75,VOX,far_right,1900,2100,PopuList 4.0,
+ESP,ES63,PODEMOS,far_left,1900,2100,PopuList 4.0,
+ESP,ES629,IU,far_left,1900,2100,PopuList 4.0,
+ESP,ES601,IU-LV,far_left,1900,2100,team,IU-led list
+ESP,ES605,UP,far_left,1900,2100,team,IU-led list 2015 (Unidad Popular)
+ESP,ES631,Podemos-IU-eQuo,far_left,1900,2100,PopuList 4.0,Unidos Podemos
+ESP,ES800,EN COMU,far_left,1900,2100,team,Podemos regional alliance (Catalonia)
+ESP,ES802,EM,far_left,1900,2100,team,Podemos regional alliance (Galicia)
+ESP,ES804,Compromis-Podemos-EUPV,far_left,1900,2100,team,Podemos regional alliance (Valencia); includes non-radical Compromis
+ESP,ES806,ECUP,far_left,1900,2100,team,Podemos regional alliance (Catalonia)
+ESP,ES603,AMAIUR,far_left,1900,2100,team,Predecessor of EH Bildu
+ESP,ES608,EH Bildu,far_left,1900,2100,PopuList 4.0,
+ESP,ES74,BNG,far_left,1900,2100,PopuList 4.0,
+ESP,ES78,CUP,far_left,1900,2100,PopuList 4.0,
+GRC,GR61,XA,far_right,1900,2100,PopuList 4.0,Golden Dawn
+GRC,GR68,LAOS,far_right,1900,2100,PopuList 4.0,
+GRC,GR60,ANEL,far_right,1900,2100,PopuList 4.0,
+GRC,GR72,EL,far_right,1900,2100,PopuList 4.0,Greek Solution
+GRC,GR74,Niki,far_right,1900,2100,PopuList 4.0,
+GRC,GR76,Spartans,far_right,1900,2100,PopuList 4.0,
+GRC,GR4,KKE,far_left,1900,2100,PopuList 4.0,
+GRC,GR600,SYRIZA,far_left,1900,2015,PopuList 4.0,PopuList far left until 2015
+GRC,GR69,LAE,far_left,1900,2100,PopuList 4.0,
+GRC,GR73,MeRA25,far_left,1900,2100,PopuList 4.0,
+GRC,GR75,PE,far_left,1900,2100,PopuList 4.0,Course of Freedom
+GRC,GR59,DIKKI,far_left,1900,2100,PopuList 4.0,
+PRT,PT41,CH,far_right,1900,2100,PopuList 4.0,Chega
+PRT,PT2,PCP,far_left,1900,2100,PopuList 4.0,
+PRT,PT601,CDU,far_left,1900,2100,team,PCP-led alliance
+PRT,PT33,BE,far_left,1900,2100,PopuList 4.0,Left Bloc
+IRL,IE28,SP,far_left,1900,2100,PopuList 4.0,
+IRL,IE35,AAA,far_left,1900,2100,team,Socialist Party electoral vehicle
+AUT,AT11,FPO,far_right,1900,2100,PopuList 4.0,
+AUT,AT5,KPO,far_left,1900,2100,PopuList 4.0,
+BEL,BE29,VB,far_right,1900,2100,PopuList 4.0,
+BEL,BE33,FN/NF,far_right,1900,2100,PopuList 4.0,
+BEL,BE49,PP,far_right,1900,2100,PopuList 4.0,
+BEL,BE48,N-VA,far_right,2019,2025,PopuList 4.0,PopuList far right 2019-2025 only
+BEL,BE24,PvdA/PTB,far_left,1900,2100,PopuList 4.0,
+ITA,IT24,MSI-DN/AN,far_right,1900,2100,PopuList 4.0,
+ITA,IT47,LN,far_right,1900,2100,PopuList 4.0,Lega
+ITA,IT46,PRC,far_left,1900,2100,PopuList 4.0,
+ITA,IT80,FDI,far_right,1900,2100,PopuList 4.0,Brothers of Italy
+ITA,IT60,PDCI,far_left,1900,2100,PopuList 4.0,
+ITA,IT654,SA,far_left,1900,2100,PopuList 4.0,The Left - The Rainbow 2008
+ITA,IT632,RC,far_left,1900,2100,PopuList 4.0,Civil Revolution 2013
+ITA,IT76,SEL,far_left,1900,2100,PopuList 4.0,
+ITA,IT641,LeU,far_left,1900,2100,PopuList 4.0,Free and Equal 2018

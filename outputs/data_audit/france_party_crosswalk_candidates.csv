@@ -1,0 +1,16 @@
+iso3c,edate,party_id,pname_en,cmp,vote_pct,alliance,ches_party_id,party,cmp_id,lrgen,lrecon,galtan,match_status
+FRA,2024-06-30,FR16,Other Extreme Right,,0.18615977455323998,,,,,,,,unmatched
+FRA,2024-06-30,FR18,Other Extreme Left,,1.14353552158332,,,,,,,,unmatched
+FRA,2024-06-30,FR29,National Rally,31720.0,29.256684130667598,Electoral alliance member,610.0,RN,31720.0,8.818181991577148,6.0,8.363636016845703,CMP ID match; review
+FRA,2024-06-30,FR33,The Republicans,31626.0,6.569871943760839,,609.0,LR,31626.0,7.727272510528564,7.818181991577148,7.181818008422852,CMP ID match; review
+FRA,2024-06-30,FR53,Other Ecologists,,0.5692130119627701,,,,,,,,unmatched
+FRA,2024-06-30,FR602,Together,31041.0,21.2753680475973,Electoral alliance,,,,,,,unmatched
+FRA,2024-06-30,FR604,New Popular Front,,28.2066886006982,Electoral alliance,,,,,,,unmatched
+FRA,2024-06-30,FR61,Miscellaneous left,,1.53128338290919,,,,,,,,unmatched
+FRA,2024-06-30,FR62,Regionalists,,0.9692667147171499,,,,,,,,unmatched
+FRA,2024-06-30,FR80,Reconquest,,0.74531911682676,,,,,,,,unmatched
+FRA,2024-06-30,FR82,Miscellaneous Centre,,1.22098589847272,,,,,,,,unmatched
+FRA,2024-06-30,FR86,Sovereign Right,,0.28108475820628,,,,,,,,unmatched
+FRA,2024-06-30,FR87,Miscellaneous Right,,3.60218025197247,,,,,,,,unmatched
+FRA,2024-06-30,FR88,Union of the Far-Right,,3.9579017320697996,Electoral alliance member,,,,,,,unmatched
+FRA,2024-06-30,FR999,Others,,0.48445087529937003,,,,,,,,unmatched

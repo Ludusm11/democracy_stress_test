@@ -1,0 +1,9 @@
+source,country,wave,indicator,share_pct,source_cell
+Eurobarometer 105.2,France,Autumn 2025,Trust in political parties,7.000000000000001,QA6_2!AA13
+Eurobarometer 105.2,France,Spring 2026,Trust in political parties,12.0,QA6_2!AB13
+Eurobarometer 105.2,France,Autumn 2025,Trust in national government,9.0,QA6_10!AA13
+Eurobarometer 105.2,France,Spring 2026,Trust in national government,21.0,QA6_10!AB13
+Eurobarometer 105.2,France,Autumn 2025,Trust in national parliament,12.0,QA6_11!AA13
+Eurobarometer 105.2,France,Spring 2026,Trust in national parliament,23.0,QA6_11!AB13
+Eurobarometer 105.2,France,Autumn 2025,Satisfied with democracy in France,37.0,SD18a!AA23
+Eurobarometer 105.2,France,Spring 2026,Satisfied with democracy in France,56.00000000000001,SD18a!AB23
