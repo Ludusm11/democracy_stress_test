@@ -22,6 +22,8 @@ import pandas as pd
 from openpyxl import load_workbook
 from pypdf import PdfReader
 
+import party_coverage
+
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw"
@@ -294,23 +296,29 @@ def main() -> None:
         issue("Manifesto + PPEG", "coverage", "France's newest manifesto predates the 2024 election",
               f"Latest France manifesto year {fr_manifesto_last}; PPEG election {latest}",
               "If using a 2022 manifesto for 2024, label it as earlier information.")
+    fr_ches24 = ches.loc[(ches.country.eq(6)) & (ches.year.eq(2024))]
+    alliance_members = pd.read_csv(ROOT / "data/reference/alliance_members.csv")
     crosswalk = (
         latest_parl[["iso3c", "edate", "party_id", "pname_en", "cmp", "vote_pct", "alliance"]]
         .merge(
-            ches.loc[(ches.country.eq(6)) & (ches.year.eq(2024)) & ches.cmp_id.notna(),
-                     ["party_id", "party", "cmp_id", "lrgen", "lrecon", "galtan"]]
+            fr_ches24.loc[fr_ches24.cmp_id.notna(), ["party_id", "party", "cmp_id", "lrgen", "lrecon", "galtan"]]
             .rename(columns={"party_id": "ches_party_id"}),
             left_on="cmp", right_on="cmp_id", how="left", validate="many_to_one"
         )
     )
+    # Alliances and unlisted rows: see data/reference/alliance_members.csv and src/party_coverage.py.
+    crosswalk = party_coverage.link_rows(crosswalk, fr_ches24, alliance_members)
     crosswalk["match_status"] = np.where(
-        crosswalk.ches_party_id.notna(), "CMP ID match; review", "unmatched"
-    )
+        crosswalk.is_catch_all, "catch-all row (not a party)",
+        crosswalk.link_status.map({"direct": "CMP ID match; review", "via_members": "alliance members; review",
+                                   "alliance_no_rated_member": "alliance, no member rated by CHES"}).fillna("unmatched"))
     crosswalk.to_csv(OUT / "france_party_crosswalk_candidates.csv", index=False)
-    matched_vote = crosswalk.loc[crosswalk.ches_party_id.notna(), "vote_pct"].sum()
-    issue("PPEG + CHES", "join", "Most 2024 votes have no direct CHES match",
-          f"CMP IDs directly match {matched_vote:.1f}% of France {latest} vote",
-          "Review the alliance rows and missing IDs before using a merged party table.")
+    cover = party_coverage.coverage(crosswalk)
+    issue("PPEG + CHES", "join", "Some 2024 French parties have no CHES rating",
+          f"{cover['parties_matched']}/{cover['parties_over_1pct']} parties with 1%+ of the {latest} vote link to CHES "
+          f"({cover['parties_direct']} by ID, the rest via alliance members), covering {cover['pct_vote_matched']}% of their vote. "
+          f"No CHES rating: {cover['unmatched']}",
+          "Alliance members are in data/reference/alliance_members.csv, not yet checked by a person.")
 
     # EVS/WVS: distinguish valid 1–4 confidence codes from negative missing codes.
     evs_path = RAW / "evs_wvs_joint_2017_2022_v5/F00012158-EVS_WVS_Joint_Csv_v5_0.zip"  # pandas reads the CSV inside

@@ -12,7 +12,7 @@ This is a first data prototype for the Democracy Stress Test. It describes what 
 
 ## What needs care
 
-- Only 35.8% of the French 2024 vote links directly to a CHES party by ID. Several large election rows are alliances. A person must check their member parties before we combine votes and party positions.
+- 4 of 5 French 2024 parties with 1%+ of the vote link to a CHES party (2 by ID, the others as alliances through `data/reference/alliance_members.csv`). Alliance members are not yet checked by a person, and an alliance's position is not one party's position. No CHES rating: Union of the Far-Right. Coverage for the eight countries is in `ches_coverage.csv`.
 - The EVS, Eurobarometer and CEVIPOF trust questions differ. Read each survey on its own terms; their percentages are not one continuous series.
 - Many IDEA election dates are January 1 placeholders. Three reported turnout rates exceed 100%. The working table flags these values and keeps the originals.
 - The ESS folder has questionnaires but no survey responses.

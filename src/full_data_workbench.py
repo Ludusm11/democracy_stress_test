@@ -22,6 +22,8 @@ import numpy as np
 import pandas as pd
 from openpyxl import load_workbook
 
+from party_coverage import coverage
+
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data/raw"
 PROCESSED = ROOT / "data/processed"
@@ -271,7 +273,7 @@ def write_report(inventory_df: pd.DataFrame, trend: pd.DataFrame,
     latest = fr_trend.loc[fr_trend.wave.eq("105.2")]
     trust = {row.institution: row.trust_pct for row in latest.itertuples()}
     crosswalk = pd.read_csv(OUT / "france_party_crosswalk_candidates.csv")
-    matched_vote = crosswalk.loc[crosswalk.ches_party_id.notna(), "vote_pct"].sum()
+    cover = coverage(crosswalk)
     lines = [
         "# Where the project stands",
         "",
@@ -287,7 +289,7 @@ def write_report(inventory_df: pd.DataFrame, trend: pd.DataFrame,
         "",
         "## What needs care",
         "",
-        f"- Only {matched_vote:.1f}% of the French 2024 vote links directly to a CHES party by ID. Several large election rows are alliances. A person must check their member parties before we combine votes and party positions.",
+        f"- {cover['parties_matched']} of {cover['parties_over_1pct']} French 2024 parties with 1%+ of the vote link to a CHES party ({cover['parties_direct']} by ID, the others as alliances through `data/reference/alliance_members.csv`). Alliance members are not yet checked by a person, and an alliance's position is not one party's position. No CHES rating: {cover['unmatched']}. Coverage for the eight countries is in `ches_coverage.csv`.",
         "- The EVS, Eurobarometer and CEVIPOF trust questions differ. Read each survey on its own terms; their percentages are not one continuous series.",
         "- Many IDEA election dates are January 1 placeholders. Three reported turnout rates exceed 100%. The working table flags these values and keeps the originals.",
         "- The ESS folder has questionnaires but no survey responses.",

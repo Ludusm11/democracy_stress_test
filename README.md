@@ -99,7 +99,7 @@ In VS Code, open the folder and select the **Capstone (.venv Python 3.12)** kern
 ## What remains open
 
 - Radical vote shares are calculated descriptively in [notebook 03](notebooks/03_radical_voting.ipynb), using PopuList classes linked to PPEG results in [data/reference/](data/reference/). Two judgment calls are still the team's to make: whether to count Les Républicains (and the RPR before it) as far right, as PopuList 4.0 does, and how to split the 2024 New Popular Front, which PPEG reports as one alliance.
-- Linking election votes to CHES party positions still needs a checked list of the parties inside each 2024 alliance.
+- Linking election votes to CHES party positions: [data/reference/alliance_members.csv](data/reference/alliance_members.csv) lists the parties inside each 2024 French alliance, but no one has checked it against an official list yet. [ches_coverage.csv](outputs/data_audit/ches_coverage.csv) reports how much of each country's latest vote links to CHES; outside France it matches by Manifesto ID only, so it is a lower bound.
 - No shock transmission estimates or severity ranges are calculated yet. The site does not present a forecast.
 - The ESS folder contains guidance, but no respondent data yet.
 - The trust surveys ask different questions. Their results stay separate.

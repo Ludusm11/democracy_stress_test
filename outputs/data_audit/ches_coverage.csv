@@ -1,0 +1,9 @@
+iso3,election,parties_over_1pct,parties_matched,parties_direct,pct_parties_matched,pct_parties_direct,pct_vote_matched,pct_vote_direct,vote_pct_catch_all,unmatched,ches_parties,ches_parties_without_cmp_id,note
+BEL,2024-06-09,12,11,11,91.7,91.7,89.7,89.7,4.3,Workers' Party of Belgium,12,1,Lower bound: CHES parties without a Manifesto ID cannot be matched by ID. 
+GRC,2023-06-25,9,2,2,22.2,22.2,50.0,50.0,3.3,"Coalition of the Radical Left, PASOK - Movement for Change, Greek Solution, European Realistic Disobedience Front, Democratic Patriotic Movement - Victory, Course of Freedom, Spartans",9,5,Lower bound: CHES parties without a Manifesto ID cannot be matched by ID. 
+ESP,2023-07-23,11,7,7,63.6,63.6,90.0,90.0,2.7,"Basque Country Unite, Together for Catalonia, In Common We Can, Unite Movement",14,4,Lower bound: CHES parties without a Manifesto ID cannot be matched by ID. 
+FRA,2024-06-30,5,4,2,80.0,40.0,95.6,40.1,8.7,Union of the Far-Right,10,4,Lower bound: CHES parties without a Manifesto ID cannot be matched by ID. Alliances read from alliance_members.csv.
+IRL,2024-11-29,8,5,5,62.5,62.5,86.3,86.3,18.9,"People Before Profit Alliance, Social Democrats, Unite",8,3,Lower bound: CHES parties without a Manifesto ID cannot be matched by ID. 
+ITA,2022-09-25,9,1,1,11.1,11.1,9.2,9.2,5.1,"Forward Italy, More Europe, Democratic Party - Democratic and Progressive Italy, Greens and Left Alliance, Action - Italia Viva, People's Union, Five Star Movement, Brothers of Italy",10,5,Lower bound: CHES parties without a Manifesto ID cannot be matched by ID. 
+PRT,2025-05-18,8,4,4,50.0,50.0,63.7,63.7,1.9,"People-Animals-Nature, ENOUGH!, Liberal Initiative, FREE",9,4,Lower bound: CHES parties without a Manifesto ID cannot be matched by ID. 
+AUT,2024-09-29,7,4,4,57.1,57.1,86.2,86.2,1.6,"The New Austria and Liberal Forum, The Beer Party, Communist Party of Austria",5,0,
