@@ -1,7 +1,8 @@
 """Numbers around each reference episode for the website's Shocks view.
 
-Same method as notebooks/02_shock_numbers.ipynb (trust windows, elections, party moves,
-economy, V-Dem). Observations only: no effects or forecasts. Writes website/data/shocks.json.
+Trust: first wave after the episode against the waves before it, minus the same change in EU
+countries that had no reference episode. Elections, party moves, economy and V-Dem as in
+notebooks/02_shock_numbers.ipynb. Observations only: no effects or forecasts. Writes website/data/shocks.json.
 """
 
 from __future__ import annotations
@@ -12,6 +13,8 @@ from pathlib import Path
 from zipfile import ZipFile
 
 import pandas as pd
+
+from trust_windows import comparison_change, load_waves
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW, PROC, OUT = ROOT / "data/raw", ROOT / "data/processed", ROOT / "website/data"
@@ -35,10 +38,7 @@ def load():
     episodes["end_date"] = pd.to_datetime(episodes.end) + pd.offsets.MonthEnd(0)
     episodes["iso2"] = episodes.iso3.map(ISO2)
 
-    eb = pd.read_csv(PROC / "eurobarometer_trust_trend.csv", parse_dates=["fieldwork_start"])
-    eb["fieldwork_end"] = pd.to_datetime(eb.fieldwork.str.split(" ").str[1], format="%d/%b/%Y", errors="coerce")
-    eb = eb.groupby(["country_code", "institution", "wave"], as_index=False).agg(
-        trust=("trust_pct", "mean"), start=("fieldwork_start", "first"), end=("fieldwork_end", "first"))
+    eb = load_waves()
 
     with ZipFile(RAW / "ppeg_2025v1/ppeg_parl_2025v1.zip") as archive:
         ppeg = pd.read_csv(archive.open("ppeg_parl_2025v1.csv"), low_memory=False)
@@ -54,24 +54,31 @@ def load():
     return episodes, eb, ppeg, family, macro, vdem
 
 
-def trust_window(ep, eb, institution):
+def trust_window(ep, eb, institution, episode_countries):
+    """Trust before and after an episode, against EU countries that were not hit.
+
+    Effect = first wave after the episode's end minus the mean of the two waves before its start,
+    minus the same change over the same waves in EU27 members outside `episode_countries`.
+    The lowest wave in between is reported for description only; it is not the effect.
+    """
     d = eb[eb.institution == institution]
     country = d[d.country_code == ep.iso2].sort_values("start")
-    eu = d[d.country_code == "EU"].set_index("wave").trust
     before = country[country.end < ep.start_date].tail(2)
     after = country[country.start > ep.end_date].head(1)
     window = pd.concat([country[country.start.between(ep.start_date, ep.end_date)], after])
     if len(before) < 2 or window.empty:
         return None
     low = window.loc[window.trust.idxmin()]
-    change = low.trust - before.trust.mean()
-    eu_change = eu.get(low.wave) - eu.reindex(before.wave).mean()
-    return {"institution": institution, "before": clean(before.trust.mean()),
-            "beforeWaves": f"{before.start.iloc[0]:%b %Y} and {before.start.iloc[1]:%b %Y}",
-            "lowest": clean(low.trust), "lowestWave": f"{low.start:%b %Y}",
-            "after": clean(after.trust.iloc[0]) if len(after) else None,
-            "afterWave": f"{after.start.iloc[0]:%b %Y}" if len(after) else None,
-            "change": clean(change), "euChange": clean(eu_change), "beyondEu": clean(change - eu_change)}
+    out = {"institution": institution, "before": clean(before.trust.mean()),
+           "beforeWaves": f"{before.start.iloc[0]:%b %Y} and {before.start.iloc[1]:%b %Y}",
+           "lowest": clean(low.trust), "lowestWave": f"{low.start:%b %Y}",
+           "after": None, "afterWave": None, "change": None, "euChange": None, "beyondEu": None, "comparisonCountries": 0}
+    if len(after):
+        eu_change, n = comparison_change(eb, institution, before.wave, after.wave.iloc[0], episode_countries)
+        change = after.trust.iloc[0] - before.trust.mean()
+        out.update(after=clean(after.trust.iloc[0]), afterWave=f"{after.start.iloc[0]:%b %Y}", change=clean(change),
+                   euChange=clean(eu_change), beyondEu=clean(change - eu_change), comparisonCountries=n)
+    return out
 
 
 def elections(ep, ppeg, family):
@@ -133,6 +140,7 @@ def vdem_change(ep, vdem):
 
 def main() -> None:
     episodes, eb, ppeg, family, macro, vdem = load()
+    episode_countries = set(episodes.iso2)  # left out of the comparison group
     out = []
     for ep in episodes.itertuples():
         y0, y1 = ep.start[:4], ep.end[:4]
@@ -140,7 +148,7 @@ def main() -> None:
             "id": ep.episode_id, "shock": ep.shock, "country": ep.country,
             "label": f"{ep.country} {y0}" + ("" if y0 == y1 else f"–{y1[2:]}"),
             "start": ep.start, "end": ep.end, "startYear": int(y0), "endYear": int(y1), "note": ep.note,
-            "trust": [t for inst in INSTITUTIONS if ep.use_trust and (t := trust_window(ep, eb, inst))],
+            "trust": [t for inst in INSTITUTIONS if ep.use_trust and (t := trust_window(ep, eb, inst, episode_countries))],
             "elections": elections(ep, ppeg, family),
             "economy": economy(ep, macro),
             "vdem": vdem_change(ep, vdem),

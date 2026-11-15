@@ -6,7 +6,7 @@ const loading = {};
 let view = 'scenario';
 
 async function fetchJson(name) {
-  const response = await fetch('data/' + name + '.json?v=site4');
+  const response = await fetch('data/' + name + '.json?v=site5');
   if (!response.ok) throw new Error(name + ': HTTP ' + response.status);
   return response.json();
 }
@@ -251,8 +251,8 @@ function trustColumn(institution, label) {
   return {label, cell: ep => {
     const t = ep.trust.find(row => row.institution === institution);
     if (!t) return null;
-    const sub = t.change < 0 ? `${signed(t.change, 0)} pts · EU ${signed(t.euChange, 0)}` : 'no fall';
-    return [`${pct(t.before)} → ${pct(t.lowest)}`, sub, t.beyondEu <= -3 ? 'down' : ''];
+    if (t.after == null) return [`${pct(t.before)} → …`, 'no wave after the episode yet', ''];
+    return [`${pct(t.before)} → ${pct(t.after)}`, `${signed(t.change, 0)} pts · ${signed(t.beyondEu, 0)} vs EU`, t.beyondEu <= -3 ? 'down' : ''];
   }};
 }
 const COLUMNS = {
@@ -294,10 +294,9 @@ function summaryLines(id) {
   const trust = eps.map(ep => ep.trust.find(row => row.institution === institution)).filter(Boolean);
   const lines = [];
   if (trust.length) {
-    const fell = trust.filter(t => t.beyondEu <= -3);
-    const lo = Math.round(-Math.max(...fell.map(t => t.beyondEu))), hi = Math.round(-Math.min(...fell.map(t => t.beyondEu)));
-    const range = fell.length ? ` (by ${lo === hi ? lo : lo + ' to ' + hi} points)` : '';
-    lines.push(`<strong>Trust in ${institution === 'Political parties' ? 'parties' : 'parliament'}</strong> fell at least 3 points more than the EU average in <strong>${fell.length} of ${trust.length}</strong> episodes${range}.`);
+    const measured = trust.filter(t => t.beyondEu != null);
+    const effects = measured.map(t => t.beyondEu).sort((x, y) => x - y);
+    if (measured.length) lines.push(`<strong>Trust in ${institution === 'Political parties' ? 'parties' : 'parliament'}</strong> after the episode, compared with the EU countries that were not hit: ${effects.map(v => signed(v, 0)).join(', ')} points (${measured.length} episodes, one number each; with so few cases this is a list, not a range).`);
   }
   if (id === 'S2') {
     const econ = eps.map(ep => ep.economy).filter(e => e && e.unemploymentPeak != null);
@@ -358,7 +357,7 @@ function renderEpisode(ep) {
   $('episode-heading').textContent = ep.label;
   $('episode-note').textContent = ep.note;
   const facts = [];
-  ep.trust.forEach(t => facts.push(`<b>Trust in ${t.institution.replace('National ', '').toLowerCase()}:</b> ${pct(t.before)} before (${t.beforeWaves}) → lowest ${pct(t.lowest)} (${t.lowestWave})${t.after != null ? ` → ${pct(t.after)} at the first wave after (${t.afterWave})` : ''}. EU average over the same waves: ${signed(t.euChange, 0)} pts.`));
+  ep.trust.forEach(t => facts.push(`<b>Trust in ${t.institution.replace('National ', '').toLowerCase()}:</b> ${pct(t.before)} before (${t.beforeWaves}) → ${t.after != null ? `${pct(t.after)} at the first wave after the episode (${t.afterWave}): ${signed(t.change)} pts, against ${signed(t.euChange)} in ${t.comparisonCountries} EU countries not hit, so ${signed(t.beyondEu)} pts beyond them` : 'no wave after the episode yet'}. Lowest wave in between: ${pct(t.lowest)} (${t.lowestWave}), shown for description only.`));
   const e = ep.elections;
   if (e) {
     const list = moves => moves.map(m => `${escapeHtml(m.name)} ${signed(m.change)}`).join(', ');

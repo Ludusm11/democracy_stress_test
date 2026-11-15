@@ -18,9 +18,10 @@
     "lowestWave": "May 2010",
     "after": 46.0,
     "afterWave": "May 2012",
-    "change": -11.5,
-    "euChange": 0.0,
-    "beyondEu": -11.5
+    "change": 6.5,
+    "euChange": -2.711,
+    "beyondEu": 9.211,
+    "comparisonCountries": 19
    },
    {
     "institution": "National government",
@@ -30,9 +31,10 @@
     "lowestWave": "May 2010",
     "after": 44.0,
     "afterWave": "May 2012",
-    "change": -13.5,
-    "euChange": -1.5,
-    "beyondEu": -12.0
+    "change": 8.5,
+    "euChange": -2.789,
+    "beyondEu": 11.289,
+    "comparisonCountries": 19
    },
    {
     "institution": "Political parties",
@@ -42,9 +44,10 @@
     "lowestWave": "May 2010",
     "after": 32.0,
     "afterWave": "May 2012",
-    "change": -4.5,
-    "euChange": 0.5,
-    "beyondEu": -5.0
+    "change": 7.5,
+    "euChange": 1.395,
+    "beyondEu": 6.105,
+    "comparisonCountries": 19
    }
   ],
   "elections": {
@@ -127,9 +130,10 @@
     "lowestWave": "May 2016",
     "after": 17.0,
     "afterWave": "Nov 2016",
-    "change": 4.0,
-    "euChange": -3.0,
-    "beyondEu": 7.0
+    "change": 6.0,
+    "euChange": 0.579,
+    "beyondEu": 5.421,
+    "comparisonCountries": 19
    },
    {
     "institution": "National government",
@@ -139,9 +143,10 @@
     "lowestWave": "May 2016",
     "after": 20.0,
     "afterWave": "Nov 2016",
-    "change": 0.0,
-    "euChange": -5.0,
-    "beyondEu": 5.0
+    "change": 6.0,
+    "euChange": 0.316,
+    "beyondEu": 5.684,
+    "comparisonCountries": 19
    },
    {
     "institution": "Political parties",
@@ -151,9 +156,10 @@
     "lowestWave": "May 2016",
     "after": 10.0,
     "afterWave": "Nov 2016",
-    "change": 0.0,
-    "euChange": 0.5,
-    "beyondEu": -0.5
+    "change": 4.0,
+    "euChange": 1.921,
+    "beyondEu": 2.079,
+    "comparisonCountries": 19
    }
   ],
   "elections": {
@@ -236,9 +242,10 @@
     "lowestWave": "Oct 2025",
     "after": 23.0,
     "afterWave": "Mar 2026",
-    "change": -15.0,
-    "euChange": -3.5,
-    "beyondEu": -11.5
+    "change": -4.0,
+    "euChange": 0.316,
+    "beyondEu": -4.316,
+    "comparisonCountries": 19
    },
    {
     "institution": "National government",
@@ -248,9 +255,10 @@
     "lowestWave": "Oct 2025",
     "after": 21.0,
     "afterWave": "Mar 2026",
-    "change": -13.5,
-    "euChange": -1.5,
-    "beyondEu": -12.0
+    "change": -1.5,
+    "euChange": 2.526,
+    "beyondEu": -4.026,
+    "comparisonCountries": 19
    },
    {
     "institution": "Political parties",
@@ -260,9 +268,10 @@
     "lowestWave": "Oct 2025",
     "after": 12.0,
     "afterWave": "Mar 2026",
-    "change": -2.0,
-    "euChange": 5.0,
-    "beyondEu": -7.0
+    "change": 3.0,
+    "euChange": 2.737,
+    "beyondEu": 0.263,
+    "comparisonCountries": 19
    }
   ],
   "elections": {
@@ -345,9 +354,10 @@
     "lowestWave": "May 2013",
     "after": 9.0,
     "afterWave": "Mar 2014",
-    "change": -43.5,
-    "euChange": -8.5,
-    "beyondEu": -35.0
+    "change": -41.5,
+    "euChange": -4.237,
+    "beyondEu": -37.263,
+    "comparisonCountries": 19
    },
    {
     "institution": "National government",
@@ -357,9 +367,10 @@
     "lowestWave": "May 2013",
     "after": 10.0,
     "afterWave": "Mar 2014",
-    "change": -44.0,
-    "euChange": -8.0,
-    "beyondEu": -36.0
+    "change": -42.0,
+    "euChange": -3.789,
+    "beyondEu": -38.211,
+    "comparisonCountries": 19
    },
    {
     "institution": "Political parties",
@@ -369,9 +380,10 @@
     "lowestWave": "May 2013",
     "after": 8.0,
     "afterWave": "Mar 2014",
-    "change": -31.0,
-    "euChange": -2.0,
-    "beyondEu": -29.0
+    "change": -28.0,
+    "euChange": 3.342,
+    "beyondEu": -31.342,
+    "comparisonCountries": 19
    }
   ],
   "elections": {
@@ -454,9 +466,10 @@
     "lowestWave": "Nov 2012",
     "after": 10.0,
     "afterWave": "Mar 2014",
-    "change": -41.5,
-    "euChange": -6.5,
-    "beyondEu": -35.0
+    "change": -40.5,
+    "euChange": -4.237,
+    "beyondEu": -36.263,
+    "comparisonCountries": 19
    },
    {
     "institution": "National government",
@@ -466,9 +479,10 @@
     "lowestWave": "May 2012",
     "after": 9.0,
     "afterWave": "Mar 2014",
-    "change": -34.0,
-    "euChange": -5.0,
-    "beyondEu": -29.0
+    "change": -31.0,
+    "euChange": -3.789,
+    "beyondEu": -27.211,
+    "comparisonCountries": 19
    },
    {
     "institution": "Political parties",
@@ -478,9 +492,10 @@
     "lowestWave": "May 2013",
     "after": 6.0,
     "afterWave": "Mar 2014",
-    "change": -15.0,
-    "euChange": -2.0,
-    "beyondEu": -13.0
+    "change": -13.0,
+    "euChange": 3.342,
+    "beyondEu": -16.342,
+    "comparisonCountries": 19
    }
   ],
   "elections": {
@@ -564,8 +579,9 @@
     "after": 13.0,
     "afterWave": "Mar 2014",
     "change": -23.5,
-    "euChange": -8.5,
-    "beyondEu": -15.0
+    "euChange": -4.237,
+    "beyondEu": -19.263,
+    "comparisonCountries": 19
    },
    {
     "institution": "National government",
@@ -575,9 +591,10 @@
     "lowestWave": "May 2013",
     "after": 14.0,
     "afterWave": "Mar 2014",
-    "change": -21.0,
-    "euChange": -8.0,
-    "beyondEu": -13.0
+    "change": -17.0,
+    "euChange": -3.789,
+    "beyondEu": -13.211,
+    "comparisonCountries": 19
    },
    {
     "institution": "Political parties",
@@ -588,8 +605,9 @@
     "after": 9.0,
     "afterWave": "Mar 2014",
     "change": -8.0,
-    "euChange": -2.0,
-    "beyondEu": -6.0
+    "euChange": 3.342,
+    "beyondEu": -11.342,
+    "comparisonCountries": 19
    }
   ],
   "elections": {
@@ -672,9 +690,10 @@
     "lowestWave": "Nov 2010",
     "after": 20.0,
     "afterWave": "Mar 2014",
-    "change": -25.5,
-    "euChange": -3.5,
-    "beyondEu": -22.0
+    "change": -17.5,
+    "euChange": -4.237,
+    "beyondEu": -13.263,
+    "comparisonCountries": 19
    },
    {
     "institution": "National government",
@@ -684,9 +703,10 @@
     "lowestWave": "Nov 2010",
     "after": 23.0,
     "afterWave": "Mar 2014",
-    "change": -24.5,
-    "euChange": -5.0,
-    "beyondEu": -19.5
+    "change": -11.5,
+    "euChange": -3.789,
+    "beyondEu": -7.711,
+    "comparisonCountries": 19
    },
    {
     "institution": "Political parties",
@@ -696,9 +716,10 @@
     "lowestWave": "Nov 2010",
     "after": 14.0,
     "afterWave": "Mar 2014",
-    "change": -15.5,
-    "euChange": -3.0,
-    "beyondEu": -12.5
+    "change": -10.5,
+    "euChange": 3.342,
+    "beyondEu": -13.842,
+    "comparisonCountries": 19
    }
   ],
   "elections": {
@@ -782,8 +803,9 @@
     "after": 54.0,
     "afterWave": "Nov 2019",
     "change": -3.5,
-    "euChange": 0.5,
-    "beyondEu": -4.0
+    "euChange": 1.053,
+    "beyondEu": -4.553,
+    "comparisonCountries": 19
    },
    {
     "institution": "National government",
@@ -794,8 +816,9 @@
     "after": 50.0,
     "afterWave": "Nov 2019",
     "change": -5.5,
-    "euChange": 0.5,
-    "beyondEu": -6.0
+    "euChange": 1.158,
+    "beyondEu": -6.658,
+    "comparisonCountries": 19
    },
    {
     "institution": "Political parties",
@@ -806,8 +829,9 @@
     "after": 33.0,
     "afterWave": "Nov 2019",
     "change": -4.0,
-    "euChange": 0.5,
-    "beyondEu": -4.5
+    "euChange": -0.026,
+    "beyondEu": -3.974,
+    "comparisonCountries": 19
    }
   ],
   "elections": {
@@ -891,8 +915,9 @@
     "after": 15.0,
     "afterWave": "Nov 2018",
     "change": -2.5,
-    "euChange": 0.5,
-    "beyondEu": -3.0
+    "euChange": 1.553,
+    "beyondEu": -4.053,
+    "comparisonCountries": 19
    },
    {
     "institution": "National government",
@@ -903,8 +928,9 @@
     "after": 19.0,
     "afterWave": "Nov 2018",
     "change": -0.5,
-    "euChange": 0.0,
-    "beyondEu": -0.5
+    "euChange": 0.763,
+    "beyondEu": -1.263,
+    "comparisonCountries": 19
    },
    {
     "institution": "Political parties",
@@ -915,8 +941,9 @@
     "after": 8.0,
     "afterWave": "Nov 2018",
     "change": 0.0,
-    "euChange": -0.5,
-    "beyondEu": 0.5
+    "euChange": 1.053,
+    "beyondEu": -1.053,
+    "comparisonCountries": 19
    }
   ],
   "elections": {
