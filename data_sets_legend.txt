@@ -75,8 +75,12 @@ their question and page numbers. We do not have its respondent data.
 Source: https://www.sciencespo.fr/cevipof/
 
 ESS (ess/)
-Only a questionnaire and weighting guide are in this folder. There is no
-respondent file yet, so ESS is not part of the current analysis.
+The European Social Survey asks people in about 30 countries every two years
+how much they trust parliament, politicians and parties (0 to 10), and how
+satisfied they are with democracy. The respondent file (about 540,000 people,
+rounds 1 to 11) is not in the repository: it needs a free ESS login and may not
+be redistributed. src/build_ess_tables.py turns it into a country-by-round
+table of weighted averages and interview dates. See ess/README.md.
 Source: https://ess.sikt.no/en/data-builder/
 
 ECONOMIC CONTEXT

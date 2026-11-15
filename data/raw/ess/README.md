@@ -27,3 +27,12 @@ Calculate weighted round-level estimates for France for `stfdem`, `trstprl`, and
 ## Access
 
 The ESS Data Portal requires login for data downloads. Its API requires a user ID for usage statistics; the ID is shown after login at https://ess.sikt.no/en/api . The data file has not yet been downloaded into this folder.
+
+## Where the respondent file goes, and what the pipeline builds from it
+
+Save the Data Builder CSV as `data/raw/ess/Datafile-subset.csv` (the pipeline also finds it in `data/new/Datafile-subset/`). It is ignored by git. `src/build_ess_tables.py` (run by `run_analysis.py`, skipped if the file is missing) builds:
+
+- `data/processed/ess_respondents_slim.csv`: about 30 useful columns per respondent, with refusal, don't-know and no-answer codes turned into blanks. Ignored by git, because respondent data may not be redistributed.
+- `data/processed/ess_country_round_summary.csv`: one row per country and round. Weighted means (`pspwght`) of trust in parliament, politicians, parties, the legal system and the EU parliament, satisfaction with democracy, government and the economy (all 0–10), self-reported turnout among eligible voters, valid counts, and interview dates. Aggregates only, safe to commit.
+
+Limits: interview dates are missing for ESS round 10 in several countries (including Austria and Spain), round 5 Estonia and round 9 Bulgaria (see `interview_date_share`). `trstprt` was not asked in round 1. Self-reported turnout is higher than real turnout. ESS trust uses 0–10, not Eurobarometer's "tend to trust", so the two are not one series.
