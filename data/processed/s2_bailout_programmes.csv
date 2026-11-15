@@ -1,0 +1,7 @@
+country,facility,first_disbursement,last_disbursement,disbursed_bn,repaid_early_bn,scheduled_repayments_bn,last_scheduled_repayment,gdp_2012_bn,disbursed_pct_gdp_2012,note
+Greece,EFSF,2012-03-09,2014-08-14,141.84,20.38,121.46,2070-12-19,185.9,76.3,"ESM/EFSF loans only: excludes EFSM, the Greek Loan Facility, IMF and EU balance-of-payments loans, so a lower bound"
+Ireland,EFSF,2011-02-01,2013-12-04,18.41,0.0,18.41,2042-11-17,176.5,10.4,"ESM/EFSF loans only: excludes EFSM, the Greek Loan Facility, IMF and EU balance-of-payments loans, so a lower bound"
+Portugal,EFSF,2011-06-22,2014-04-28,27.33,4.33,23.0,2040-07-17,168.5,16.2,"ESM/EFSF loans only: excludes EFSM, the Greek Loan Facility, IMF and EU balance-of-payments loans, so a lower bound"
+Cyprus,ESM,2013-05-13,2015-10-08,6.3,1.35,4.95,2031-10-08,19.5,32.3,"ESM/EFSF loans only: excludes EFSM, the Greek Loan Facility, IMF and EU balance-of-payments loans, so a lower bound"
+Greece,ESM,2015-08-20,2018-08-06,61.93,2.53,59.39,2060-08-06,185.9,33.3,"ESM/EFSF loans only: excludes EFSM, the Greek Loan Facility, IMF and EU balance-of-payments loans, so a lower bound"
+Spain,ESM,2012-12-11,2013-02-05,41.33,34.05,7.29,2027-12-13,1036.0,4.0,"ESM/EFSF loans only: excludes EFSM, the Greek Loan Facility, IMF and EU balance-of-payments loans, so a lower bound"
