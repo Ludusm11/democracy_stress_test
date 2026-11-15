@@ -32,6 +32,8 @@ The data view covers the eight prepared sources: V-Dem, Freedom House, Internati
 
 ## Where things are
 
+For the proposed S1 prediction pilot, see the [input/output variable plan](docs/s1_input_output_variables.md). All 28 PPEG lack-of-parliamentary-support candidates now have a provisional case review; 14 remain possible S1 cases and 12 have the proposed trust measurement window. These checks do not calculate shock effects or train a model.
+
 | Folder | What you will find |
 | --- | --- |
 | `data/raw/` | Original downloads. Leave these files as they are. |

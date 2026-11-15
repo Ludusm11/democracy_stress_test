@@ -1,0 +1,8 @@
+primary_scenario,include_in_s1_training,reviewed_cabinets,distinct_episodes,complete_trust_windows
+S1,review,8,8,8
+S1,yes,6,6,4
+S2,no,3,3,3
+S3,no,5,5,5
+duplicate,no,1,1,1
+formation,no,4,4,3
+other,no,1,1,0
