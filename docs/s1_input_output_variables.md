@@ -57,3 +57,24 @@ The first output is **parliamentary trust only**. Government trust can be a seco
 - [PPEG government dataset and codebook](https://ppeg.wzb.eu/www/codebook_ppeg_gov_2025v1.pdf): `idate`, `rft`, `tog`, `gov_seat` and coverage.
 - [European Commission Eurobarometer 105](https://europa.eu/eurobarometer/surveys/detail/3613): trust question and published survey data. The processed trend holds the source sheet, cell, wave and fieldwork dates.
 - Every reviewed event's evidence link and source quality are in [the case table](../data/reference/s1_verified_events.csv). Examples: [French National Assembly](https://www.assemblee-nationale.fr/dyn/actualites-accueil-hub/adoption-d-une-motion-de-censure-le-plfss-2025-est-rejete-en-lecture-cmp-art.-49.3-et-le-premier-ministre-a-presente-la-demission-du-gouvernement-art.-50), [Spanish Congress](https://www.congreso.es/es/cem/mociones-de-censura), [Austrian Parliament](https://www.parlament.gv.at/gegenstand/XXVI/E/75).
+
+## Episode dataset (built)
+
+`src/build_s1_dataset.py` (run by `run_analysis.py`) writes `data/processed/s1_episode_dataset.csv`: one row per reviewed S1 episode marked `yes` or `review` (14 rows; France is `role = held_out`). It fits no model.
+
+| Role | Columns | Source and note |
+| --- | --- | --- |
+| Input | `days_without_full_government`, `successor_is_caretaker` | PPEG cabinets: days from the event to the next cabinet that is not expert or caretaker. **Known only after the crisis**, so not allowed as a predictor at the event date or at day 30. |
+| Input | `cabinets_24m_before`, `early_endings_24m_before` | PPEG cabinets in the 24 months before the event; early ending = reason `LoPS`, `Diss`, `ResPM` or `IoHS`. The next inauguration stands in for the end date. |
+| Input | `government_seat_share`, `government_parties`, `government_type`, `event_type` | PPEG at formation of the ending cabinet; the event type is coded by hand in the case review. |
+| Control | `unemployment_pct`, `gdp_growth_pct`, `inflation_pct` | Eurostat annual values for the year before the event. Release dates are not modelled, so this is not strict real-time information. |
+| Control | `parl_pre_trust_pct`, `*_comparison_change_pp` | Baseline trust (mean of the last two Eurobarometer waves ending before the event) and the change over the same waves in EU27 countries with no reviewed event or reference episode in that period. |
+| Output | `parl_`, `gov_`, `parties_` + `change_pp`, `change_beyond_comparison_pp` | Trust at the first wave starting 90–270 days after the event, minus baseline, minus the comparison group. |
+| Output | `turnout_change_pp`, `effective_parties_change`, with previous and next election dates | PPEG: the last election on or before the event against the first after it. The next election can be years later (`next_election_gap_days`). Alliance member parties count as one list. |
+| Design | `compulsory_voting` | From the International IDEA export; turnout rows with it set should be excluded. |
+| Second source | `ess_*` | ESS parliament trust (0–10) before and after, with gaps in days. The change is filled only when both rounds are within two years of the event (3 episodes). Not comparable with the Eurobarometer percentages. |
+| Flags | `election_before_post_wave`, `another_reviewed_event_before_post_wave`, `clean_window` | Complete window with neither an election nor another reviewed crisis before the post wave. |
+
+**Not included: radical vote share.** `data/reference/radical_parties.csv` classifies parties for eight countries only (FRA, BEL, ESP, GRC, PRT, IRL, AUT, ITA). The other S1 countries (Bulgaria, Czechia, Estonia, Malta, Netherlands, Romania, Slovakia, Sweden) need a PopuList-to-PPEG link before a radical vote output can be built.
+
+**Coverage.** 12 episodes have a complete parliament-trust window (11 candidates plus France) and 7 candidates have a clean one. Changes beyond the comparison group run from about −13 to +34 points; the largest (Malta 2012) has an election inside its window, so it is not a response to the budget defeat.
