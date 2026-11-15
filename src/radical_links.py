@@ -24,9 +24,11 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 RAW, OUT = ROOT / "data/raw", ROOT / "outputs/data_audit"
 
-POPU_COUNTRY = {"BGR": "Bulgaria", "CZE": "Czech Republic", "EST": "Estonia", "MLT": "Malta", "NLD": "Netherlands",
-                "ROU": "Romania", "SVK": "Slovakia", "SWE": "Sweden"}
-PARLGOV_ISO = {"BGR": "BGR", "CZE": "CZE", "EST": "EST", "MLT": "MLT", "NLD": "NLD", "ROU": "ROU", "SVK": "SVK", "SWE": "SWE"}
+POPU_COUNTRY = {"AUT": "Austria", "BEL": "Belgium", "BGR": "Bulgaria", "HRV": "Croatia", "CYP": "Cyprus", "CZE": "Czech Republic",
+                "DNK": "Denmark", "EST": "Estonia", "FIN": "Finland", "FRA": "France", "DEU": "Germany", "GRC": "Greece",
+                "HUN": "Hungary", "IRL": "Ireland", "ITA": "Italy", "LVA": "Latvia", "LTU": "Lithuania", "LUX": "Luxembourg",
+                "MLT": "Malta", "NLD": "Netherlands", "POL": "Poland", "PRT": "Portugal", "ROU": "Romania", "SVK": "Slovakia",
+                "SVN": "Slovenia", "ESP": "Spain", "SWE": "Sweden"}  # the EU27, as PopuList names them
 RANK = {"cmp_id": 0, "parlgov_vote": 1, "name": 2}
 
 
@@ -129,10 +131,35 @@ def build(countries=POPU_COUNTRY) -> pd.DataFrame:
 MANUAL = {("BGR", "BSP"): (["BG1", "BG650"], "BORDERLINE and DISPUTED: PopuList 4.0 marks the Bulgarian Socialist Party borderline far right; other sources call it centre-left or social-democratic")}
 
 
+STABLE_FROM, STABLE_TO = 2000, 2025  # a party counts as radical only if PopuList classes it so for the whole period
+
+
+def parlgov_shares() -> pd.DataFrame:
+    """Radical vote share per election straight from ParlGov, as an independent check on the PPEG links.
+
+    Uses the same PopuList parties (classed throughout 2000-2025, not borderline) through their ParlGov IDs.
+    ParlGov ends in 2023, and it reports some alliances as one list, so it can differ from PPEG.
+    """
+    pop, _, pg_elec, _ = load()
+    names = {v: k for k, v in POPU_COUNTRY.items()}
+    rows = []
+    for r in pop[pop.country_name.isin(names) & pop.parlgov_id.notna()].itertuples():
+        for family, first, last, borderline in classes(r):
+            if borderline or first > STABLE_FROM or last < STABLE_TO:
+                continue
+            for v in pg_elec[pg_elec.party_id == r.parlgov_id].itertuples():
+                if pd.notna(v.vote_share):
+                    rows.append((names[r.country_name], v.election_date, v.vote_share))
+    return pd.DataFrame(rows, columns=["iso3", "edate", "parlgov_radical_pct"]).groupby(["iso3", "edate"], as_index=False).sum()
+
+
 def election_shares(ppeg: pd.DataFrame, links: pd.DataFrame) -> pd.DataFrame:
     """Radical vote share of each election: far right and far left, with BORDERLINE, DISPUTED and PARTIAL parties kept apart."""
     ppeg = ppeg.assign(edate=pd.to_datetime(ppeg.edate), vote_pct=100 * ppeg.v_share)
     ok = links[links.status.eq("linked")].drop_duplicates(["iso3", "ppeg_party_id", "family"])
+    # A class that changes within the period would make a relabeling look like a change in votes (N-VA is far right
+    # in PopuList only from 2019), so only parties classed the same way throughout count.
+    ok = ok[(ok.first_year.astype(int) <= STABLE_FROM) & (ok.last_year.astype(int) >= STABLE_TO)]
     rows = []
     for (iso3, edate), g in ppeg[ppeg.iso3c.isin(ok.iso3.unique())].groupby(["iso3c", "edate"]):
         mine = ok[ok.iso3 == iso3]

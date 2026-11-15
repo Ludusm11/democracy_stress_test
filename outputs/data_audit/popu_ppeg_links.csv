@@ -1,4 +1,11 @@
 iso3,popu_party,popu_name,family,first_year,last_year,ppeg_party_id,ppeg_party,methods,status,evidence,source,borderline,checked_by_person,note
+AUT,FPÖ,Freedom Party of Austria,far_right,1900,2100,AT11,VdU,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+AUT,KPÖ Plus,Communist Party of Austria Plus,far_left,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+BEL,FN,National Front,far_right,1900,2100,BE33,FN/NF,parlgov_vote+name,linked,1991-11-24: 1.00 vs 1.05; 1995-05-21: 2.28 vs 2.28; 2003-05-18: 1.98 vs 1.98,PopuList 4.0,0,no,
+BEL,PP,People's Party,far_right,1900,2100,BE49,PP,parlgov_vote+name,linked,2010-06-13: 1.29 vs 1.29; 2014-05-25: 1.52 vs 1.52; 2019-05-26: 1.11 vs 1.11,PopuList 4.0,0,no,
+BEL,PVDA/PTB,Workers' Party of Belgium,far_left,1900,2100,BE24,PvdA/PTB,name,linked,,PopuList 4.0,0,no,
+BEL,VB,Flemish Interest,far_right,1900,2100,BE29,VB,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+BEL,N-VA,New Flemish Alliance,far_right,2019,2025,,,cmp_id+parlgov_vote+name,conflict,cmp_id=BE8; parlgov_vote=BE48; name=BE48,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
 BGR,Ataka,Attack,far_right,1900,2100,BG33,Ataka,parlgov_vote+name,linked,2005-06-25: 8.14 vs 8.14; 2009-07-05: 9.36 vs 9.36; 2013-05-12: 7.30 vs 7.30,PopuList 4.0,0,no,
 BGR,BBT,Bulgaria Uncensored,far_right,1900,2100,BG29,BBZ,parlgov_vote,linked,2014-10-05: 5.69 vs 5.69,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
 BGR,NFSB,National Front for the Salvation of Bulgaria,far_right,1900,2100,BG38,NFSB,name,linked,,PopuList 4.0,0,no,
@@ -9,6 +16,27 @@ BGR,Vazrazhdane,Revival,far_right,1900,2100,BG40,V (2017),parlgov_vote+name,link
 BGR,Velichie,Greatness,far_right,1900,2100,BG44,V (2023),name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
 BGR,MECh,"Morality, Unity, Honour",far_right,1900,2100,BG45,MECh,name,linked,,PopuList 4.0,0,no,
 BGR,BV,Bulgarian Rise,far_right,1900,2100,BG619,BV,name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+HRV,HCSP,Croatian Pure Party of Rights,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+HRV,HSP,Croatian Party of Rights,far_right,1900,2100,HR7,HSP,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+HRV,HSP AS,Croatian Party of Rights Dr. Ante Starčević,far_right,1900,2100,HR29,HSP AS,name,linked,,PopuList 4.0,0,no,
+HRV,HDSSB,Croatian Democratic Alliance of Slavonia and Baranja,far_right,1900,2100,HR23,HDSSB,name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+HRV,Hrast,Croatian Growth,far_right,1900,2100,HR33,HRAST,name,linked,,PopuList 4.0,0,no,
+HRV,Most,Bridge,far_right,1900,2100,HR30,MOST,parlgov_vote+name,linked,2015-11-08: 13.42 vs 13.56,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+HRV,DP,Homeland Movement,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+HRV,HS,Croatian Sovereigntists,far_right,1900,2100,HR57,HS,name,linked,,PopuList 4.0,0,no,
+HRV,BzH,Bloc for Croatia,far_right,1900,2100,HR54,BzH,name,linked,,PopuList 4.0,0,no,
+HRV,HKS,Croatian Conservative Party,far_right,1900,2100,HR48,HKS,name,linked,,PopuList 4.0,0,no,
+HRV,HDZ,Croatian Democratic Union,far_right,1900,2000,HR1,HDZ,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+HRV,DOMiNO,Home and National Rally,far_right,1900,2000,,,,not_linked,,PopuList 4.0,0,no,
+HRV,PiP,Law and Justice,far_right,1900,2000,HR56,PiP,name,linked,,PopuList 4.0,0,no,
+HRV,RF,Workers' Front,far_left,1900,2100,HR44,RF,name,linked,,PopuList 4.0,0,no,
+CYP,AKEL,Progressive Party of Working People,far_left,1900,2100,CY1,AKEL,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+CYP,ELAM,National Popular Front,far_right,1900,2100,CY19,ELAM,parlgov_vote+name,linked,2016-05-22: 3.71 vs 3.71; 2021-05-30: 6.78 vs 6.78,PopuList 4.0,0,no,
+CYP,SYM / SYPOL,Citizens' Alliance,far_left,1900,2100,CY20,SP,name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+CYP,EVROKO,European Party,far_right,1900,2100,CY12,EK,parlgov_vote,linked,2006-05-21: 5.75 vs 5.75; 2011-05-22: 3.88 vs 3.88,PopuList 4.0,0,no,
+CYP,Hunters,Movement of Hunters,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+CYP,NH,New Horizons,far_right,1900,2100,CY8,NEO,parlgov_vote+name,linked,1996-05-26: 1.70 vs 1.71; 2001-05-27: 3.00 vs 3.01,PopuList 4.0,0,no,
+CYP,Allilegii,Solidarity,far_right,1900,2100,CY18,KA,parlgov_vote,linked,2016-05-22: 5.24 vs 5.24; 2021-05-30: 2.31 vs 2.31,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
 CZE,KSCM,Communist Party of Bohemia and Moravia,far_left,1900,2100,CZ1,KSCS,cmp_id+name,linked,,PopuList 4.0,0,no,
 CZE,KSC,Communist Party of Czechoslovakia,far_left,1900,2100,CZ1,KSCS,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
 CZE,SPR-RSC,Rally for the Republic - Republican Party of Czechoslovakia,far_right,1900,2100,CZ3,SPR-RSC,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
@@ -16,9 +44,85 @@ CZE,SPD,Freedom and Direct Democracy,far_right,1900,2100,CZ25,SPD,parlgov_vote+n
 CZE,Usvit,Dawn,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
 CZE,VB,Free Bloc,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
 CZE,AUTO,Motorists for Themselves,far_right,1900,2100,CZ29,AUTO,name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+DNK,DF,Danish People's Party,far_right,1900,2100,DK26,DF,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+DNK,En-O,Red-Green Alliance,far_left,1900,2100,DK601,EL,cmp_id+parlgov_vote,linked,,PopuList 4.0,0,no,
+DNK,NB,The New Right,far_right,1900,2100,DK30,NB,name,linked,,PopuList 4.0,0,no,
+DNK,SF,Socialist People's Party,far_left,1900,2100,DK16,SF,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+DNK,BP,Citizens' Party,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+DNK,DD,Denmark Democrats,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
 EST,EKo,Estonian Citizens,far_right,1900,2100,EE660,EK,cmp_id,linked,,PopuList 4.0,0,no,
 EST,EKRE,Conservative People’s Party of Estonia,far_right,1900,2100,EE8,R,parlgov_vote+name,linked,1999-03-07: 7.27 vs 7.27; 2003-03-02: 13.00 vs 13.03; 2011-03-06: 2.10 vs 2.12,PopuList 4.0,0,no,
 EST,ERSP,Estonian National Independence Party,far_right,1900,2100,EE1,ERSP,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+FIN,VAS,Left Alliance,far_left,1900,2100,,,cmp_id+name,conflict,cmp_id=FI13; name=FI23,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+FIN,PS,Finns Party,far_right,1900,2100,FI17,SPP (1959),cmp_id+parlgov_vote+name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+FRA,DLR / DLF,Republic Arise | France Arise,far_right,1900,2100,,,,not_linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+FRA,FN / RN,National Front / Rally,far_right,1900,2100,FR29,FN,cmp_id,linked,,PopuList 4.0,0,no,
+FRA,FI,Unsubmissive France,far_left,1900,2100,FR72,FI,name,linked,,PopuList 4.0,0,no,
+FRA,MPF,Movement for France,far_right,1900,2100,FR41,MPF/CNI,name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+FRA,PCF,French Communist Party,far_left,1900,2100,FR9,PCF,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+FRA,RPF,Rally for France,far_right,1900,2100,FR14,UG,name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+FRA,Reconquete,Reconquest,far_right,1900,2100,FR80,R,name,linked,,PopuList 4.0,0,no,
+FRA,LO,Workers' Struggle,far_left,1900,2100,FR24,LO,name,linked,,PopuList 4.0,0,no,
+FRA,UDR,Union of the Right for the Republic,far_right,1900,2100,FR14,UG,name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+FRA,LR,The Republicans,far_right,1900,2100,FR33,UMP,name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+DEU,AfD,Alternative for Germany,far_right,2015,2100,DE61,AfD,parlgov_vote+name,linked,2017-09-24: 12.60 vs 12.64; 2021-09-26: 10.34 vs 10.34,PopuList 4.0,0,no,
+DEU,Linke,The Left,far_left,1900,2100,DE3,PDS,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+DEU,Republikaner,Republicans,far_right,1900,2100,DE54,REP,parlgov_vote,linked,1990-12-02: 2.10 vs 2.13; 1994-10-16: 1.90 vs 1.86; 1998-09-27: 1.80 vs 1.84,PopuList 4.0,0,no,
+DEU,BSW,Sahra Wagenknecht Alliance,far_left,1900,2100,DE62,BSW,name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+GRC,ANEL,Independent Greeks,far_right,1900,2100,GR60,ANEL,parlgov_vote+name,linked,2012-05-06: 10.62 vs 10.60; 2012-06-17: 7.51 vs 7.51,PopuList 4.0,0,no,
+GRC,DIKKI,Democratic Social Movement,far_left,1900,2100,GR59,DIKKI,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+GRC,EL,Greek Solution,far_right,1900,2100,GR72,EL (2016),parlgov_vote+name,linked,2019-07-07: 3.70 vs 3.70; 2023-05-21: 4.45 vs 4.45,PopuList 4.0,0,no,
+GRC,MeRa25,European Realistic Disobedience Front,far_left,1900,2100,GR73,MeRA25,parlgov_vote+name,linked,2019-07-07: 3.44 vs 3.44; 2023-05-21: 2.63 vs 2.63; 2023-06-25: 2.50 vs 2.50,PopuList 4.0,0,no,
+GRC,KKE,Comnunist Party of Greece,far_left,1900,2100,GR4,KKE,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+GRC,LAOS,Popular Orthodox Rally,far_right,1900,2100,GR68,LAOS,parlgov_vote+name,linked,2004-03-07: 2.19 vs 2.19; 2007-09-16: 3.80 vs 3.80; 2009-10-04: 5.63 vs 5.63,PopuList 4.0,0,no,
+GRC,GD,Golden Dawn,far_right,1900,2100,GR61,XA,parlgov_vote+name,linked,2012-05-06: 6.97 vs 6.97; 2012-06-17: 6.92 vs 6.92; 2015-09-20: 6.99 vs 6.99,PopuList 4.0,0,no,
+GRC,OE,Alternative Ecologists,far_left,1900,2100,,,,not_linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+GRC,POLAN,Political Spring,far_right,1900,2100,GR58,POLA,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+GRC,SYRIZA,The Coalition of the Radical Left,far_left,1900,2015,GR600,SYRIZA,parlgov_vote+name,linked,2004-03-07: 3.26 vs 3.26; 2007-09-16: 5.04 vs 5.05; 2009-10-04: 4.60 vs 4.60,PopuList 4.0,0,no,
+GRC,LAE,Popular Unity- Insubordinate Left,far_left,1900,2100,GR69,LAE,parlgov_vote+name,linked,2015-09-20: 2.86 vs 2.86,PopuList 4.0,0,no,
+GRC,SYN,The Coalition of the Left,far_left,1900,2100,GR614,SYN,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+GRC,NIKI,Democratic Patriotic Movement NIKI,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+GRC,Course of Freedom,Course of Freedom-Zoe Konstantopoulou,far_left,1900,2100,GR75,PE,name,linked,,PopuList 4.0,0,no,
+GRC,,New Left,far_left,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+GRC,Spartans,Spartans,far_right,1900,2100,GR76,S,name,linked,,PopuList 4.0,0,no,
+HUN,Fidesz,Fidesz,far_right,2010,2100,HU5,FIDESZ,name,linked,,PopuList 4.0,0,no,
+HUN,Jobbik,Movement for a Better Hungary,far_right,1900,2018,HU14,Jobbik,parlgov_vote+name,linked,2014-04-06: 20.22 vs 20.22; 2018-04-08: 19.06 vs 19.06,PopuList 4.0,0,no,
+HUN,MIÉP,Hungarian Justice and Life Party,far_right,1900,2100,,,cmp_id+parlgov_vote+name,conflict,cmp_id=HU8; parlgov_vote=HU600; name=HU8,PopuList 4.0,0,no,
+HUN,MMP,Hungarian Workers' Party,far_left,1900,2100,HU10,MP,parlgov_vote,linked,2014-04-06: 0.56 vs 0.56,PopuList 4.0,0,no,
+HUN,MHM,Our Homeland Movement,far_right,1900,2100,HU23,MHM,parlgov_vote+name,linked,2022-04-03: 5.88 vs 5.88,PopuList 4.0,0,no,
+HUN,FKgP,Independent Smallholders’ Party,far_right,2019,2100,HU3,FKGP,cmp_id+name,linked,,PopuList 4.0,0,no,
+IRL,WP,Workers' Party,far_left,1900,2100,,,cmp_id+name,conflict,cmp_id=IE6; name=IE19,PopuList 4.0,0,no,
+IRL,SP,Socialist Party,far_left,1900,2100,IE28,SP,parlgov_vote+name,linked,2002-05-17: 0.80 vs 0.80,PopuList 4.0,0,no,
+ITA,MSFT,Social Movement Tricolour Flame,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+ITA,FdI,Brothers of Italy,far_right,1900,2100,IT80,FDI,parlgov_vote+name,linked,2018-03-04: 4.35 vs 4.20; 2022-09-25: 26.00 vs 25.95,PopuList 4.0,0,no,
+ITA,Lega,(Northern) League,far_right,1900,2100,IT47,LN,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+ITA,LAM,Southern Action League,far_right,1900,2100,IT53,Ld'AM,name,linked,,PopuList 4.0,0,no,
+ITA,MSI-DN,Italian Social Movement- National Right,far_right,1900,2100,IT24,MSI,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+ITA,PDCI,Party of Italian Communists,far_left,1900,2100,IT60,PDCI,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+ITA,PRC,Communist Refoundation Party,far_left,1900,2100,IT46,PRC,cmp_id+name,linked,,PopuList 4.0,0,no,
+ITA,RC,Civil Revolution,far_left,1900,2100,IT632,RC,name,linked,,PopuList 4.0,0,no,
+ITA,SEL,Left Ecology and Freedom,far_left,1900,2100,IT76,SEL,name,linked,,PopuList 4.0,0,no,
+ITA,LeU,Free and Equals,far_left,1900,2100,IT641,LeU,name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+ITA,AN,National Alliance,far_right,1900,2100,IT24,MSI,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+ITA,SA,The Left the rainbow,far_left,1900,2100,IT654,SA,name,linked,,PopuList 4.0,0,no,
+ITA,LD-FT,The Right - Tricolor Flame,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+LVA,LKP,Communist Party of Latvia,far_left,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+LVA,LSP,Socialist Party of Latvia,far_left,1900,2100,LV12,LSP,cmp_id+name,linked,,PopuList 4.0,0,no,
+LVA,LVP,Latvian Unity Party,far_left,1900,2100,LV11,LVP,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+LVA,TB / LNNK,For Fatherland and Freedom,far_right,1900,2100,,,cmp_id+parlgov_vote+name,conflict,cmp_id=LV6; parlgov_vote=LV6; name=LV21,PopuList 4.0,0,no,
+LVA,,National Alliance,far_right,1900,2100,LV21,TB-LNNK,cmp_id,linked,,PopuList 4.0,0,no,
+LVA,New Harmony,Motherland (now New Harmony),far_left,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+LVA,TKL,People’s Movement for Latvia (Siegerist Party),far_right,1900,2100,,,cmp_id+parlgov_vote+name,conflict,cmp_id=LV10; parlgov_vote=LV9; name=LV10,PopuList 4.0,0,no,
+LTU,JL,Young Lithuania,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+LTU,LTS,Lithuanian Nationalist and Republican Union,far_right,1900,2100,LT630,LTS-NP,cmp_id+name,linked,,PopuList 4.0,0,no,
+LTU,FRONTAS,Fronto Partija,far_left,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+LTU,LLS,Lithuanian Freedom Union,far_right,1900,2100,LT28,LŽP,parlgov_vote,linked,2016-10-09: 2.23 vs 2.03,PopuList 4.0,0,no,
+LTU,,Dawn of Nemunas,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+LTU,NS,National Alliance,far_right,1900,2100,,,,not_linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+LUX,ADR,Alternative Democratic Reform Party,far_right,2022,2100,LU24,A5/6,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+LUX,Dei Lenk,The Left,far_left,1900,2100,LU29,DL,name,linked,,PopuList 4.0,0,no,
+LUX,KPL,Communist Party of Luxembourg,far_left,1900,2100,LU7,PCL/KPL,cmp_id+name,linked,,PopuList 4.0,0,no,
+LUX,NB,National Movement,far_right,1900,2100,LU27,LLNB,parlgov_vote,linked,1994-06-12: 2.76 vs 2.60,PopuList 4.0,0,no,
 MLT,Imperium Europa,Imperium Europa,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
 NLD,CD,Centre Democrats,far_right,1900,2100,NL39,CD,parlgov_vote+name,linked,1994-05-03: 2.46 vs 2.46,PopuList 4.0,0,no,
 NLD,FVD,Forum for Democracy,far_right,1900,2100,NL56,FvD,parlgov_vote+name,linked,2017-03-15: 1.80 vs 1.78,PopuList 4.0,0,no,
@@ -26,6 +130,24 @@ NLD,PVV,Party for Freedom,far_right,1900,2100,NL53,PVV,parlgov_vote+name,linked,
 NLD,SP,Socialist Party (Netherlands),far_left,1900,2100,NL42,SP,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
 NLD,JA21,Right Answer 21,far_right,1900,2100,NL58,JA21,name,linked,,PopuList 4.0,0,no,
 NLD,BBB,Farmer–Citizen Movement,far_right,1900,2100,NL59,BBB,name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+POL,KORWiN,Coalition for the Renewal of the Republic – Freedom and Hope,far_right,1900,2100,PL40,KORWIN,name,linked,,PopuList 4.0,0,no,
+POL,Razem,Together,far_left,1900,2100,PL45,PR (2015),parlgov_vote,linked,2015-10-25: 3.62 vs 3.62,PopuList 4.0,0,no,
+POL,LPR,League of Polish Families,far_right,1900,2010,PL29,LPR,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+POL,X,Party X,far_right,1900,2100,PL12,PX,cmp_id+name,linked,,PopuList 4.0,0,no,
+POL,PZZ,Polish Western Union,far_right,1900,2100,PL14,PZZ,cmp_id+name,linked,,PopuList 4.0,0,no,
+POL,PiS,Law and Justice,far_right,2005,2100,PL28,PiS,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+POL,RN,National Movement,far_right,1900,2100,PL38,RN,name,linked,,PopuList 4.0,0,no,
+POL,ROP,Movement for the Reconstruction of Poland,far_right,1900,2100,PL21,ROP,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+POL,UPR,Real Politics Union ,far_right,1900,2100,PL9,UPR,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+POL,ZChN,Christian National Union,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+POL,Konfederacja,Confederation Freedom and Independence,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+POL,Korona,Confederation of the Polish Crown,far_right,1900,2100,PL72,KKP,name,linked,,PopuList 4.0,0,no,
+POL,SP,Sovereign Poland,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+POL,KNP,Congress of the New Right,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+POL,NN,New Hope,far_right,1900,2100,PL40,KORWIN,name,linked,,PopuList 4.0,0,no,
+PRT,BE,Left Bloc,far_left,1900,2100,PT33,BE,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+PRT,Chega,Enough,far_right,1900,2100,PT41,CH,parlgov_vote+name,linked,2022-01-30: 7.38 vs 7.38,PopuList 4.0,0,no,
+PRT,PCP,Portuguese Communist Party,far_left,1900,2100,PT2,PCP,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
 ROU,PRM,Greater Romania Party,far_right,1900,2100,RO11,PRM,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
 ROU,PRU,United Romania Party,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
 ROU,PSM,Socialist Party of Labour,far_left,1900,2100,RO12,PSM,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
@@ -44,6 +166,20 @@ SVK,SR,We are family,far_right,1900,2100,SK30,SR,parlgov_vote+name,linked,2020-0
 SVK,ZRS,Union of the Workers of Slovakia,far_left,1900,2100,SK10,ZRS,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
 SVK,Vlast,Homeland,far_right,1900,2100,,SNS,parlgov_vote,conflict,also claimed by a better-evidenced PopuList party; was SK4,PopuList 4.0,0,no,
 SVK,REP,Republic,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+SVN,Levica,Left,far_left,1900,2100,SI601,ZL (2014),parlgov_vote+name,linked,2018-06-03: 9.33 vs 9.33; 2022-04-22: 4.46 vs 4.46,PopuList 4.0,0,no,
+SVN,SDS,Slovenian Democratic Party,far_right,2015,2100,SI17,SDSS,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+SVN,SNS,Slovenian National Party,far_right,1900,2100,SI10,SNS,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+SVN,SSS,Socialist Party of Slovenia,far_left,1900,2100,SI7,SSS,parlgov_vote+name,linked,1992-12-06: 2.75 vs 2.75,PopuList 4.0,0,no,
+SVN,ZL,United Left,far_left,1900,2100,SI32,ZLSD,cmp_id+parlgov_vote,linked,,PopuList 4.0,0,no,
+SVN,N.Si,New Slovenia – Christian Democrats,far_right,1900,2100,SI14,NSi,cmp_id+name,linked,,PopuList 4.0,0,no,
+ESP,BNG,Galician Nationalist Bloc,far_left,1900,2100,ES74,BNG,cmp_id+name,linked,,PopuList 4.0,0,no,
+ESP,EHB,Basque Country Unite,far_left,1900,2100,ES608,EH Bildu,parlgov_vote+name,linked,2016-06-26: 0.77 vs 0.77,PopuList 4.0,0,no,
+ESP,HB,United People,far_left,1900,2100,ES46,HB,name,linked,,PopuList 4.0,0,no,
+ESP,IU,United Left,far_left,1900,2100,ES629,IU,name,linked,,PopuList 4.0,0,no,
+ESP,Podemos,We Can,far_left,1900,2100,ES63,PODEMOS,name,linked,,PopuList 4.0,0,no,
+ESP,UP,United We Can,far_left,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+ESP,Vox,Voice,far_right,1900,2100,ES75,VOX,parlgov_vote+name,linked,2019-04-28: 10.26 vs 10.34; 2019-11-10: 15.08 vs 15.21,PopuList 4.0,0,no,
+ESP,CUP,Popular Unity Candidacy,far_left,1900,2100,ES78,CUP,name,linked,,PopuList 4.0,0,no,
 SWE,SD,Sweden Democrats,far_right,1900,2100,SE25,SD,parlgov_vote+name,linked,2014-09-14: 12.86 vs 12.86; 2018-09-09: 17.53 vs 17.53; 2022-09-11: 20.54 vs 20.54,PopuList 4.0,0,no,
 SWE,V,Left Party,far_left,1900,2100,SE10,KP,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
 BGR,BSP,Bulgarian Socialist Party,far_right,1900,2100,BG1,BG1,manual,linked,same party under a later list name,PopuList 4.0,1,no,BORDERLINE and DISPUTED: PopuList 4.0 marks the Bulgarian Socialist Party borderline far right; other sources call it centre-left or social-democratic

@@ -1,5 +1,8 @@
 variable,timing,source,definition
 episode_id,label,s1_verified_events.csv,Episode name from data/reference/s1_verified_events.csv
+date_basis,label,"s1_verified_events.csv, s1_researched_dates.csv, PPEG gov","verified (the day the government fell, from the case review), researched (the day it fell, from news and encyclopedia sources) or successor inauguration (proxy: the day the next cabinet took office, with the baseline moved back 90 days)"
+s1_status,label,s1_researched_dates.csv,"verified (reviewed), include (researched and judged a fall), or unreviewed / exclude / needs_check (not S1)"
+case_group,label,s1_verified_events.csv,"Why the government fell: government collapse (S1), collapse in a financial crisis (S2), collapse after a scandal (S3) or failed government formation"
 iso3,label,,Country
 event_date,label,s1_verified_events.csv,Date of the verified loss of parliamentary support or equivalent event
 role,label,,"candidate, or held_out (France is the application case and is not fitted)"
@@ -15,13 +18,24 @@ econ_year,day0,rule in build_s1_dataset.py,"Year of the economic controls: t-1 i
 unemployment_pct,day0,Eurostat,"Unemployment rate in econ_year, %"
 gdp_growth_pct,day0,Eurostat,"Real GDP growth in econ_year, %"
 inflation_pct,day0,Eurostat,"HICP annual inflation in econ_year, %"
+successor_start,outcome,PPEG gov (idate),"Date the next cabinet took office, which can be a caretaker or the same prime minister's reshaped cabinet"
+full_government_start,outcome,"PPEG gov (tog, idate)",Date the first cabinet not coded expert or caretaker took office after the fall: the end of the crisis in PPEG terms
+days_to_successor,outcome,PPEG gov (idate),Days from the fall to the next cabinet
 d30_successor_inaugurated,day30,PPEG gov (idate),"A new cabinet was inaugurated within 30 days of the event. PPEG records inaugurations only, so a continuing cabinet acting as caretaker counts as no successor"
 d30_days_to_successor,day30,PPEG gov (idate),"Days to that cabinet, if within 30 days"
 d30_successor_is_caretaker,day30,PPEG gov (tog),That cabinet is coded expert or caretaker (blank if none)
 cabinets_24m_before,day0,PPEG gov (idate),Cabinets inaugurated in the 24 months up to the event
 early_endings_24m_before,day0,PPEG gov (rft),"Cabinets that ended early (LoPS, Diss, ResPM, IoHS) in the 24 months before the event; the next inauguration stands in for the end date"
-days_until_non_caretaker_cabinet,post_event_descriptor,"PPEG gov (tog, idate)",Days from the event to the next cabinet not coded expert or caretaker; the final value is known only afterwards
-successor_is_caretaker,post_event_descriptor,PPEG gov (tog),The cabinet that followed is coded expert or caretaker
+days_until_non_caretaker_cabinet,outcome,"PPEG gov (tog, idate)","How long the crisis lasted: days from the event to the next cabinet not coded expert or caretaker (a cabinet-status measure, not a legal one)"
+successor_is_caretaker,outcome,PPEG gov (tog),The cabinet that followed is coded expert or caretaker
+support_seat_share,day0,"PPEG gov (support_party, s_share)","Seat share of parties PPEG codes as supporting the cabinet without a coalition agreement, at formation, 0-1 (coding probably incomplete in some countries)"
+government_plus_support_seat_share,day0,PPEG gov,"Government seat share plus supporting parties' seat share, 0-1"
+pm_party_share_of_government,day0,"PPEG gov (pm_party, s_share)",The prime minister's party seats as a share of the government's seats at formation (1 means a single-party government)
+majority_shortfall,day0,PPEG gov,0.5 minus the government's seat share at formation; above 0 means no majority of its own
+majority_shortfall_with_support,day0,PPEG gov,0.5 minus the seat share of the government plus supporting parties; above 0 means no majority even with support
+largest_opposition_party_seat_share,day0,"PPEG parl, PPEG gov","Seat share of the biggest party outside the government and its supporters, at the election the cabinet came from, 0-1"
+coalition_lr_spread,day0,"CHES, PPEG-CHES links",Gap between the most left and most right governing party on CHES's 0-10 left-right scale (0 for a single-party cabinet); blank when a governing party has no CHES rating. Links are unchecked by a person
+coalition_parties_rated,day0,"CHES, PPEG-CHES links",Number of governing parties with a CHES left-right position
 parl_pre_waves,day0,Eurobarometer,Start dates of the two Eurobarometer waves ending before the event (national parliament)
 parl_pre_trust_pct,day0,Eurobarometer,"Mean 'tend to trust' of those two waves, % (national parliament)"
 parl_pre_gap_days,day0,Eurobarometer,Days from the end of the last pre-event wave to the event (national parliament)
@@ -74,6 +88,16 @@ radical_disputed_prev_pct,day0,PopuList + PPEG,"Vote share of borderline, DISPUT
 radical_next_pct,outcome,PopuList + PPEG,Same at the next election
 radical_disputed_next_pct,outcome,PopuList + PPEG,"Same for borderline, DISPUTED or PARTIAL parties at the next election"
 radical_change_pp,outcome,PopuList + PPEG,"Next minus previous radical vote share, percentage points"
+next_election_within_365d,outcome,PPEG parl,"The next parliamentary election came within a year of the fall, so it is plausibly the election the fall led to"
+turnout_comparison_change_pp,outcome,PPEG parl,Average turnout change in the other EU countries between their elections either side of the same date; compulsory-voting elections left out
+turnout_comparison_countries,outcome,PPEG parl,Number of countries in that comparison
+turnout_change_beyond_comparison_pp,outcome,PPEG parl,turnout_change_pp minus the comparison change; blank for a compulsory-voting country
+effective_parties_comparison_change,outcome,PPEG parl,Average change in the effective number of parties in the other EU countries over the same period
+effective_parties_comparison_countries,outcome,PPEG parl,Number of countries in that comparison
+effective_parties_change_beyond_comparison,outcome,PPEG parl,effective_parties_change minus the comparison change
+radical_comparison_change_pp,outcome,PopuList + PPEG,Average change in radical vote share in the other EU countries over the same period
+radical_comparison_countries,outcome,PopuList + PPEG,Number of countries in that comparison
+radical_change_beyond_comparison_pp,outcome,PopuList + PPEG,radical_change_pp minus the comparison change
 ess_round_before,day0,ESS,Last ESS round whose median interview date is before the event
 ess_trstprl_before,day0,ESS,"Weighted mean trust in parliament in that round, 0-10"
 ess_before_gap_days,day0,ESS,Days from that round's median interview date to the event
