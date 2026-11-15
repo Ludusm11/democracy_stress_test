@@ -1,0 +1,432 @@
+iso3,ppeg_party_id,ppeg_party,ppeg_name,ches_party_id,ches_party,method,evidence_election,ches_wave,ches_vote_pct,ppeg_vote_pct,vote_difference,checked_by_person
+AUT,AT1,SPÖ,Social Democratic Party of Austria,1301,SPO,cmp_id,2008-09-28,2010,29.26,29.26,0.0,no
+AUT,AT11,FPÖ,Freedom Party of Austria,1303,FPO,cmp_id,2008-09-28,2010,17.54,17.54,0.0,no
+AUT,AT15,Grüne,Greens - Green Alternative,1304,Grune,cmp_id,1999-10-03,1999,7.4,7.4,0.0,no
+AUT,AT17,LF,Liberal Forum,1306,LIF,cmp_id,2002-11-24,2002,1.0,0.98,0.02,no
+AUT,AT2,ÖVP,Austrian People's Party,1302,OVP,cmp_id,2002-11-24,2002,42.3,42.3,0.0,no
+AUT,AT24,BZÖ,Alliance for the Future of Austria,1307,BZO,cmp_id,2008-09-28,2010,10.7,10.7,0.0,no
+AUT,AT26,FRANK,Team Stronach for Austria,1310,TeamStronach,name_and_vote,2013-09-29,2014,5.7,5.73,0.03,no
+AUT,AT27,NEOS,The New Austria and Liberal Forum,1306,NEOS,name_and_vote,2019-09-29,2019,8.1,8.1,0.0,no
+BEL,BE14,FDF,Francophone Democratic Federalists,111,FDF,cmp_id,2014-05-25,2014,1.8,1.8,0.0,no
+BEL,BE19,CD&V,Christian Democrats & Flemish,109,CD&V,cmp_id,2010-06-13,2010,10.85,10.85,0.0,no
+BEL,BE20,CDH,Democratic and Humanist Center,108,CDH,cmp_id,2010-06-13,2010,5.52,5.52,0.0,no
+BEL,BE21,VLD,Flemish Liberals and Democrats - Citizens' Party,107,PVV/VLD,cmp_id,1999-06-13,1999,14.3,14.3,0.0,no
+BEL,BE24,PvdA/PTB,Workers' Party of Belgium,119,PVDA-PTB,name_and_vote,2019-05-26,2019,8.62,8.62,0.0,no
+BEL,BE26,ECOLO,Francophone Greens,104,ECOLO,cmp_id,2010-06-13,2010,4.8,4.8,0.0,no
+BEL,BE27,G!,Green!,105,Groen,cmp_id,2010-06-13,2010,4.38,4.38,0.0,no
+BEL,BE29,VB,Flemish Interest,112,VB,cmp_id,2010-06-13,2010,7.76,7.76,0.0,no
+BEL,BE30,SPA,Socialist Party Different,103,SPA,cmp_id,2010-06-13,2010,9.24,9.24,0.0,no
+BEL,BE31,PS,Francophone Socialist Party,102,PS,cmp_id,2010-06-13,2010,13.7,13.7,0.0,no
+BEL,BE33,FN/NF,National Front,115,FN,name_and_vote,2010-06-13,2010,0.51,0.51,0.0,no
+BEL,BE4,LD,List Dedecker,117,LDD,cmp_id,2010-06-13,2010,2.31,2.31,0.0,no
+BEL,BE48,N-VA,New Flemish Alliance,110,NVA,cmp_id,2010-06-13,2010,17.4,17.4,0.0,no
+BEL,BE49,PP,Popular Party,120,PP,name_and_vote,2014-05-25,2014,1.5,1.52,0.02,no
+BEL,BE600,SP.A-Spirit,Socialist Party Different - Spirit,103,SPA,name_and_vote,2003-05-18,2006,14.9,14.91,0.01,no
+BEL,BE604,MR,Reform Movement,106,MR,cmp_id,2003-05-18,2006,11.4,11.4,0.0,no
+BEL,BE604,PRL-FDF-MCC Liberals,PRL-FDF-MCC Liberals,111,FDF,alliance_sum,1999-06-13,1999,2.4,10.14,0.04,no
+BEL,BE650,VU-ID21,VU-ID21,110,VU,name_and_vote,1999-06-13,1999,5.6,5.56,0.04,no
+BGR,BG10,DSB,Democrats for a Strong Bulgaria,2008,DSB,cmp_id,2005-06-25,2006,6.4,6.44,0.04,no
+BGR,BG2,DPS,Movement for Rights and Freedom,2004,DPS,cmp_id,2005-06-25,2006,12.8,12.81,0.01,no
+BGR,BG21,RZS,"Order, Law and Justice",2012,RZS,name_and_vote,2009-07-05,2010,4.1,4.13,0.03,no
+BGR,BG23,GERB,Citizens for European Development of Bulgaria,2010,GERB,cmp_id,2009-07-05,2010,39.72,39.72,0.0,no
+BGR,BG29,BBZ,Bulgaria Without Censorship,2015,BBT,vote_share,2014-10-05,2014,5.7,5.69,0.01,no
+BGR,BG30,ABV,Alternative for Bulgarian Revival,2016,ABV,name_and_vote,2014-10-05,2014,4.2,4.15,0.05,no
+BGR,BG33,Ataka,Attack Coalition,2007,ATAKA,cmp_id,2014-10-05,2014,4.5,4.52,0.02,no
+BGR,BG36,DV,Volya Movement,2017,Volya,name_and_vote,2017-03-26,2019,4.26,4.15,0.11,no
+BGR,BG39,ITN,There Is Such A People,2019,ITN,name_and_vote,2024-10-27,2024,6.56,6.56,0.0,no
+BGR,BG40,V (2017),Revival,2020,Vazrazhdane,vote_share,2024-10-27,2024,12.92,12.92,0.0,no
+BGR,BG44,V (2023),Greatness,2024,Velichie,vote_share,2024-10-27,2024,3.87,3.87,0.0,no
+BGR,BG45,MECh,"Morality, Unity, Honour",2023,MECh,name_and_vote,2024-10-27,2024,4.44,4.44,0.0,no
+BGR,BG600,RB,Reformist Bloc,2014,NFSB,alliance_sum,2014-10-05,2014,4.2,8.89,0.09,no
+BGR,BG600,RB,Reformist Bloc,2002,SDS,alliance_sum,2014-10-05,2014,1.5,8.89,0.09,no
+BGR,BG600,RB,Reformist Bloc,2005,VMRO-BND,alliance_sum,2014-10-05,2014,3.1,8.89,0.09,no
+BGR,BG608,DG-VMRO,George's Day Movement  - Bulgarian National Movement,2005,G-VMRO,name_and_vote,2001-06-18,2002,3.6,3.63,0.03,no
+BGR,BG611,GERB-SDS,Citizens for European Development of Bulgaria - Union of Democratic Forces,2010,GERB,name_and_vote,2024-10-27,2024,25.52,25.52,0.0,no
+BGR,BG622,PP-DB,We Continue the Change - Democratic Bulgaria,2018,DB,alliance_sum,2024-10-27,2024,6.8,13.74,0.04,no
+BGR,BG622,PP-DB,We Continue the Change - Democratic Bulgaria,2021,PP,alliance_sum,2024-10-27,2024,6.9,13.74,0.04,no
+BGR,BG624,DPS-P,Movement for Rights and Freedoms – A New Beginning,2022,DPS - Novo nachalo,vote_share,2024-10-27,2024,11.17,11.17,0.0,no
+BGR,BG625,APS,Alliance for Rights and Freedoms,2004,APS,name_and_vote,2024-10-27,2024,7.23,7.23,0.0,no
+BGR,BG630,ODS,United Democratic Forces,2002,ODS,cmp_id,2001-06-18,2002,18.2,18.18,0.02,no
+BGR,BG650,KzB,Coalition for Bulgaria,2003,KzB,cmp_id,2009-07-05,2010,17.7,17.7,0.0,no
+BGR,BG690,BNS,Bulgarian People's Union,2009,BNS,name_and_vote,2005-06-25,2006,5.2,5.19,0.01,no
+BGR,BG9,NDSV,National Movement for Stability and Progress,2001,NDSV,cmp_id,2009-07-05,2010,3.02,3.02,0.0,no
+CYP,CY1,AKEL,Progressive Party of the Working People,4003,AKEL,cmp_id,2016-05-22,2019,25.67,25.67,0.0,no
+CYP,CY11,KOP,Ecological and Environmental Movement-Cyprus Green Party,4006,KOP,cmp_id,2016-05-22,2019,4.81,4.81,0.0,no
+CYP,CY12,EK,The European Party,4002,EVROKO,cmp_id,2011-05-22,2014,3.9,3.88,0.02,no
+CYP,CY18,KA,Solidarity Movement,4008,KINHMA,vote_share,2016-05-22,2019,5.24,5.24,0.0,no
+CYP,CY19,ELAM,National People's Front,4009,ELAM,name_and_vote,2016-05-22,2019,3.71,3.71,0.0,no
+CYP,CY2,EDEK,Movement for Social Democracy,4005,EDEK,cmp_id,2016-05-22,2019,6.18,6.18,0.0,no
+CYP,CY20,SP,Citizens' Alliance,4007,SYM,vote_share,2016-05-22,2019,6.01,6.01,0.0,no
+CYP,CY21,DP,Democratic Front,4015,DIPA,vote_share,2021-05-30,2024,6.1,6.1,0.0,no
+CYP,CY4,DIKO,Democratic Party,4004,DIKO,cmp_id,2016-05-22,2019,14.49,14.49,0.0,no
+CYP,CY6,DISY,Democratic Coalition,4001,DISY,cmp_id,2016-05-22,2019,30.69,30.69,0.0,no
+CZE,CZ1,KSCM,Communist Party of Bohemia and Moravia,2103,KSCM,cmp_id,2021-10-09,2024,3.61,3.61,0.0,no
+CZE,CZ15,VV,Public Affairs,2110,VV,cmp_id,2010-05-29,2010,10.9,10.88,0.02,no
+CZE,CZ16,TOP 09,Tradition Responsibility Prosperity 09,2109,TOP09,cmp_id,2013-10-26,2014,12.0,12.0,0.0,no
+CZE,CZ18,STAN,Mayors and Independents,2116,STAN,name_and_vote,2017-10-21,2019,5.18,5.18,0.0,no
+CZE,CZ2,CSSD,Czech Social Democratic Party,2101,CSSD,cmp_id,2002-06-14,2002,30.2,30.21,0.01,no
+CZE,CZ21,Úsvit,Dawn of Direct Democracy,2112,USVIT,cmp_id,2013-10-26,2014,6.9,6.89,0.01,no
+CZE,CZ22,ANO 2011,Action of Dissatisfied Citizens,2111,ANO2011,cmp_id,2017-10-21,2019,29.64,29.64,0.0,no
+CZE,CZ23,KDU-CSL,Christian Democratic Union - Czech People’s Party,2104,KDU-CSL,cmp_id,2017-10-21,2019,5.8,5.8,0.0,no
+CZE,CZ24,Piráti,Czech Pirate Party,2114,Pirates,vote_share,2021-10-09,2024,1.69,1.69,0.0,no
+CZE,CZ25,SPD,Freedom and Direct Democracy – Tomio Okamura,2115,SPD,name_and_vote,2017-10-21,2019,10.64,10.64,0.0,no
+CZE,CZ5,ODS,Civic Democratic Party,2102,ODS,cmp_id,2017-10-21,2019,11.32,11.32,0.0,no
+CZE,CZ6,US-DEU,Freedom Union - Democratic Union,2105,US-DEU,name_and_vote,2002-06-14,2002,4.15,4.14,0.01,no
+CZE,CZ8,SZ,Green Party,2107,SZ,cmp_id,2013-10-26,2014,3.2,3.2,0.0,no
+DEU,DE2,SPD,Social Democratic Party of Germany,302,SPD,cmp_id,2017-09-24,2019,20.5,20.51,0.01,no
+DEU,DE3,PDS,Party of Democratic Socialism,306,PDS,cmp_id,1998-09-27,1999,5.1,5.1,0.0,no
+DEU,DE36,CDU,Christian Democratic Union,301,CDU,cmp_id,2021-09-26,2024,18.9,24.07,5.17,no
+DEU,DE38,FDP,Free Democratic Party,303,FDP,cmp_id,2002-09-22,2002,7.4,7.37,0.03,no
+DEU,DE49,NPD,National Democratic Party of Germany,309,NPD,name_and_vote,2013-09-22,2014,1.3,1.28,0.02,no
+DEU,DE54,REP,The Republicans,305,REP,name_and_vote,1998-09-27,1999,1.79999995231628,1.84,0.04,no
+DEU,DE58,B’90/Grüne,Alliance 90/Greens,304,Grunen,cmp_id,1998-09-27,1999,6.7,6.7,0.0,no
+DEU,DE60,PIRATEN,Pirate Party Germany,311,Piraten,cmp_id,2013-09-22,2014,2.2,2.19,0.01,no
+DEU,DE61,AfD,Alternative for Germany,310,AfD,cmp_id,2013-09-22,2014,4.7,4.7,0.0,no
+DNK,DK1,KF,Conservative People's Party,203,DKF,cmp_id,2022-11-01,2024,5.51,5.51,0.0,no
+DNK,DK16,SF,Socialist People's Party,206,SF,cmp_id,2005-02-08,2006,6.0,5.99,0.01,no
+DNK,DK19,KF (1970),Christian People's Party,210,KRF,cmp_id,1998-03-11,1999,2.4,2.51,0.11,no
+DNK,DK20,CD,Centre Democrats,204,CD,cmp_id,1998-03-11,1999,4.3,4.31,0.01,no
+DNK,DK21,FP,Progress Party,212,FP,cmp_id,1998-03-11,1999,2.4,2.42,0.02,no
+DNK,DK26,DF,Danish People's Party,215,DF,cmp_id,1998-03-11,1999,7.4,7.41,0.01,no
+DNK,DK28,New Alliance,New Alliance,218,LA,cmp_id,2007-11-13,2010,2.8,2.81,0.01,no
+DNK,DK29,A,The Alternative,219,ALT,vote_share,2022-11-01,2024,3.33,3.33,0.0,no
+DNK,DK30,NB,The New Right,220,NB,name_and_vote,2022-11-01,2024,3.66,3.67,0.01,no
+DNK,DK31,M,Moderates,221,M,vote_share,2022-11-01,2024,9.27,9.27,0.0,no
+DNK,DK32,DIS,Denmark Democrats - Inger Støjberg,222,DD,vote_share,2022-11-01,2024,8.08,8.12,0.04,no
+DNK,DK4,SD,Social Democrats,201,SD,cmp_id,2019-06-05,2019,25.9,25.9,0.0,no
+DNK,DK5,RV,Danish Social Liberal Party,202,RV,cmp_id,2022-11-01,2024,3.79,3.79,0.0,no
+DNK,DK6,Venstre,"Left, Denmark's Liberal Party",211,V,cmp_id,1998-03-11,1999,24.0,24.01,0.01,no
+DNK,DK601,EL,Red-Green Unity List,213,EL,cmp_id,1998-03-11,1999,2.70000004768372,2.7,0.0,no
+ESP,ES1,PSOE,Spanish Socialist Workers' Party,501,PSOE,cmp_id,2004-03-14,2006,42.6,42.59,0.01,no
+ESP,ES15,PNV/EAJ,Basque Nationalist Party,506,PNV,cmp_id,2008-03-09,2010,1.2,1.19,0.01,no
+ESP,ES29,PP,People's Party,502,PP,cmp_id,1996-03-03,1999,38.8,38.79,0.01,no
+ESP,ES3,ERC,Catalan Republican Left,511,ERC,cmp_id,2023-07-23,2024,1.89,1.9,0.01,no
+ESP,ES35,PSA/PA,Andalusian Socialist Party,516,PA,cmp_id,2000-03-12,2002,0.9,0.89,0.01,no
+ESP,ES46,HB,United People,508,EH,vote_share,1996-03-03,1999,0.7,0.72,0.02,no
+ESP,ES48,UV,Valencian Union,512,UV,name_and_vote,1996-03-03,1999,0.4,0.37,0.03,no
+ESP,ES49,UPN,Navarre People's Union,553,UPN,name_and_vote,2023-07-23,2024,0.21,0.21,0.0,no
+ESP,ES601,IU-LV,United Left - Green List,504,IU,cmp_id,2011-11-20,2014,5.0,7.02,2.02,no
+ESP,ES603,AMAIUR,Amaiur,524,Amaiur,cmp_id,2011-11-20,2014,1.2,1.39,0.19,no
+ESP,ES608,EH Bildu,Basque Country Unite,524,EHB,name_and_vote,2023-07-23,2024,1.36,1.37,0.01,no
+ESP,ES62,C's,Citizens,526,Cs,cmp_id,2019-04-28,2019,6.8,15.98,9.18,no
+ESP,ES627,CC,Canarian Coalition,517,CC,cmp_id,2011-11-20,2014,0.6,0.6,0.0,no
+ESP,ES629,IU,United Left,504,IU,cmp_id,2008-03-09,2010,3.8,3.77,0.03,no
+ESP,ES63,PODEMOS,We can,525,Podemos,cmp_id,2023-07-23,2024,1.59,1.6,0.01,no
+ESP,ES64,EA,Basque Solidarity,507,EA,cmp_id,2008-03-09,2010,0.2,0.2,0.0,no
+ESP,ES69,CHA,Aragonist Council,520,CHA,cmp_id,2008-03-09,2010,0.15,0.15,0.0,no
+ESP,ES70,UPyD,"Union, Progress and Democracy",523,UPyD,cmp_id,2008-03-09,2010,1.2,1.19,0.01,no
+ESP,ES74,BNG,Galician Nationalist Bloc,513,BNG,cmp_id,2004-03-14,2006,0.8,0.81,0.01,no
+ESP,ES75,VOX,VOX,527,Vox,cmp_id,2023-07-23,2024,12.38,12.48,0.1,no
+ESP,ES75,VOX,VOX,528,Pais,cmp_id,2019-04-28,2019,2.4,10.34,7.94,no
+ESP,ES76,JxCat,Together for Catalonia,550,Junts,vote_share,2023-07-23,2024,1.6,1.61,0.01,no
+EST,EE10,EER,Estonian Greens,2207,EER,cmp_id,2011-03-06,2014,3.8,3.79,0.01,no
+EST,EE11,IRL,Pro Patria and Res Publica Union,2201,IRL,cmp_id,2011-03-06,2014,20.5,20.52,0.02,no
+EST,EE17,E200,Estonia 200,2210,E200,name_and_vote,2023-03-05,2024,13.33,13.33,0.0,no
+EST,EE2,ER,Estonian Reform Party,2203,ER,cmp_id,2023-03-05,2024,31.24,31.24,0.0,no
+EST,EE3,EKK,Estonian Centre Party,2202,EK,cmp_id,2003-03-02,2006,25.4,25.4,0.0,no
+EST,EE6,EÜRP,Estonian United People’s Party,2205,KP,vote_share,2003-03-02,2006,2.2,2.25,0.05,no
+EST,EE640,SDE,Social Democratic Party,2204,SDE,cmp_id,2023-03-05,2024,9.27,9.27,0.0,no
+EST,EE7,ResP,Union for the Republic - Res Publica,2201,IRL,cmp_id,2003-03-02,2006,7.3,24.62,17.32,no
+EST,EE8,R,Estonian People's Union,2206,ERL,cmp_id,2003-03-02,2006,13.0,13.03,0.03,no
+EST,EE8,EKRE,Conservative People's Party of Estonia,2209,EKRE,name_and_vote,2023-03-05,2024,16.05,16.05,0.0,no
+FIN,FI1,SSDP,Finnish Social Democratic Party,1401,SDP,cmp_id,2011-04-17,2014,19.1,19.1,0.0,no
+FIN,FI16,KD,Christian Democrats,1409,KD,cmp_id,2019-04-14,2019,3.9,3.9,0.0,no
+FIN,FI17,PS,True Finns,1405,PS,cmp_id,1999-03-21,1999,1.0,0.99,0.01,no
+FIN,FI2,SFP/RKP,Swedish People's Party,1406,RKP/SFP,cmp_id,2011-04-17,2014,4.3,4.64,0.34,no
+FIN,FI20,Vihr,Green League,1408,VIHR,cmp_id,2023-04-02,2024,7.04,7.04,0.0,no
+FIN,FI23,VAS,Left-Wing Alliance,1404,VAS,cmp_id,2007-03-18,2010,8.8,8.81,0.01,no
+FIN,FI24,KIPU,The Colourful Party - For the Environment,1413,KIPU,name_and_vote,1999-03-21,1999,0.4,0.39,0.01,no
+FIN,FI26,REM,Reform Group,1412,REM,name_and_vote,1999-03-21,1999,1.10000002384186,1.06,0.04,no
+FIN,FI28,LN,Movement Now,1410,Liik,vote_share,2023-04-02,2024,2.4,2.42,0.02,no
+FIN,FI4,Kesk,Centre Party of Finland,1403,KESK,cmp_id,1999-03-21,1999,22.4,22.4,0.0,no
+FIN,FI8,KK,National Coalition,1402,KOK,cmp_id,2019-04-14,2019,17.0,17.0,0.0,no
+FRA,FR1,PS,Socialist Party,602,PS,cmp_id,1997-05-25,1999,25.5,25.5,0.0,no
+FRA,FR14,RPR,Rally for the Republic,609,RPR,cmp_id,1997-05-25,1999,16.8,16.81,0.01,no
+FRA,FR2,PR/RRRS,Radical Party,622,PRV,cmp_id,2012-06-10,2014,1.2,1.24,0.04,no
+FRA,FR22,REG,Regionalist Parties,624,PG,vote_share,2012-06-10,2014,0.7,0.56,0.14,no
+FRA,FR25,PRG,Left Radical Party,603,PRG,cmp_id,2012-06-10,2014,1.7,1.65,0.05,no
+FRA,FR28,E,Ecologist,605,EELV,cmp_id,2017-06-11,2019,4.3,4.3,0.0,no
+FRA,FR29,FN,National Front,610,FN,cmp_id,2012-06-10,2014,13.6,13.6,0.0,no
+FRA,FR30,UDF,Union of French Democracy,613,UDF,cmp_id,1997-05-25,1999,14.7,14.7,0.0,no
+FRA,FR33,LR,The Republicans,609,LR,cmp_id,2017-06-11,2019,15.77,15.77,0.0,no
+FRA,FR41,MPF/CNI,Movement for France,612,MPF,name_and_vote,2007-06-10,2010,1.2,1.2,0.0,no
+FRA,FR45,PR (2001),Republican Pole,603,PRG,name_and_vote,2002-06-09,2002,1.5,1.19,0.31,no
+FRA,FR52,NC,New Centre,621,NC,cmp_id,2012-06-10,2014,2.2,2.2,0.0,no
+FRA,FR54,ED,Extreme Right,612,MPF,vote_share,2012-06-10,2014,0.23,0.19,0.04,no
+FRA,FR58,DLF,France Arise,628,DLF,name_and_vote,2017-06-11,2019,1.17,1.17,0.0,no
+FRA,FR59,AC,Centrist Alliance,623,AC,cmp_id,2012-06-10,2014,0.6,0.6,0.0,no
+FRA,FR70,En Marche!,Forward!,626,LREM,vote_share,2017-06-11,2019,28.21,28.21,0.0,no
+FRA,FR72,FI,Unsubmissive France,627,FI,name_and_vote,2017-06-11,2019,11.03,11.03,0.0,no
+FRA,FR80,R,Reconquest,630,REC,vote_share,2024-06-30,2024,0.75,0.75,0.0,no
+FRA,FR88,UXD,Union of the Far-Right,631,Horizons,vote_share,2024-06-30,2024,4.018,3.96,0.06,no
+FRA,FR9,PCF,French Communist Party,601,PCF,cmp_id,2017-06-11,2019,2.72,2.72,0.0,no
+GBR,GB1,Cons,Conservative Party,1101,CONS,cmp_id,2001-06-07,2002,31.7,31.7,0.0,no
+GBR,GB11,SNP,Scottish National Party,1105,SNP,cmp_id,2019-12-12,2019,3.88,3.88,0.0,no
+GBR,GB12,PC,Party of Wales,1106,PLAID,cmp_id,2019-12-12,2019,0.48,0.48,0.0,no
+GBR,GB19,GREENS,Green Party of England and Wales,1107,GREEN,name_and_vote,1997-05-01,1999,0.200000002980232,0.2,0.0,no
+GBR,GB22,LibDem,Liberal Democrats,1104,LibDem,cmp_id,2019-12-12,2019,11.55,11.55,0.0,no
+GBR,GB31,UKIP,United Kingdom Independence Party,1108,UKIP,cmp_id,2010-05-06,2010,3.1,3.1,0.0,no
+GBR,GB45,BP,Brexit Party,1110,BREXIT,name_and_vote,2019-12-12,2019,2.01,2.01,0.0,no
+GBR,GB6,Lab,Labour Party,1102,LAB,cmp_id,2024-07-04,2024,33.7,33.7,0.0,no
+GRC,GR36,ND,New Democracy,402,ND,cmp_id,2009-10-04,2010,33.48,33.48,0.0,no
+GRC,GR37,PASOK,Pan-Hellenic Socialist Movement,401,PASOK,cmp_id,2000-04-09,2002,43.8,43.8,0.0,no
+GRC,GR4,KKE,Communist Party of Greece,404,KKE,cmp_id,1996-09-22,1999,5.6,5.6,0.0,no
+GRC,GR58,POLA,Political Spring,408,POLA,cmp_id,1996-09-22,1999,2.9,2.94,0.04,no
+GRC,GR59,DIKKI,Democratic Social Movement,409,DIKKI,cmp_id,2004-03-07,2006,1.8,1.79,0.01,no
+GRC,GR600,SYRIZA,Coalition of the Radical Left,403,SYRIZA,cmp_id,2009-10-04,2010,4.6,4.6,0.0,no
+GRC,GR61,XA,Golden Dawn,415,XA,cmp_id,2019-07-07,2019,2.93,2.93,0.0,no
+GRC,GR614,SYN,Progressive Left Coalition,403,SYN,cmp_id,2000-04-09,2002,3.2,3.2,0.0,no
+GRC,GR616,PASOK-KINAL,PASOK - Movement for Change,401,PASOK,name_and_vote,2023-05-21,2024,11.46,11.46,0.0,no
+GRC,GR62,DIMAR,Democratic Left,414,DIMAR,cmp_id,2012-05-06,2014,6.3,6.11,0.19,no
+GRC,GR68,LAOS,Popular Orthodox Rally,410,LAOS,cmp_id,2009-10-04,2010,5.63,5.63,0.0,no
+GRC,GR72,EL (2016),Greek Solution,416,EL,name_and_vote,2019-07-07,2019,3.7,3.7,0.0,no
+GRC,GR73,MeRA25,European Realistic Disobedience Front,417,MR25,vote_share,2019-07-07,2019,3.44,3.44,0.0,no
+HRV,HR1,HDZ,Croatian Democratic Union,3101,HDZ,cmp_id,2011-12-04,2014,21.9,22.28,0.38,no
+HRV,HR10,IDS,Istrian Democratic Assembly,3106,IDS,cmp_id,2024-04-17,2024,2.25,2.25,0.0,no
+HRV,HR12,HSU,Croatian Party of Pensioners,3108,HSU,name_and_vote,2016-09-11,2019,0.6,0.8,0.2,no
+HRV,HR23,HDSSB,Croatian Democratic Assembly of Slavonia and Baranja,3107,HDSSB,cmp_id,2011-12-04,2014,3.0,2.88,0.12,no
+HRV,HR25,HL - SR,Croatian Labourists - Labour Party,3112,HL-SR,cmp_id,2011-12-04,2014,4.2,5.09,0.89,no
+HRV,HR27,HNS (2005),Croatian People's Party-Liberal Democrats,3105,HNS,cmp_id,2011-12-04,2014,6.7,6.42,0.28,no
+HRV,HR30,MOST,Bridge of Independent Lists,3115,Most,name_and_vote,2016-09-11,2019,9.43,9.84,0.41,no
+HRV,HR4,HSLS,Croatian Social Liberal Party,3104,HSLS,cmp_id,2011-12-04,2014,3.0,2.97,0.03,no
+HRV,HR49,Mozemo!,We Can! – Political Platform,3120,M!,vote_share,2024-04-17,2024,9.1,9.1,0.0,no
+HRV,HR6,HSS,Croatian Peasant Party,3103,HSS,cmp_id,2016-09-11,2019,2.98,1.83,1.15,no
+HRV,HR611,IDS-PGS-LR,Even Stronger Istria Coalition,3106,IDS,name_and_vote,2016-09-11,2019,2.18,2.27,0.09,no
+HRV,HR612,HDSSB Coalition,HDSSB Coalition,3107,HDSSB,name_and_vote,2016-09-11,2019,1.19,1.24,0.05,no
+HRV,HR7,HSP,Croatian Party of Rights,3109,HSP,cmp_id,2011-12-04,2014,3.0,3.11,0.11,no
+HRV,HR7,HSP,Croatian Party of Rights,3113,HSP-AS,cmp_id,2011-12-04,2014,0.6,3.11,2.51,no
+HUN,HU1,MDF,Hungarian Democratic Forum,2303,MDF,cmp_id,2006-04-09,2006,5.04,5.04,0.0,no
+HUN,HU10,MKP,Hungarian Socialist Workers' Party,2304,SZDSZ,vote_share,2010-04-11,2010,0.25,0.11,0.14,no
+HUN,HU14,Jobbik,The Movement for a Better Hungary,2308,JOBBIK,cmp_id,2010-04-11,2010,16.67,16.67,0.0,no
+HUN,HU15,LMP,Politics Can Be Different,2309,LMP,cmp_id,2018-04-08,2019,7.06,7.06,0.0,no
+HUN,HU17,DK,Democratic Coalition,2311,DK,cmp_id,2018-04-08,2019,5.37,5.38,0.01,no
+HUN,HU18,Együtt,Together - Party for a New Era,2310,E14,cmp_id,2018-04-08,2019,0.66,0.66,0.0,no
+HUN,HU2,SZDSZ,Alliance of Free Democrats,2304,SzDSz,cmp_id,2006-04-09,2006,6.5,6.5,0.0,no
+HUN,HU22,MM,Momentum Movement,2314,MM,name_and_vote,2018-04-08,2019,3.06,3.06,0.0,no
+HUN,HU23,MHM,Our Homeland Movement,2316,MHM,name_and_vote,2022-04-03,2024,5.88,5.88,0.0,no
+HUN,HU4,MSZP,Hungarian Socialist Party,2301,MSZP,cmp_id,2010-04-11,2010,19.3,19.3,0.0,no
+HUN,HU5,FIDESZ - MPS,Alliance of Young Democrats - Hungarian Civic Union,2302,Fidesz,cmp_id,2014-04-06,2014,39.5,36.38,3.12,no
+HUN,HU602,MSZP - PM,Hungarian Socialist Party - Dialogue for Hungary,2301,MSZP,name_and_vote,2018-04-08,2019,11.91,11.91,0.0,no
+HUN,HU630,FIDESZ - KDNP,Fidesz - Christian Democratic People’s Party,2302,Fidesz-KDNP,cmp_id,2018-04-08,2019,49.28,49.27,0.01,no
+HUN,HU8,MIéP,Hungarian Justice and Life Party,2305,MIEP,cmp_id,2002-04-07,2002,4.4,4.37,0.03,no
+HUN,HU800,FIDESZ - MPP/MDF,Alliance of Young Democrats - Hungarian Civic Party - Hungarian Democratic Forum,2302,Fidesz-M,cmp_id,2002-04-07,2002,35.11,41.07,5.96,no
+IRL,IE10,FF,Warriors of Destiny,701,FF,cmp_id,2007-05-24,2010,41.56,41.56,0.0,no
+IRL,IE14,FG,Tribe of Gaels/Family of the Irish,702,FG,cmp_id,2007-05-24,2010,27.32,27.32,0.0,no
+IRL,IE24,GP,Green Party/Comhaontas Glas,705,GP,cmp_id,2007-05-24,2010,4.69,4.69,0.0,no
+IRL,IE25,PD,Progressive Democrats,706,PD,cmp_id,1997-06-06,1999,4.7,4.68,0.02,no
+IRL,IE28,SP,Socialist Party,708,SP,cmp_id,1997-06-06,1999,0.7,0.7,0.0,no
+IRL,IE32,PBPA,People Before Profit Alliance,709,PBPA,name_and_vote,2011-02-25,2014,1.0,1.07,0.07,no
+IRL,IE34,DS,Social Democrats,710,DS,name_and_vote,2016-02-26,2019,3.01,3.01,0.0,no
+IRL,IE40,A,Unite,713,Aon,vote_share,2024-11-29,2024,3.9,3.91,0.01,no
+IRL,IE6,SF,Ourselves,707,SF,cmp_id,2007-05-24,2010,6.94,6.94,0.0,no
+IRL,IE8,ILP,Irish Labour Party,703,LP,cmp_id,1997-06-06,1999,10.4,10.4,0.0,no
+ITA,IT11,DS,Democrats of the Left,802,DS,cmp_id,2001-05-13,2002,16.6,16.57,0.03,no
+ITA,IT24,AN,National Alliance,805,AN,cmp_id,2001-05-13,2002,12.0,12.02,0.02,no
+ITA,IT25,SVP,South Tyrol People's Party,827,SVP,cmp_id,2008-04-13,2010,0.4,0.39,0.01,no
+ITA,IT28,LVA,List Aosta Valley,847,VdA,cmp_id,2013-02-24,2014,0.01,0.05,0.04,no
+ITA,IT34,LBP,Bonino-Pannella List,825,RI,alliance_sum,2001-05-13,2002,1.2,2.24,0.16,no
+ITA,IT34,LBP,Bonino-Pannella List,829,UDEUR,alliance_sum,2001-05-13,2002,1.2,2.24,0.16,no
+ITA,IT40,PP,Pensioners' Party,830,PP,name_and_vote,2006-04-10,2006,0.9,0.85,0.05,no
+ITA,IT45,FdV,Federation of the Greens,808,FdV,cmp_id,1996-04-21,1999,2.5,2.5,0.0,no
+ITA,IT46,PRC,Communist Refoundation Party,803,RC,cmp_id,2006-04-10,2006,5.7,5.69,0.01,no
+ITA,IT47,LN,Northern League,811,LN,cmp_id,2006-04-10,2006,4.5,4.51,0.01,no
+ITA,IT50,FI,Forward Italy,815,FI,cmp_id,2006-04-10,2006,23.6,23.6,0.0,no
+ITA,IT54,DINI,Dini List - Italian Renewal,825,RI,cmp_id,1996-04-21,1999,4.3,4.34,0.04,no
+ITA,IT55,MS,Social Movement - Flame Tricolore,821,MS,name_and_vote,1996-04-21,1999,0.9,0.91,0.01,no
+ITA,IT57,NPSI,New Italian Socialist Party,835,NPSI,cmp_id,2006-04-10,2006,0.7,0.73,0.03,no
+ITA,IT60,PDCI,Party of Italian Communists,836,PdCI,cmp_id,2006-04-10,2006,2.3,2.26,0.04,no
+ITA,IT618,SVP-PATT,South Tyrol People's Party - Trentino Tyrolean Autonomist Party,827,SVP,name_and_vote,2022-09-25,2024,0.42,0.4,0.02,no
+ITA,IT62,CCD,Christian Democratic Centre,814,CCD,cmp_id,1996-04-21,1999,2.9,5.84,2.94,no
+ITA,IT63,UDC,Union of Christian and Centre Democrats,814,UDC,cmp_id,2006-04-10,2006,6.8,6.76,0.04,no
+ITA,IT632,RC,Civil Revolution,803,RC,name_and_vote,2013-02-24,2014,2.3,2.18,0.12,no
+ITA,IT637,+E,More Europe,832,+E,vote_share,2022-09-25,2024,2.83,2.72,0.11,no
+ITA,IT64,PD,Democratic Party,837,PD,cmp_id,2013-02-24,2014,25.4,25.48,0.08,no
+ITA,IT641,LeU,Free and Equal,838,SI,vote_share,2018-03-04,2019,3.39,3.47,0.08,no
+ITA,IT654,SA,The Left - The Rainbow,842,SD,alliance_sum,2008-04-13,2010,0.78,3.07,0.05,no
+ITA,IT654,SA,The Left - The Rainbow,836,PdCI,alliance_sum,2008-04-13,2010,0.78,3.07,0.05,no
+ITA,IT654,SA,The Left - The Rainbow,808,VERDI,alliance_sum,2008-04-13,2010,0.78,3.07,0.05,no
+ITA,IT654,SA,The Left - The Rainbow,803,RC,alliance_sum,2008-04-13,2010,0.78,3.07,0.05,no
+ITA,IT672,PD-IDP,Democratic Party - Democratic and Progressive Italy,837,PD,name_and_vote,2022-09-25,2024,19.04,19.37,0.33,no
+ITA,IT674,AVS,Greens and Left Alliance,850,EV,alliance_sum,2022-09-25,2024,1.8,3.49,0.11,no
+ITA,IT674,AVS,Greens and Left Alliance,838,SI,alliance_sum,2022-09-25,2024,1.8,3.49,0.11,no
+ITA,IT720,IPdL,People of Freedom,815,FI,cmp_id,2013-02-24,2014,21.6,21.33,0.27,no
+ITA,IT76,SEL,Left Ecology Freedom,838,SEL,cmp_id,2013-02-24,2014,3.2,3.16,0.04,no
+ITA,IT78,M5S,Five Star Movement,845,M5S,cmp_id,2013-02-24,2014,25.6,25.1,0.5,no
+ITA,IT79,SC,Civic Choice,846,SC,cmp_id,2013-02-24,2014,8.3,8.57,0.27,no
+ITA,IT80,FDI,Brothers of Italy,844,FdI,cmp_id,2013-02-24,2014,2.0,1.91,0.09,no
+ITA,IT87,Pietro,Pietro List - Italy of Values,828,IdV,cmp_id,2001-05-13,2002,3.9,3.89,0.01,no
+ITA,IT89,P-UDEUR,Union for European Democracy Populars,829,UDEUR,cmp_id,2006-04-10,2006,1.4,1.39,0.01,no
+ITA,IT90,MpA,Movement for Autonomy,840,MpA,name_and_vote,2008-04-13,2010,1.1,1.09,0.01,no
+ITA,IT91,CD,Democratic Centre - Rights and Freedom,843,CD,cmp_id,2013-02-24,2014,0.5,0.48,0.02,no
+LTU,LT10,LLS (1990),Lithuanian Liberal Union,2505,LLS,cmp_id,2000-10-08,2002,17.3,17.25,0.05,no
+LTU,LT11,LVP,Lithuanian Peasants’ Party,2507,LVP,cmp_id,2000-10-08,2002,4.1,4.08,0.02,no
+LTU,LT15,LiCS,Liberal and Center Union,2505,LiCS,cmp_id,2004-10-10,2006,9.2,9.19,0.01,no
+LTU,LT16,DP,Labour Party,2516,DP,cmp_id,2016-10-09,2019,4.88,4.88,0.0,no
+LTU,LT17,LIT,Freedom and Justice,2528,PLT,vote_share,2024-10-27,2024,0.77,0.77,0.0,no
+LTU,LT2,LSDP,Lithuanian Social Democratic Party,2501,LSDP,cmp_id,2016-10-09,2019,15.04,15.04,0.0,no
+LTU,LT21,LRLS,Liberals' Movement of the Republic of Lithuania,2518,LRLS,cmp_id,2016-10-09,2019,9.45,9.45,0.0,no
+LTU,LT22,VNDS,Peasants and New Democratic Party Union,2507,LVLS,cmp_id,2004-10-10,2006,6.6,6.6,0.0,no
+LTU,LT23,TPP,Party of the Rising Nation,2517,TPP,name_and_vote,2008-10-12,2010,15.1,15.09,0.01,no
+LTU,LT24,PTT,Order and Justice,2515,TT,cmp_id,2016-10-09,2019,5.55,5.55,0.0,no
+LTU,LT25,DK,The Way of Courage,2520,DK,cmp_id,2012-10-14,2014,8.0,8.34,0.34,no
+LTU,LT28,LŽP,Lithuanian Green Party,2522,LZP,vote_share,2016-10-09,2019,2.03,2.03,0.0,no
+LTU,LT29,LCP,Lithuanian Centre Party,2521,LCP,name_and_vote,2016-10-09,2019,6.32,6.32,0.0,no
+LTU,LT3,LCS,Lithuanian Centre Union,2509,LCS,cmp_id,2000-10-08,2002,2.9,2.86,0.04,no
+LTU,LT32,NKS,Union of Moderate Conservatives,2510,NKS,name_and_vote,2000-10-08,2002,2.0,2.01,0.01,no
+LTU,LT36,LP,Freedom Party,2524,Laisvės,vote_share,2024-10-27,2024,4.62,4.62,0.0,no
+LTU,LT38,NS (2020),National Alliance,2527,NS,name_and_vote,2024-10-27,2024,2.87,2.93,0.06,no
+LTU,LT39,PPNA,"Political Party ""Dawn of Nemunas""",2525,PPNA,name_and_vote,2024-10-27,2024,14.97,15.26,0.29,no
+LTU,LT4,LLRA-KŠS,Electoral Action of Poles in Lithuania – Christian Families Alliance,2511,LLRA,cmp_id,2016-10-09,2019,5.72,5.72,0.0,no
+LTU,LT40,DSVL,"Union of Democrats ""For Lithuania""",2526,DSVL,name_and_vote,2024-10-27,2024,9.22,9.4,0.18,no
+LTU,LT5,TS,Homeland Union,2506,TS-LK,cmp_id,2000-10-08,2002,8.6,8.62,0.02,no
+LTU,LT6,LKDP,Lithuanian Christian Democratic Party,2508,LKDP,cmp_id,2000-10-08,2002,3.1,3.07,0.03,no
+LTU,LT690,DP+J,Labour Party and Youth,2516,DP,name_and_vote,2008-10-12,2010,9.0,8.99,0.01,no
+LTU,LT9,NS (1998),New Union,2504,NS,cmp_id,2000-10-08,2002,19.6,19.64,0.04,no
+LUX,LU1,PCS/CSV,Christian Social People's Party,3801,CSV,cmp_id,2018-10-14,2019,27.08,27.08,0.0,no
+LUX,LU16,PD/DP,Democratic Party,3803,DP,cmp_id,2018-10-14,2019,16.4,16.4,0.0,no
+LUX,LU2,POSL/LSAP,Socialist Workers' Party of Luxembourg,3804,LSAP,cmp_id,2018-10-14,2019,15.72,15.72,0.0,no
+LUX,LU24,ADR,Alternative Democratic Reform Party,3805,ADR,cmp_id,2018-10-14,2019,8.02,8.02,0.0,no
+LUX,LU28,DG,The Greens,3802,Greng,cmp_id,2018-10-14,2019,14.1,14.1,0.0,no
+LUX,LU29,DL,The Left,3806,DL,cmp_id,2018-10-14,2019,4.72,4.72,0.0,no
+LUX,LU30,PL (2009),Pirate Party Luxembourg,3807,PPLU,name_and_vote,2018-10-14,2019,6.2,6.2,0.0,no
+LVA,LV1,LC,Alliance Latvia`s Way,2407,LC,cmp_id,2002-10-05,2002,4.9,4.89,0.01,no
+LVA,LV15,TP,People's Party,2403,TP,cmp_id,2006-10-07,2006,19.56,19.56,0.0,no
+LVA,LV16,LSDA,Latvian Social Democratic Alliance,2408,LSDSP,vote_share,2006-10-07,2006,3.5,3.5,0.0,no
+LVA,LV18,JL,New Era,2401,JL,cmp_id,2006-10-07,2006,16.38,16.38,0.0,no
+LVA,LV19,LPP,Latvia's First Party,2404,LPP,cmp_id,2002-10-05,2002,9.5,9.57,0.07,no
+LVA,LV21,TB-LNNK,For Fatherland and Freedom - Latvian National Independence Movement,2406,TB-LNNK,cmp_id,2006-10-07,2006,6.94,6.94,0.0,no
+LVA,LV23,ZRP,Zatlers' Reform Party,2411,ZRP,name_and_vote,2011-09-17,2010,20.82,21.01,0.19,no
+LVA,LV24,LRA,Latvian Association of Regions,2414,LRA,name_and_vote,2018-10-06,2019,4.17,4.17,0.0,no
+LVA,LV25,NSL,For Latvia From The Heart,2413,NSL,name_and_vote,2014-10-04,2014,6.9,6.9,0.0,no
+LVA,LV26,SDPS,"Social Democratic Party ""Harmony""",2410,SDPS,cmp_id,2018-10-06,2019,19.92,19.92,0.0,no
+LVA,LV28,JKP,New Conservative Party,2416,JKP,cmp_id,2018-10-06,2019,13.67,13.67,0.0,no
+LVA,LV30,KPV LV,Who owns the state?,2415,KPV LV,cmp_id,2018-10-06,2019,14.33,14.33,0.0,no
+LVA,LV31,S,For Stability,2418,S!,cmp_id,2022-10-01,2024,6.88,6.88,0.0,no
+LVA,LV32,LPV,Latvia First,2419,LPV,cmp_id,2022-10-01,2024,6.31,6.31,0.0,no
+LVA,LV33,P,The Progressives,2420,Progresivie,cmp_id,2022-10-01,2024,6.23,6.23,0.0,no
+LVA,LV621,AS,United List,2414,AS,name_and_vote,2022-10-01,2024,11.14,11.14,0.0,no
+LVA,LV622,AP!,Development/For!,2417,AP!,cmp_id,2018-10-06,2019,12.12,12.12,0.0,no
+LVA,LV640,PCTVL,For Human Rights within a United Latvia,2402,PCTVL,cmp_id,2006-10-07,2006,6.03,6.03,0.0,no
+LVA,LV650,ZZS,Union of Greens and Farmers,2405,ZZS,cmp_id,2006-10-07,2006,16.71,16.71,0.0,no
+LVA,LV651,ZZS (2022),Union of Greens and Farmers (2022),2405,ZZS,cmp_id,2022-10-01,2024,12.58,12.58,0.0,no
+LVA,LV690,SC,Harmony Centre,2410,SC,name_and_vote,2006-10-07,2006,14.42,14.42,0.0,no
+LVA,LV700,LPP - LC,Latvia First Party - Latvia's Way,2404,LPP,alliance_sum,2006-10-07,2006,5.76,8.58,0.02,no
+LVA,LV700,LPP - LC,Latvia First Party - Latvia's Way,2407,LC,alliance_sum,2006-10-07,2006,2.84,8.58,0.02,no
+LVA,LV720,VL - TB/LNNK,"National Alliance ""All For Latvia!"" - ""For Fatherland and Freedom/LNNK""",2406,,vote_share,2018-10-06,2019,11.08,11.08,0.0,no
+LVA,LV730,V,Unity,2412,V,cmp_id,2014-10-04,2014,21.9,22.01,0.11,no
+LVA,LV731,JV,New Unity,2412,V,cmp_id,2018-10-06,2019,6.74,6.74,0.0,no
+MLT,MT3,MLP,Malta Labour Party,3701,PL,cmp_id,2017-06-03,2019,55.04,55.04,0.0,no
+MLT,MT5,NP,Nationalist Party,3702,PN,cmp_id,2022-03-26,2024,41.74,41.74,0.0,no
+NLD,NL14,SGP,Political Reformed Party,1006,SGP,cmp_id,2023-11-22,2024,2.08,2.08,0.0,no
+NLD,NL23,PvdA,Labour Party,1002,PvdA,cmp_id,2017-03-15,2019,5.7,5.7,0.0,no
+NLD,NL24,VVD,People's Party for Freedom and Democracy,1003,VVD,cmp_id,2023-11-22,2024,15.24,15.24,0.0,no
+NLD,NL26,GPV,Reformed Political Union,1007,GPV,name_and_vote,1998-05-06,1999,1.2,1.26,0.06,no
+NLD,NL29,D'66,Democrats '66,1004,D66,cmp_id,2002-05-15,2002,5.1,5.1,0.0,no
+NLD,NL35,RPF,Reformed Political Federation,1008,RPF,name_and_vote,1998-05-06,1999,2.0,2.03,0.03,no
+NLD,NL42,SP,Socialist Party,1014,SP,cmp_id,2002-05-15,2002,5.9,5.9,0.0,no
+NLD,NL49,LPF,List Pim Fortuyn,1015,LPF,cmp_id,2002-05-15,2002,17.0,17.0,0.0,no
+NLD,NL50,CU,Christian Union,1016,CU,cmp_id,2023-11-22,2024,2.04,2.04,0.0,no
+NLD,NL52,PvdD,Party for the Animals,1018,PvdD,cmp_id,2010-06-09,2010,1.3,1.3,0.0,no
+NLD,NL53,PVV,Party for Freedom,1017,PVV,cmp_id,2023-11-22,2024,23.49,23.49,0.0,no
+NLD,NL54,50plus,50plus,1020,50PLUS,cmp_id,2017-03-15,2019,3.1,3.11,0.01,no
+NLD,NL55,DENK,Think,1050,DENK,name_and_vote,2023-11-22,2024,2.37,2.37,0.0,no
+NLD,NL56,FvD,Forum for Democracy,1051,FvD,name_and_vote,2023-11-22,2024,2.23,2.23,0.0,no
+NLD,NL57,V,Volt,1052,Volt,name_and_vote,2023-11-22,2024,1.71,1.71,0.0,no
+NLD,NL59,BBB,Farmer-Citizen Movement,1054,BBB,name_and_vote,2023-11-22,2024,4.65,4.65,0.0,no
+NLD,NL600,GL,Green Left,1005,GL,cmp_id,2006-11-22,2006,4.6,4.6,0.0,no
+NLD,NL602,CDA,Christian Democratic Appeal,1001,CDA,cmp_id,2023-11-22,2024,3.31,3.31,0.0,no
+NLD,NL61,NSC,New Social Contract,1056,NSC,name_and_vote,2023-11-22,2024,12.88,12.88,0.0,no
+POL,PL20,SRP,Self-Defense of the Polish Republic,2604,S,cmp_id,2001-09-23,2002,10.2,10.2,0.0,no
+POL,PL26,PO,Citizens' Platform,2603,PO,cmp_id,2007-10-21,2010,41.51,41.51,0.0,no
+POL,PL28,PiS,Law and Justice,2605,PiS,cmp_id,2001-09-23,2002,9.5,9.5,0.0,no
+POL,PL29,LPR,League of Polish Families,2607,LPR,cmp_id,2007-10-21,2010,1.3,1.3,0.0,no
+POL,PL30,SDPL,Social Democratic Party of Poland,2611,SDPL,name_and_vote,2007-10-21,2010,2.5,2.48,0.02,no
+POL,PL31,PD (2005),Democratic Party (2005),2609,PD,name_and_vote,2005-09-25,2006,2.5,2.45,0.05,no
+POL,PL31,PD (2005),Democratic Party (2005),2612,SD,vote_share,2007-10-21,2010,0.74,0.74,0.0,no
+POL,PL37,RP,Palikot Movement,2613,RP,cmp_id,2011-10-09,2014,10.0,10.02,0.02,no
+POL,PL4,PSL,Polish Peasants' Party,2606,PSL,cmp_id,2007-10-21,2010,8.9,8.91,0.01,no
+POL,PL49,UP,Labour Union,2602,UP,cmp_id,2001-09-23,2002,2.9,3.04,0.14,no
+POL,PL50,UW (1994),Freedom Union,2609,UW,cmp_id,2001-09-23,2002,3.1,3.1,0.0,no
+POL,PL602,KO,Civic Coalition,2603,PO,cmp_id,2019-10-13,2019,19.43,27.4,7.97,no
+POL,PL603,KP (2019),Polish Coalition,2621,Wiosnia,alliance_sum,2019-10-13,2019,2.62,8.55,0.19,no
+POL,PL603,KP (2019),Polish Coalition,2617,Kukiz,alliance_sum,2019-10-13,2019,2.98,8.55,0.19,no
+POL,PL603,KP (2019),Polish Coalition,2620,Lewica Razem,alliance_sum,2019-10-13,2019,2.76,8.55,0.19,no
+POL,PL606,KWiN (Alliance),Confederation Liberty and Independence (Alliance),2619,Konfederacia,cmp_id,2019-10-13,2019,1.16,6.81,5.65,no
+POL,PL61,KWiN (Party),Confederation Liberty and Independence (Party),2619,Konfederacja,cmp_id,2023-10-15,2024,7.2,1.58,5.62,no
+POL,PL610,SLD,Alliance of the Democratic Left,2601,SLD,cmp_id,2005-09-25,2006,11.3,11.31,0.01,no
+POL,PL660,AWS,Solidarity Election Action,2608,AWSP,cmp_id,2001-09-23,2002,5.6,5.6,0.0,no
+POL,PL690,SLD - UP,Coalition Alliance of Democratic Left and Labour Union,2611,SDPL,vote_share,2005-09-25,2006,3.9,3.89,0.01,no
+PRT,PT1,CDS-PP,Social Democratic Center - Popular Party,1202,CDS-PP,cmp_id,2019-10-06,2019,4.44,4.44,0.0,no
+PRT,PT16,PEV,"Ecologist Party ""The Greens""",1211,PEV,name_and_vote,2019-10-06,2019,1.11,1.11,0.0,no
+PRT,PT2,PCP,Portuguese Communist Party,1210,PCP,name_and_vote,2019-10-06,2019,5.55,5.55,0.0,no
+PRT,PT27,MPT,Earth Party,1209,MPT,name_and_vote,2011-06-05,2014,0.4,0.42,0.02,no
+PRT,PT3,PSD,Social Democratic Party,1206,PSD,cmp_id,2011-06-05,2014,40.3,40.31,0.01,no
+PRT,PT33,BE,Left Bloc,1208,BE,cmp_id,2019-10-06,2019,10.01,10.01,0.0,no
+PRT,PT39,PAN,People-Animals-Nature,1250,PAN,name_and_vote,2019-10-06,2019,3.49,3.49,0.0,no
+PRT,PT4,PSP,Portuguese Socialist Party,1205,PS,cmp_id,2019-10-06,2019,38.21,38.2,0.01,no
+PRT,PT42,IL,Liberal Initiative,1252,IL,name_and_vote,2024-03-10,2024,4.9,5.16,0.26,no
+ROU,RO1,PD,Democratic Party,2704,PDL,cmp_id,2000-11-26,2002,7.0,7.03,0.03,no
+ROU,RO11,PRM,Greater Romania Party,2703,PRM,cmp_id,2004-11-28,2006,13.0,12.99,0.01,no
+ROU,RO2,PNL,National Liberal Party,2705,PNL,cmp_id,2016-12-11,2019,20.04,20.04,0.0,no
+ROU,RO21,PSD (2001),Social Democratic Party,2701,PSD,cmp_id,2004-11-28,2006,31.5,31.5,0.0,no
+ROU,RO23,PUR,Humanist Party of Romania,2702,PC,vote_share,2004-11-28,2006,5.3,5.3,0.0,no
+ROU,RO26,PDL,Democratic Liberal Party,2704,PDL,cmp_id,2008-11-30,2010,32.4,32.36,0.04,no
+ROU,RO27,UDMR,Hungarian Democratic Alliance of Romania,2706,UDMR,cmp_id,2000-11-26,2002,6.8,6.8,0.0,no
+ROU,RO31,PMP,People's Movement Party,2711,PMP,name_and_vote,2016-12-11,2019,5.35,5.35,0.0,no
+ROU,RO34,USR,Save Romania Union,2713,USR,name_and_vote,2016-12-11,2019,8.87,8.87,0.0,no
+ROU,RO35,ALDE,Alliance of Liberals and Democrats,2712,ALDE,name_and_vote,2016-12-11,2019,5.62,5.62,0.0,no
+ROU,RO39,PP-DD,People's Party - Dan Diaconescu,2710,PP-DD,cmp_id,2012-12-09,2014,14.0,13.99,0.01,no
+ROU,RO45,AUR (2019),Alliance for the Unity of Romanians,2715,AUR,name_and_vote,2024-12-01,2024,18.01,18.01,0.0,no
+ROU,RO46,USR (2021),Save Romania Union (2021),2713,USR,name_and_vote,2024-12-01,2024,12.4,12.4,0.0,no
+ROU,RO47,SOS,S.O.S. Romania,2716,SOS RO,name_and_vote,2024-12-01,2024,7.36,7.36,0.0,no
+ROU,RO48,POT,Party of Young People,2717,POT,name_and_vote,2024-12-01,2024,6.46,6.46,0.0,no
+ROU,RO601,USL,Social Liberal Union,2709,UNPR,alliance_sum,2012-12-09,2014,2.1,58.63,0.03,no
+ROU,RO601,USL,Social Liberal Union,2702,PC,alliance_sum,2012-12-09,2014,2.8,58.63,0.03,no
+ROU,RO601,USL,Social Liberal Union,2701,PSD,alliance_sum,2012-12-09,2014,32.2,58.63,0.03,no
+ROU,RO601,USL,Social Liberal Union,2705,PNL,alliance_sum,2012-12-09,2014,21.5,58.63,0.03,no
+ROU,RO604,PDS,Social Democratic Pole of Romania,2701,PSD,cmp_id,2000-11-26,2002,36.6,36.61,0.01,no
+ROU,RO640,CDR-2000,Democratic Convention of Romania 2000,2707,CDR 2000,cmp_id,2000-11-26,2002,5.0,5.04,0.04,no
+ROU,RO710,PSD-PC,Alliance PSD - PC,2701,PSD,alliance_sum,2008-11-30,2010,31.77,33.1,0.01,no
+ROU,RO710,PSD-PC,Alliance PSD - PC,2702,PC,alliance_sum,2008-11-30,2010,1.32,33.1,0.01,no
+SVK,SK13,SDKU-DS,Slovak Democratic and Christian Union - Democratic Party,2802,SDKU-DS,cmp_id,2012-03-10,2014,6.1,6.1,0.0,no
+SVK,SK14,Smer-SD,Direction-Social Democracy,2803,Smer,cmp_id,2010-06-12,2010,34.8,34.8,0.0,no
+SVK,SK15,ANO,Alliance of New Citizens,2806,ANO,cmp_id,2002-09-20,2002,8.0,8.01,0.01,no
+SVK,SK16,KSS (1992),Communist Party of Slovakia,2807,KSS,cmp_id,2010-06-12,2010,0.83,0.83,0.0,no
+SVK,SK17,HZD,Movement for Democracy,2810,HZD,name_and_vote,2002-09-20,2002,3.3,3.28,0.02,no
+SVK,SK2,KDH,Christian Democratic Movement,2805,KDH,cmp_id,2016-03-05,2019,4.94,4.94,0.0,no
+SVK,SK23,SaS,Freedom and Solidarity,2812,SaS,cmp_id,2016-03-05,2019,12.1,12.1,0.0,no
+SVK,SK24,MOST,Bridge,2813,MH,cmp_id,2012-03-10,2014,6.9,6.9,0.0,no
+SVK,SK25,OĽaNO,Ordinary People and Independent Personalities,2814,OLaNO,cmp_id,2012-03-10,2014,8.6,8.56,0.04,no
+SVK,SK28,Kotleba,People's Party Our Slovakia,2817,LSNS,vote_share,2016-03-05,2019,8.04,8.04,0.0,no
+SVK,SK29,#SIEŤ,Network,2816,Siet,name_and_vote,2016-03-05,2019,5.61,5.61,0.0,no
+SVK,SK30,SR,We Are Family-Boris Kollár,2818,Sme Rodina,vote_share,2016-03-05,2019,6.63,6.63,0.0,no
+SVK,SK32,PS,Progressive Slovakia,2819,PS,name_and_vote,2023-09-30,2024,18.0,17.96,0.04,no
+SVK,SK34,HSD,Voice – Social Democracy,2823,Hlas,vote_share,2023-09-30,2024,14.7,14.7,0.0,no
+SVK,SK4,SNS,Slovak National Party,2809,SNS,cmp_id,2016-03-05,2019,8.64,8.64,0.0,no
+SVK,SK602,MKP - SMK,Party of the Hungarian Coalition,2804,SMK,cmp_id,2010-06-12,2010,4.33,4.33,0.0,no
+SVK,SK602,S,Alliance,2822,Aliancia,vote_share,2023-09-30,2024,4.39,4.39,0.0,no
+SVK,SK605,OĽaNO-NOVA-ZZ,Ordinary People and Independent Personalities - Nová Väčšina - Zmena Zdola,2814,OLaNO,cmp_id,2016-03-05,2019,11.03,11.03,0.0,no
+SVK,SK7,LS-HZDS,People's Party - Movement for Democratic Slovakia,2801,HZDS,cmp_id,2002-09-20,2002,19.5,19.5,0.0,no
+SVN,SI10,SNS,Slovenian National Party,2907,SNS,cmp_id,2008-09-21,2010,5.4,5.4,0.0,no
+SVN,SI13,DeSUS,Democratic Party of Retired Persons of Slovenia,2906,DeSUS,cmp_id,2018-06-03,2019,4.93,4.93,0.0,no
+SVN,SI14,NSi,New Slovenia - Christian People’s Party,2905,NSI,cmp_id,2008-09-21,2010,3.4,3.4,0.0,no
+SVN,SI15,SMS,Party of the Slovenia Youth,2908,SMS,cmp_id,2000-10-15,2002,4.3,4.34,0.04,no
+SVN,SI16,LDS (1994),Liberal Democracy of Slovenia,2901,LDS,cmp_id,2000-10-15,2002,36.3,36.3,0.0,no
+SVN,SI17,SDS,Slovenian Democratic Party,2902,SDS,cmp_id,2018-06-03,2019,24.92,24.92,0.0,no
+SVN,SI21,ZARES,For Real - New Politics,2910,Zares,cmp_id,2008-09-21,2010,9.4,9.37,0.03,no
+SVN,SI28,PS,Positive Slovenia,2914,PS,cmp_id,2014-07-13,2014,3.0,2.97,0.03,no
+SVN,SI3,SLS,Slovenian People’s Party,2904,SLS-SMS,cmp_id,2008-09-21,2010,5.2,5.21,0.01,no
+SVN,SI30,SMC,Modern Centre Party,2911,SMC,name_and_vote,2018-06-03,2019,9.75,9.75,0.0,no
+SVN,SI31,SAB,Party of Alenka Bratušek,2913,AB,name_and_vote,2018-06-03,2019,5.11,5.11,0.0,no
+SVN,SI32,ZLSD,United List of Social Democrats,2903,ZLSD,cmp_id,2000-10-15,2002,12.1,12.1,0.0,no
+SVN,SI33,LMS,List of Marjan Šarec,2915,LMS,name_and_vote,2018-06-03,2019,12.6,12.6,0.0,no
+SVN,SI601,LEVICA,The Left,2912,Levica,name_and_vote,2018-06-03,2019,9.33,9.33,0.0,no
+SWE,SE10,VP,Left Party,1601,V,cmp_id,2010-09-19,2010,5.6,5.6,0.0,no
+SWE,SE18,FP,Liberal People's Party,1604,FP,cmp_id,2002-09-15,2002,13.4,13.39,0.01,no
+SWE,SE20,KD,Christian Democrats,1606,KD,cmp_id,2010-09-19,2010,5.6,5.6,0.0,no
+SWE,SE23,MPG,Green Ecological Party,1607,MP,cmp_id,1998-09-21,1999,4.5,4.5,0.0,no
+SWE,SE24,NyD,New Democracy,1608,NyD,cmp_id,1998-09-21,1999,,0.16,,no
+SWE,SE25,SD,Sweden Democrats,1610,SD,cmp_id,2010-09-19,2010,5.7,5.7,0.0,no
+SWE,SE5,SdAP,Social Democratic Labour Party,1602,SAP,cmp_id,1998-09-21,1999,36.4,36.39,0.01,no
+SWE,SE6,MS (1969),Moderate Coalition Party,1605,M,cmp_id,1998-09-21,1999,22.8999996185303,22.9,0.0,no
+SWE,SE7,CP,Centre Party,1603,C,cmp_id,2002-09-15,2002,6.2,6.19,0.01,no

@@ -1,8 +1,9 @@
 """Link PPEG election rows to CHES parties and report how much of the vote is covered.
 
-Used by audit_data.py (France 2024 crosswalk). Run directly to write
-outputs/data_audit/ches_coverage.csv: one line per country for its latest
-parliamentary election, matched against the CHES 2024 parties.
+link_rows() and coverage() are used by audit_data.py for the France 2024 crosswalk.
+Run directly, this script writes outputs/data_audit/ppeg_ches_links.csv (every PPEG
+party linked to a CHES party, with the evidence) and ches_coverage.csv (one line per
+country and election since 1999). The linking itself is in party_links.py.
 
 A PPEG row is linked in one of three ways:
   direct       its Manifesto ID (cmp) equals a CHES cmp_id
@@ -78,27 +79,22 @@ def coverage(linked: pd.DataFrame) -> dict:
 
 
 def main() -> None:
+    """Write the evidence-based links and the coverage of each election (see party_links.py)."""
+    import party_links
+
     members = pd.read_csv(ROOT / "data/reference/alliance_members.csv")
     ches = pd.read_csv(RAW / "ches/1999-2024_CHES_dataset_meansV2.csv", low_memory=False)
-    ches = ches[ches.year.eq(2024)]
     with ZipFile(RAW / "ppeg_2025v1/ppeg_parl_2025v1.zip") as archive:
         ppeg = pd.read_csv(archive.open("ppeg_parl_2025v1.csv"), low_memory=False)
-
-    lines = []
-    for code, iso3 in CHES_COUNTRY.items():
-        country = ppeg[ppeg.iso3c.eq(iso3)]
-        latest = country[country.edate.eq(country.edate.max())].copy()
-        latest["vote_pct"] = 100 * latest.v_share
-        wave = ches[ches.country.eq(code)]
-        linked = link_rows(latest, wave, members)
-        no_id = int(wave.cmp_id.isna().sum())
-        lines.append(dict(iso3=iso3, election=str(latest.edate.iloc[0])[:10], **coverage(linked),
-                          ches_parties=len(wave), ches_parties_without_cmp_id=no_id,
-                          note=("Lower bound: CHES parties without a Manifesto ID cannot be matched by ID. "
-                                if no_id else "") + ("Alliances read from alliance_members.csv." if iso3 == "FRA" else "")))
-    table = pd.DataFrame(lines)
-    table.to_csv(OUT / "ches_coverage.csv", index=False)
-    print(table.drop(columns="unmatched").to_string(index=False))
+    links = party_links.build_links(ches, ppeg)
+    links.to_csv(OUT / "ppeg_ches_links.csv", index=False)
+    coverage_table = party_links.coverage_by_election(ppeg, links, members)
+    coverage_table.to_csv(OUT / "ches_coverage.csv", index=False)
+    party_links.precision_check(ches, ppeg).to_csv(OUT / "ches_link_precision.csv", index=False)
+    latest = coverage_table.sort_values("election").groupby("iso3").tail(1)
+    print(f"Party links: {len(links)} (" + ", ".join(f"{k} {v}" for k, v in links.method.value_counts().items()) + f"); "
+          f"{len(coverage_table)} elections in {coverage_table.iso3.nunique()} countries; "
+          f"latest election: {latest.pct_vote_linked.min():.0f}-{latest.pct_vote_linked.max():.0f}% of the vote linked.")
 
 
 if __name__ == "__main__":
