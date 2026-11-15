@@ -1,7 +1,7 @@
 """Shared Eurobarometer trust helpers: wave table and the comparison group.
 
-An episode's trust effect is the change in a country's trust from its waves before the shock to
-a wave after it, minus the same change in a comparison group: EU member states that were not hit.
+An episode's comparison-adjusted trust change is its before/after change minus the same change
+in EU member states without a coded event in the comparison window. It is not a causal effect.
 Used by build_shock_numbers.py (reference episodes) and build_s1_dataset.py (S1 pilot).
 """
 
@@ -29,6 +29,16 @@ def load_waves() -> pd.DataFrame:
     eb["fieldwork_end"] = pd.to_datetime(eb.fieldwork.str.split(" ").str[1], format="%d/%b/%Y", errors="coerce")
     return eb.groupby(["country_code", "institution", "wave"], as_index=False).agg(
         trust=("trust_pct", "mean"), start=("fieldwork_start", "first"), end=("fieldwork_end", "first"))
+
+
+def comparison_countries(eb: pd.DataFrame, institution: str, before_waves, after_wave, exclude) -> list[str]:
+    """Eurobarometer codes of the countries comparison_change() averages over."""
+    d = eb[(eb.institution == institution) & eb.country_code.isin(EU27) & ~eb.country_code.isin(exclude)]
+    table = d.pivot_table(index="country_code", columns="wave", values="trust")
+    needed = list(before_waves) + [after_wave]
+    if any(w not in table.columns for w in needed):
+        return []
+    return sorted(table[needed].dropna().index)
 
 
 def comparison_change(eb: pd.DataFrame, institution: str, before_waves, after_wave, exclude) -> tuple[float, int]:

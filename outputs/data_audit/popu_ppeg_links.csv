@@ -1,0 +1,50 @@
+iso3,popu_party,popu_name,family,first_year,last_year,ppeg_party_id,ppeg_party,methods,status,evidence,source,borderline,checked_by_person,note
+BGR,Ataka,Attack,far_right,1900,2100,BG33,Ataka,parlgov_vote+name,linked,2005-06-25: 8.14 vs 8.14; 2009-07-05: 9.36 vs 9.36; 2013-05-12: 7.30 vs 7.30,PopuList 4.0,0,no,
+BGR,BBT,Bulgaria Uncensored,far_right,1900,2100,BG29,BBZ,parlgov_vote,linked,2014-10-05: 5.69 vs 5.69,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+BGR,NFSB,National Front for the Salvation of Bulgaria,far_right,1900,2100,BG38,NFSB,name,linked,,PopuList 4.0,0,no,
+BGR,RZS,"Order, Law and Justice",far_right,1900,2100,BG21,RZS,parlgov_vote+name,linked,2009-07-05: 4.13 vs 4.13,PopuList 4.0,0,no,
+BGR,VMRO,Bulgarian National Movement,far_right,1900,2100,BG24,VMRO,parlgov_vote+name,linked,2021-04-04: 3.64 vs 3.59; 2021-11-14: 1.08 vs 1.07,PopuList 4.0,0,no,
+BGR,Volya,Will,far_right,1900,2100,BG36,D,name,linked,,PopuList 4.0,0,no,
+BGR,Vazrazhdane,Revival,far_right,1900,2100,BG40,V (2017),parlgov_vote+name,linked,2017-03-26: 1.11 vs 1.08; 2021-11-14: 4.86 vs 4.80; 2023-04-02: 13.58 vs 13.58,PopuList 4.0,0,no,
+BGR,Velichie,Greatness,far_right,1900,2100,BG44,V (2023),name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+BGR,MECh,"Morality, Unity, Honour",far_right,1900,2100,BG45,MECh,name,linked,,PopuList 4.0,0,no,
+BGR,BV,Bulgarian Rise,far_right,1900,2100,BG619,BV,name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+CZE,KSCM,Communist Party of Bohemia and Moravia,far_left,1900,2100,CZ1,KSCS,cmp_id+name,linked,,PopuList 4.0,0,no,
+CZE,KSC,Communist Party of Czechoslovakia,far_left,1900,2100,CZ1,KSCS,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+CZE,SPR-RSC,Rally for the Republic - Republican Party of Czechoslovakia,far_right,1900,2100,CZ3,SPR-RSC,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+CZE,SPD,Freedom and Direct Democracy,far_right,1900,2100,CZ25,SPD,parlgov_vote+name,linked,2021-10-09: 9.56 vs 9.56,PopuList 4.0,0,no,
+CZE,Usvit,Dawn,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+CZE,VB,Free Bloc,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+CZE,AUTO,Motorists for Themselves,far_right,1900,2100,CZ29,AUTO,name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+EST,EKo,Estonian Citizens,far_right,1900,2100,EE660,EK,cmp_id,linked,,PopuList 4.0,0,no,
+EST,EKRE,Conservative People’s Party of Estonia,far_right,1900,2100,EE8,R,parlgov_vote+name,linked,1999-03-07: 7.27 vs 7.27; 2003-03-02: 13.00 vs 13.03; 2011-03-06: 2.10 vs 2.12,PopuList 4.0,0,no,
+EST,ERSP,Estonian National Independence Party,far_right,1900,2100,EE1,ERSP,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+MLT,Imperium Europa,Imperium Europa,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+NLD,CD,Centre Democrats,far_right,1900,2100,NL39,CD,parlgov_vote+name,linked,1994-05-03: 2.46 vs 2.46,PopuList 4.0,0,no,
+NLD,FVD,Forum for Democracy,far_right,1900,2100,NL56,FvD,parlgov_vote+name,linked,2017-03-15: 1.80 vs 1.78,PopuList 4.0,0,no,
+NLD,PVV,Party for Freedom,far_right,1900,2100,NL53,PVV,parlgov_vote+name,linked,2006-11-22: 5.89 vs 5.89; 2010-06-09: 15.45 vs 15.45; 2012-09-12: 10.08 vs 10.08,PopuList 4.0,0,no,
+NLD,SP,Socialist Party (Netherlands),far_left,1900,2100,NL42,SP,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+NLD,JA21,Right Answer 21,far_right,1900,2100,NL58,JA21,name,linked,,PopuList 4.0,0,no,
+NLD,BBB,Farmer–Citizen Movement,far_right,1900,2100,NL59,BBB,name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+ROU,PRM,Greater Romania Party,far_right,1900,2100,RO11,PRM,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+ROU,PRU,United Romania Party,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+ROU,PSM,Socialist Party of Labour,far_left,1900,2100,RO12,PSM,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+ROU,PUNR,Romanian National Unity Party,far_right,1900,2100,RO10,PUNR,cmp_id+name,linked,,PopuList 4.0,0,no,
+ROU,AUR,Alliance for the Union of Romanians,far_right,1900,2100,RO45,AUR (2019),parlgov_vote,linked,2020-12-06: 9.08 vs 9.08,PopuList 4.0,0,no,
+ROU,PSoDR,Romanian Socialist Democratic Party,far_left,1900,2100,RO7,PSD,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+ROU,SOS,S.O.S Romania,far_right,1900,2100,RO47,SOS,name,linked,,PopuList 4.0,0,no,
+ROU,POT,Party of Young People,far_right,1900,2100,RO48,POT,name,linked,,PopuList 4.0,0,no,
+ROU,PPR,Romanian People's Patriots,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+ROU,PNCR,Romanian National Conservative Party,far_right,1900,2100,RO49,PNCR,name,linked,,PopuList 4.0,0,no,
+SVK,KSS,Communist Party of Slovakia,far_left,1900,2100,SK16,KSS (1992),cmp_id+parlgov_vote,linked,,PopuList 4.0,0,no,
+SVK,L'SNS,Kotlebists – People’s Party Our Slovakia,far_right,1900,2100,SK28,ĽSNS,parlgov_vote,linked,2010-06-12: 1.33 vs 1.33; 2012-03-10: 1.58 vs 1.58; 2016-03-06: 8.04 vs 8.04,PopuList 4.0,0,no,
+SVK,PSNS,Real Slovak National Party,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+SVK,SNS,Slovak National Party,far_right,1900,2100,SK4,SNS,cmp_id+parlgov_vote,linked,,PopuList 4.0,0,no,
+SVK,SR,We are family,far_right,1900,2100,SK30,SR,parlgov_vote+name,linked,2020-02-29: 8.24 vs 8.24,PopuList 4.0,0,no,
+SVK,ZRS,Union of the Workers of Slovakia,far_left,1900,2100,SK10,ZRS,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,0,no,
+SVK,Vlast,Homeland,far_right,1900,2100,,SNS,parlgov_vote,conflict,also claimed by a better-evidenced PopuList party; was SK4,PopuList 4.0,0,no,
+SVK,REP,Republic,far_right,1900,2100,,,,not_linked,,PopuList 4.0,0,no,
+SWE,SD,Sweden Democrats,far_right,1900,2100,SE25,SD,parlgov_vote+name,linked,2014-09-14: 12.86 vs 12.86; 2018-09-09: 17.53 vs 17.53; 2022-09-11: 20.54 vs 20.54,PopuList 4.0,0,no,
+SWE,V,Left Party,far_left,1900,2100,SE10,KP,cmp_id+parlgov_vote+name,linked,,PopuList 4.0,1,no,BORDERLINE: PopuList 4.0 marks this class as borderline
+BGR,BSP,Bulgarian Socialist Party,far_right,1900,2100,BG1,BG1,manual,linked,same party under a later list name,PopuList 4.0,1,no,BORDERLINE and DISPUTED: PopuList 4.0 marks the Bulgarian Socialist Party borderline far right; other sources call it centre-left or social-democratic
+BGR,BSP,Bulgarian Socialist Party,far_right,1900,2100,BG650,BG650,manual,linked,same party under a later list name,PopuList 4.0,1,no,BORDERLINE and DISPUTED: PopuList 4.0 marks the Bulgarian Socialist Party borderline far right; other sources call it centre-left or social-democratic

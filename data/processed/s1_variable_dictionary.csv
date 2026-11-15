@@ -1,0 +1,86 @@
+variable,timing,source,definition
+episode_id,label,s1_verified_events.csv,Episode name from data/reference/s1_verified_events.csv
+iso3,label,,Country
+event_date,label,s1_verified_events.csv,Date of the verified loss of parliamentary support or equivalent event
+role,label,,"candidate, or held_out (France is the application case and is not fitted)"
+provisional_decision,label,s1_verified_events.csv,yes (S1 episode) or held_out (France); decisions recorded in docs/s1_review_cases.md
+event_type,day0,s1_verified_events.csv,"How the government lost support, coded by hand"
+flags,label,s1_verified_events.csv,"Case flags: economic_crisis_context, same_pm_returned, covid_shock_in_window, election_in_window, wider_crisis_continues"
+government_type,day0,PPEG gov (tog),"Type of the ending cabinet at formation, e.g. MWC minimal winning coalition, MPMi multi-party minority"
+government_seat_share,day0,PPEG gov (gov_seat),"Government parties' share of parliamentary seats at formation, 0-1"
+government_parties,day0,PPEG gov (ngovparties),Number of government parties at formation
+ending_cabinet_age_days,day0,PPEG gov (idate),Days from the ending cabinet's inauguration to the event
+review_note,label,s1_verified_events.csv,Reviewer's note
+econ_year,day0,rule in build_s1_dataset.py,"Year of the economic controls: t-1 if the event is on or after 1 May, else t-2 (assumed publication lag)"
+unemployment_pct,day0,Eurostat,"Unemployment rate in econ_year, %"
+gdp_growth_pct,day0,Eurostat,"Real GDP growth in econ_year, %"
+inflation_pct,day0,Eurostat,"HICP annual inflation in econ_year, %"
+d30_successor_inaugurated,day30,PPEG gov (idate),"A new cabinet was inaugurated within 30 days of the event. PPEG records inaugurations only, so a continuing cabinet acting as caretaker counts as no successor"
+d30_days_to_successor,day30,PPEG gov (idate),"Days to that cabinet, if within 30 days"
+d30_successor_is_caretaker,day30,PPEG gov (tog),That cabinet is coded expert or caretaker (blank if none)
+cabinets_24m_before,day0,PPEG gov (idate),Cabinets inaugurated in the 24 months up to the event
+early_endings_24m_before,day0,PPEG gov (rft),"Cabinets that ended early (LoPS, Diss, ResPM, IoHS) in the 24 months before the event; the next inauguration stands in for the end date"
+days_until_non_caretaker_cabinet,post_event_descriptor,"PPEG gov (tog, idate)",Days from the event to the next cabinet not coded expert or caretaker; the final value is known only afterwards
+successor_is_caretaker,post_event_descriptor,PPEG gov (tog),The cabinet that followed is coded expert or caretaker
+parl_pre_waves,day0,Eurobarometer,Start dates of the two Eurobarometer waves ending before the event (national parliament)
+parl_pre_trust_pct,day0,Eurobarometer,"Mean 'tend to trust' of those two waves, % (national parliament)"
+parl_pre_gap_days,day0,Eurobarometer,Days from the end of the last pre-event wave to the event (national parliament)
+parl_post_wave_start,outcome,Eurobarometer,Start of the first wave beginning 90-270 days after the event (national parliament)
+parl_post_wave_end,outcome,Eurobarometer,End of that wave (national parliament)
+parl_post_trust_pct,outcome,Eurobarometer,"'Tend to trust' in that wave, % (national parliament)"
+parl_change_pp,outcome,Eurobarometer,"Post-event trust minus pre-event trust, percentage points (national parliament)"
+parl_comparison_change_pp,outcome,Eurobarometer,"Same change, averaged over EU27 countries with no reviewed event or reference episode in the window (national parliament)"
+parl_comparison_countries,outcome,Eurobarometer,Number of countries in that comparison group (national parliament)
+parl_change_beyond_comparison_pp,outcome,Eurobarometer,change_pp minus comparison_change_pp (national parliament)
+parl_comparison_group,outcome,Eurobarometer,"Eurobarometer codes of the countries in that comparison group, separated by semicolons (national parliament)"
+gov_pre_waves,day0,Eurobarometer,Start dates of the two Eurobarometer waves ending before the event (national government)
+gov_pre_trust_pct,day0,Eurobarometer,"Mean 'tend to trust' of those two waves, % (national government)"
+gov_pre_gap_days,day0,Eurobarometer,Days from the end of the last pre-event wave to the event (national government)
+gov_post_wave_start,outcome,Eurobarometer,Start of the first wave beginning 90-270 days after the event (national government)
+gov_post_wave_end,outcome,Eurobarometer,End of that wave (national government)
+gov_post_trust_pct,outcome,Eurobarometer,"'Tend to trust' in that wave, % (national government)"
+gov_change_pp,outcome,Eurobarometer,"Post-event trust minus pre-event trust, percentage points (national government)"
+gov_comparison_change_pp,outcome,Eurobarometer,"Same change, averaged over EU27 countries with no reviewed event or reference episode in the window (national government)"
+gov_comparison_countries,outcome,Eurobarometer,Number of countries in that comparison group (national government)
+gov_change_beyond_comparison_pp,outcome,Eurobarometer,change_pp minus comparison_change_pp (national government)
+gov_comparison_group,outcome,Eurobarometer,"Eurobarometer codes of the countries in that comparison group, separated by semicolons (national government)"
+parties_pre_waves,day0,Eurobarometer,Start dates of the two Eurobarometer waves ending before the event (political parties)
+parties_pre_trust_pct,day0,Eurobarometer,"Mean 'tend to trust' of those two waves, % (political parties)"
+parties_pre_gap_days,day0,Eurobarometer,Days from the end of the last pre-event wave to the event (political parties)
+parties_post_wave_start,outcome,Eurobarometer,Start of the first wave beginning 90-270 days after the event (political parties)
+parties_post_wave_end,outcome,Eurobarometer,End of that wave (political parties)
+parties_post_trust_pct,outcome,Eurobarometer,"'Tend to trust' in that wave, % (political parties)"
+parties_change_pp,outcome,Eurobarometer,"Post-event trust minus pre-event trust, percentage points (political parties)"
+parties_comparison_change_pp,outcome,Eurobarometer,"Same change, averaged over EU27 countries with no reviewed event or reference episode in the window (political parties)"
+parties_comparison_countries,outcome,Eurobarometer,Number of countries in that comparison group (political parties)
+parties_change_beyond_comparison_pp,outcome,Eurobarometer,change_pp minus comparison_change_pp (political parties)
+parties_comparison_group,outcome,Eurobarometer,"Eurobarometer codes of the countries in that comparison group, separated by semicolons (political parties)"
+election_before_post_wave,post_event_descriptor,PPEG parl,A parliamentary election fell between the event and the end of the post-event wave
+cabinets_inaugurated_after_event,post_event_descriptor,PPEG gov (idate),Cabinets inaugurated between the event and the end of the post-event wave
+another_reviewed_event_before_post_wave,post_event_descriptor,s1_verified_events.csv,Another reviewed event in the same country fell in that period
+d30_election_held,day30,PPEG parl,A parliamentary election was held within 30 days of the event. Whether one had been called is not recorded
+prev_election,day0,PPEG parl,Last parliamentary election on or before the event
+next_election,outcome,PPEG parl,First parliamentary election after the event
+next_election_gap_days,outcome,PPEG parl,Days from the event to that election
+turnout_prev_pct,day0,PPEG parl,"Turnout at the previous election: votes cast / electorate, %"
+turnout_next_pct,outcome,PPEG parl,"Turnout at the next election, %"
+turnout_change_pp,outcome,PPEG parl,"Next minus previous turnout, percentage points"
+effective_parties_prev,day0,PPEG parl,Effective number of parties at the previous election (1 / sum of squared vote shares; alliance members counted as one list)
+effective_parties_next,outcome,PPEG parl,Same at the next election
+effective_parties_change,outcome,PPEG parl,Next minus previous
+compulsory_voting,design,International IDEA,IDEA flags a legal compulsory-voting rule at the previous or next election; it does not say whether the rule was enforced
+radical_prev_pct,day0,PopuList + PPEG,"Far-right plus far-left vote share at the previous election, % (PopuList 4.0 parties linked to PPEG; parties PopuList marks borderline, and DISPUTED or PARTIAL ones, excluded; parties inside PPEG 'Others' rows are missed)"
+radical_disputed_prev_pct,day0,PopuList + PPEG,"Vote share of borderline, DISPUTED or PARTIAL radical parties at the previous election (e.g. Bulgaria BSP and BBT; France LR and the New Popular Front)"
+radical_next_pct,outcome,PopuList + PPEG,Same at the next election
+radical_disputed_next_pct,outcome,PopuList + PPEG,"Same for borderline, DISPUTED or PARTIAL parties at the next election"
+radical_change_pp,outcome,PopuList + PPEG,"Next minus previous radical vote share, percentage points"
+ess_round_before,day0,ESS,Last ESS round whose median interview date is before the event
+ess_trstprl_before,day0,ESS,"Weighted mean trust in parliament in that round, 0-10"
+ess_before_gap_days,day0,ESS,Days from that round's median interview date to the event
+ess_round_after,outcome,ESS,First ESS round whose median interview date is on or after the event
+ess_trstprl_after,outcome,ESS,"Weighted mean trust in parliament in that round, 0-10"
+ess_after_gap_days,outcome,ESS,Days from the event to that round's median interview date
+ess_trstprl_change,outcome,ESS,After minus before; filled only when both rounds are within two years of the event
+complete_parl_window,post_event_descriptor,derived,Parliament trust is available before and 90-270 days after the event
+clean_window,post_event_descriptor,derived,Complete window with no PPEG election and no other reviewed event before the post wave ends; does not rule out unreviewed shocks
+sample_group,label,derived,"held_out; clean (complete window, no election or other reviewed event before the post wave); broad_only (complete window but an election or other event intervenes); no_post_wave (no trust wave 90-270 days after)"
