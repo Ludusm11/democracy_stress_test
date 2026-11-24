@@ -1,0 +1,23 @@
+event,level,trust_index h1,swd h1,trust_index h2,swd h2,election_in_window,other_ending
+CZE_2005_Gross,pm_resigned,,,,,,
+LVA_2007_Kalvitis,pm_resigned,-0.017,,-2.425,,False,False
+IRL_2008_Ahern,pm_resigned,-0.042,,-8.402,,False,False
+BEL_2008_Leterme,pm_resigned,-2.888,,-0.671,,False,False
+DEU_2012_Wulff,head_of_state,6.61,,8.308,,False,False
+HUN_2012_Schmitt,head_of_state,1.628,,3.991,,False,False
+SVN_2013_Jansa,government_fell,-7.228,-6.851,-5.031,-9.469,False,False
+CZE_2013_Necas,government_fell,3.89,3.184,9.329,8.897,True,True
+LUX_2013_SREL,government_fell,-4.941,-2.718,-1.056,-0.816,True,False
+ROU_2015_Ponta,government_fell,-1.308,0.19,1.452,4.624,False,True
+HRV_2016_Karamarko,government_fell,-0.089,-3.824,-6.464,,True,False
+ESP_2018_Rajoy,government_fell,-1.69,-0.791,-2.932,-2.993,False,False
+SVK_2018_Fico,pm_resigned,,,-0.753,0.117,False,False
+AUT_2019_Ibiza,government_fell,-5.545,-5.445,,,,
+MLT_2019_Muscat,pm_resigned,-8.962,-5.518,,,,
+NLD_2021_Rutte,government_fell,4.149,5.502,-14.951,-11.01,True,False
+EST_2021_Ratas,government_fell,6.525,8.418,-0.736,-1.67,False,False
+AUT_2021_Kurz,pm_resigned,-3.42,-5.995,-1.125,-7.656,False,False
+PRT_2023_Costa,government_fell,-0.441,-4.757,-1.608,-1.999,True,False
+HUN_2024_Novak,head_of_state,-1.65,-0.168,-3.427,0.362,False,False
+PRT_2025_Montenegro,government_fell,4.965,6.334,,,,
+LTU_2025_Paluckas,pm_resigned,-4.579,-0.575,,,,

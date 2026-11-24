@@ -1,0 +1,49 @@
+outcome,horizon,kind,reading,ci_low,ci_high,one_episode_half_width,placebo_clean,verdict,n_events
+trust_gov,1,"top person leaves, government continues",-1.337,-4.734,2.044,12.892,True,no detectable change,14
+trust_gov,1,government falls,1.108,-4.359,6.978,12.892,True,no detectable change,14
+trust_gov,1,average exit,-0.115,-3.012,2.861,12.892,True,no detectable change,14
+trust_gov,2,"top person leaves, government continues",-0.282,-4.356,3.908,20.981,True,no detectable change,13
+trust_gov,2,government falls,-2.491,-10.559,5.475,20.981,True,no detectable change,13
+trust_gov,2,average exit,-1.471,-6.218,3.394,20.981,True,no detectable change,13
+trust_gov,3,"top person leaves, government continues",-6.426,-15.002,2.685,26.232,True,no detectable change,13
+trust_gov,3,government falls,-3.209,-11.673,5.455,26.232,True,no detectable change,13
+trust_gov,3,average exit,-4.694,-10.493,1.238,26.232,True,no detectable change,13
+trust_gov,4,"top person leaves, government continues",-4.082,-9.341,1.696,28.734,True,no detectable change,13
+trust_gov,4,government falls,-6.801,-17.236,4.393,28.734,True,no detectable change,13
+trust_gov,4,average exit,-5.546,-11.168,0.043,28.734,True,no detectable change,13
+trust_parl,1,"top person leaves, government continues",-1.724,-3.57,0.129,7.807,True,no detectable change,14
+trust_parl,1,government falls,-1.768,-5.181,1.343,7.807,True,no detectable change,14
+trust_parl,1,average exit,-1.746,-3.516,0.113,7.807,True,no detectable change,14
+trust_parl,2,"top person leaves, government continues",-1.134,-4.32,2.395,16.651,True,no detectable change,13
+trust_parl,2,government falls,-4.364,-9.621,1.417,16.651,True,no detectable change,13
+trust_parl,2,average exit,-2.873,-5.958,0.55,16.651,True,no detectable change,13
+trust_parl,3,"top person leaves, government continues",-5.824,-12.415,1.22,19.223,True,no detectable change,13
+trust_parl,3,government falls,-4.614,-11.684,3.113,19.223,True,no detectable change,13
+trust_parl,3,average exit,-5.172,-9.528,-0.475,19.223,True,detectable change (range excludes zero),13
+trust_parl,4,"top person leaves, government continues",-3.44,-7.736,1.424,19.689,True,no detectable change,13
+trust_parl,4,government falls,-7.825,-15.619,1.343,19.689,True,no detectable change,13
+trust_parl,4,average exit,-5.801,-10.452,-0.955,19.689,True,detectable change (range excludes zero),13
+trust_parties,1,"top person leaves, government continues",-3.34,-9.668,2.968,16.683,True,no detectable change,15
+trust_parties,1,government falls,0.334,-2.048,2.764,16.683,True,no detectable change,15
+trust_parties,1,average exit,-1.381,-4.11,1.392,16.683,True,no detectable change,15
+trust_parties,2,"top person leaves, government continues",-2.077,-6.91,2.833,15.103,True,no detectable change,14
+trust_parties,2,government falls,-1.231,-6.112,3.883,15.103,True,no detectable change,14
+trust_parties,2,average exit,-1.594,-4.724,1.669,15.103,True,no detectable change,14
+trust_parties,3,"top person leaves, government continues",-3.643,-9.889,3.054,16.479,True,no detectable change,14
+trust_parties,3,government falls,-2.115,-6.235,2.38,16.479,True,no detectable change,14
+trust_parties,3,average exit,-2.77,-6.121,0.492,16.479,True,no detectable change,14
+trust_parties,4,"top person leaves, government continues",-2.216,-9.377,4.547,15.146,True,no detectable change,14
+trust_parties,4,government falls,-3.894,-9.874,2.187,15.146,True,no detectable change,14
+trust_parties,4,average exit,-3.175,-7.372,1.003,15.146,True,no detectable change,14
+swd,1,"top person leaves, government continues",-4.218,-8.844,0.296,13.03,True,no detectable change,15
+swd,1,government falls,0.776,-3.133,4.814,13.03,True,no detectable change,15
+swd,1,average exit,-1.887,-4.54,0.606,13.03,True,no detectable change,15
+swd,2,"top person leaves, government continues",-2.538,-9.47,3.857,16.892,True,no detectable change,14
+swd,2,government falls,-3.055,-9.129,3.563,16.892,True,no detectable change,14
+swd,2,average exit,-2.796,-6.86,1.302,16.892,True,no detectable change,14
+swd,3,"top person leaves, government continues",-1.951,-9.364,5.038,22.789,True,no detectable change,14
+swd,3,government falls,-2.12,-9.719,6.054,22.789,True,no detectable change,14
+swd,3,average exit,-2.036,-6.8,3.014,22.789,True,no detectable change,14
+swd,4,"top person leaves, government continues",-0.581,-8.715,8.591,25.495,True,no detectable change,14
+swd,4,government falls,-4.108,-13.727,6.487,25.495,True,no detectable change,14
+swd,4,average exit,-2.345,-8.521,4.008,25.495,True,no detectable change,14
