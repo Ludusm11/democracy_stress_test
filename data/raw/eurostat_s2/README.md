@@ -15,3 +15,14 @@ Downloaded 15 November 2026. Each Eurostat file is the original JSON-stat 2.0 AP
 | `worldbank_bank_npl_ratio.json` | Bank non-performing loans to total gross loans, % (World Bank `FB.AST.NPER.ZS`), 2000-2024, all countries | `https://api.worldbank.org/v2/country/all/indicator/FB.AST.NPER.ZS?format=json&per_page=20000&date=2000:2024` |
 
 Gaps seen on download: no long-term bond yield for Estonia; house prices missing some years for 8 of 27 EU countries; World Bank bank-loan data are patchy for some countries. `src/prepare_s2_sources.py` decodes everything into `data/processed/s2_country_year_inputs.csv`.
+
+## Added 24 November 2026 (monthly and quarterly series for the S2 panel analysis)
+
+Same API and format as above (`sinceTimePeriod=2000-01` or `2000-Q1`, no country filter, open data). Used by `notebooks/Shock_2_financial_crisis_analysis.ipynb`.
+
+| Local file | Indicator | Exact request (base `https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/`) |
+|---|---|---|
+| `une_rt_m_monthly_unemployment.json` | Unemployment, monthly, seasonally adjusted, % of active population, 15-74, both sexes. January 2000 to October 2026 | `une_rt_m?s_adj=SA&age=TOTAL&unit=PC_ACT&sex=T&sinceTimePeriod=2000-01&format=JSON&lang=EN` |
+| `namq_10_gdp_quarterly_real.json` | GDP at market prices, quarterly, seasonally and calendar adjusted, chain-linked volumes (2020), million euro. 2000-Q1 to 2026-Q3 | `namq_10_gdp?s_adj=SCA&unit=CLV20_MEUR&na_item=B1GQ&sinceTimePeriod=2000-Q1&format=JSON&lang=EN` |
+| `irt_lt_mcby_m_monthly_bond_yield.json` | 10-year government bond yield, monthly (Maastricht criterion series), %. 2000-01 to 2026-10; no Estonian series | `irt_lt_mcby_m?int_rt=MCBY&sinceTimePeriod=2000-01&format=JSON&lang=EN` |
+| `prc_hpi_q_house_prices_quarterly.json` | House price index, all dwellings, quarterly, 2015 = 100. 2005-Q1 to 2026-Q2; 38 geographies, gaps for some countries (downloaded, not yet used) | `prc_hpi_q?purchase=TOTAL&unit=I15_Q&sinceTimePeriod=2000-Q1&format=JSON&lang=EN` |
