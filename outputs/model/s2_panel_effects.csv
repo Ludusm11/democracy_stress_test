@@ -1,0 +1,17 @@
+outcome,specification,n,u_peak,u_now,gdp_worst,spread_peak
+Trust in parliament,Unemployment rise so far (peak),512,-1.26 (-1.88 to -0.68),,,
+Trust in parliament,Unemployment gap now,512,,-1.76 (-2.07 to -1.46),,
+Trust in parliament,Peak and gap together,512,+0.58 (-0.07 to +1.29),-2.34 (-3.08 to -1.63),,
+Trust in parliament,"Unemployment, GDP and spread together (peaks)",493,-1.44 (-2.09 to -0.85),,+0.63 (+0.02 to +1.39),-0.80 (-1.39 to -0.28)
+Trust in government,Unemployment rise so far (peak),512,-1.11 (-1.71 to -0.61),,,
+Trust in government,Unemployment gap now,512,,-1.59 (-1.86 to -1.35),,
+Trust in government,Peak and gap together,512,+0.52 (-0.54 to +1.57),-2.10 (-3.20 to -1.09),,
+Trust in government,"Unemployment, GDP and spread together (peaks)",493,-1.45 (-2.24 to -0.72),,+0.60 (-0.05 to +1.41),-0.51 (-1.14 to +0.07)
+Trust in political parties,Unemployment rise so far (peak),458,-0.73 (-1.13 to -0.42),,,
+Trust in political parties,Unemployment gap now,458,,-1.00 (-1.20 to -0.81),,
+Trust in political parties,Peak and gap together,458,+0.26 (-0.12 to +0.63),-1.27 (-1.69 to -0.84),,
+Trust in political parties,"Unemployment, GDP and spread together (peaks)",441,-0.94 (-1.59 to -0.36),,+0.31 (-0.06 to +0.76),-0.23 (-0.55 to +0.09)
+Satisfied with democracy,Unemployment rise so far (peak),375,-1.56 (-2.54 to -0.67),,,
+Satisfied with democracy,Unemployment gap now,375,,-2.31 (-2.73 to -1.91),,
+Satisfied with democracy,Peak and gap together,375,+0.98 (+0.02 to +2.05),-3.29 (-4.21 to -2.38),,
+Satisfied with democracy,"Unemployment, GDP and spread together (peaks)",361,-2.03 (-3.00 to -1.09),,+1.34 (+0.56 to +2.23),-1.32 (-2.26 to -0.47)

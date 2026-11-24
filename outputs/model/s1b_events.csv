@@ -1,0 +1,41 @@
+episode,iso3,cause,event_date,not_clean_because,after_gap_days,days_no_gov,falls_24m,early_election,other_endings,trust_index,trust_index_controls,trust_gov,trust_gov_controls,trust_parl,trust_parl_controls,trust_parties,trust_parties_controls,swd,swd_controls,clean
+AUT_2019_Ibiza,AUT,scandal or crisis,2019-05-27,election,177,225.0,1,1.0,0,-5.545,22,-7.099,22,-5.48,22,-4.055,22,-5.445,22,False
+BEL_201812_Michel,BEL,coalition break-up,2018-12-09,,101,464.0,1,1.0,0,-6.839,24,-8.314,24,-9.22,24,-2.983,24,-5.224,24,True
+BGR_2022_Petkov,BGR,lost a vote,2022-06-22,election,215,349.0,1,1.0,0,-5.698,16,-9.141,16,-4.17,16,-3.782,16,-1.655,16,False
+CZE_2009_Topolanek,CZE,lost a vote,2009-03-24,,221,461.0,0,0.0,0,11.691,19,20.748,19,2.634,19,,0,,0,True
+DEU_202411_Scholz,DEU,coalition break-up,2024-11-06,election,150,181.0,0,1.0,0,1.23,20,0.541,20,2.341,20,0.808,20,3.88,20,False
+ESP_2018_Gurtel,ESP,scandal or crisis,2018-06-01,,165,6.0,0,1.0,0,-1.76,22,-1.234,22,-3.756,22,-0.289,22,-0.968,22,True
+EST_2016_Roivas,EST,lost a vote,2016-11-09,,162,14.0,0,0.0,0,,0,0.861,20,,0,,0,,0,True
+EST_202206_Kallas,EST,coalition break-up,2022-06-03,,237,45.0,2,1.0,0,-7.437,16,-11.109,16,-8.896,16,-2.307,16,-4.539,16,True
+HRV_201706_Plenkovic,HRV,coalition break-up,2017-04-27,,196,43.0,0,0.0,0,,0,-10.429,19,,0,,0,,0,True
+HUN_200804_Gyurcsany,HUN,coalition break-up,2008-04-30,,173,759.0,1,0.0,0,-2.691,21,-2.223,21,-2.173,21,-3.678,21,,0,True
+HUN_2009_financial_crisis,HUN,scandal or crisis,2009-04-14,,200,410.0,2,1.0,0,3.95,19,3.652,19,4.248,19,,0,,0,True
+IRL_201101_Cowen,IRL,coalition break-up,2011-01-23,election,113,45.0,1,1.0,0,22.307,22,24.277,22,20.337,22,,0,,0,False
+ITA_2012_Monti,ITA,scandal or crisis,2012-12-21,election,146,124.0,1,1.0,0,1.074,21,-2.099,21,3.674,21,1.649,21,4.324,21,False
+ITA_201402_Letta,ITA,coalition break-up,2014-02-13,,107,12.0,1,0.0,0,2.057,18,5.477,18,2.548,18,-1.853,18,-4.15,18,True
+ITA_202102_Conte,ITA,coalition break-up,2021-01-13,,44,647.0,1,0.0,0,3.46,17,4.474,17,2.943,17,2.964,17,13.536,17,True
+LTU_200607_Brazauskas,LTU,coalition break-up,2006-05-31,other cabinet ending,111,48.0,1,0.0,1,1.554,19,4.065,19,0.96,19,-0.362,19,,0,False
+LUX_2013_SREL,LUX,scandal or crisis,2013-07-10,election,120,147.0,0,1.0,0,-4.941,19,-7.522,19,-7.201,19,-0.101,19,-2.718,19,False
+LVA_200604_Kalvitis,LVA,coalition break-up,2006-04-07,election,172,1.0,1,1.0,0,0.083,18,1.065,18,-1.6,18,0.783,18,,0,False
+LVA_201003_Dombrovskis,LVA,coalition break-up,2010-03-17,other cabinet ending,60,5.0,1,1.0,1,7.957,18,10.302,18,5.612,18,,0,,0,False
+MLT_2012_budget,MLT,lost a vote,2012-12-10,election,156,93.0,0,1.0,0,27.923,21,27.47,21,33.757,21,22.543,21,21.047,21,False
+NLD_200607_Balkenende,NLD,coalition break-up,2006-06-29,,82,238.0,0,1.0,0,4.528,18,9.406,18,2.66,18,1.518,18,,0,True
+NLD_2012_Rutte,NLD,coalition break-up,2012-04-23,election,203,189.0,1,1.0,0,0.671,16,0.044,16,1.297,16,,0,,0,False
+NLD_202506_Schoof,NLD,coalition break-up,2025-06-03,,139,,1,1.0,0,-8.659,19,-5.525,19,-12.476,19,-7.975,19,-11.594,19,True
+POL_200708_Kaczynski,POL,coalition break-up,2007-07-09,,92,28.0,2,1.0,0,1.844,22,3.469,22,0.22,22,,0,,0,True
+POL_202108_Morawiecki,POL,coalition break-up,2021-08-10,,175,1.0,0,0.0,0,2.425,18,3.098,18,3.124,18,1.053,18,1.058,18,True
+PRT_2025_Montenegro,PRT,scandal or crisis,2025-03-11,election,226,86.0,1,1.0,0,4.965,17,6.467,17,6.494,17,1.935,17,6.334,17,False
+ROU_200912_Boc,ROU,coalition break-up,2009-10-01,,227,83.0,0,0.0,0,-11.625,17,-13.393,17,-9.857,17,,0,,0,True
+ROU_2012_Ungureanu,ROU,lost a vote,2012-04-27,,193,10.0,1,1.0,0,9.826,17,13.708,17,5.944,17,,0,,0,True
+ROU_201403_Ponta,ROU,coalition break-up,2014-02-25,,95,8.0,1,0.0,0,3.517,18,2.893,18,2.432,18,5.227,18,2.895,18,True
+ROU_2017_Grindeanu,ROU,lost a vote,2017-06-21,,140,8.0,1,0.0,0,,0,-13.422,22,,0,,0,,0,True
+ROU_2018_Tudose,ROU,coalition break-up,2018-01-15,other cabinet ending,66,14.0,1,0.0,1,-3.433,20,-7.362,20,-3.967,20,1.03,20,-2.876,20,False
+ROU_2019_Dancila,ROU,lost a vote,2019-10-10,,42,25.0,2,0.0,0,10.093,23,9.946,23,11.317,23,9.017,23,11.645,23,True
+ROU_2020_Orban,ROU,lost a vote,2020-02-05,other cabinet ending,169,38.0,2,1.0,1,-0.614,19,2.566,19,-1.809,19,-2.599,19,-0.829,19,False
+ROU_2021_Citu,ROU,lost a vote,2021-10-05,,118,51.0,3,0.0,0,-0.351,18,-1.902,18,0.984,18,-0.134,18,-3.73,18,True
+SVK_200602_Dzurinda,SVK,coalition break-up,2006-02-06,other cabinet ending,62,148.0,2,1.0,1,-0.664,21,-1.268,21,2.817,21,-3.542,21,,0,False
+SVK_2011_euro_rescue,SVK,scandal or crisis,2011-10-11,election,218,176.0,0,1.0,0,9.895,16,12.449,16,7.34,16,,0,,0,False
+SVK_2022_23_crisis,SVK,lost a vote,2022-12-15,,174,314.0,2,1.0,0,-0.662,20,-0.074,20,-3.381,20,1.468,20,-3.2,20,True
+SVN_201106_Pahor,SVN,coalition break-up,2011-05-09,,186,49.0,0,1.0,0,-5.585,17,-7.48,17,-9.157,17,-0.117,17,,0,True
+SVN_2013_corruption,SVN,scandal or crisis,2013-02-27,,80,15.0,1,0.0,0,-7.228,21,-7.621,21,-8.612,21,-5.451,21,-6.851,21,True
+SWE_2021_Lofven,SWE,lost a vote,2021-06-21,other cabinet ending,225,18.0,0,0.0,1,-3.105,13,3.688,13,-5.079,13,-7.923,13,0.36,13,False

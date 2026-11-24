@@ -1,0 +1,5 @@
+# Systemic financial crises
+
+`esrb_fcdb_20220120.xlsx` is the **ESRB/ECB European financial crises database** (Lo Duca, Koban and Basten; ESRB Occasional Paper No 13), downloaded on 24 November 2026 from `https://www.esrb.europa.eu/pub/fcdb/esrb.fcdb20220120.en.xlsx` (the link on the database page, https://www.esrb.europa.eu/pub/financial-crises/html/index.en.html). Two sheets: *Systemic crises* (one row per country and episode: start date, end of crisis management, return to normal, whether the sovereign, banking system or asset prices were involved, external support) and *Residual events*. The page says the database was last updated in December 2023; the file name carries January 2022. It covers EU countries and Norway; 22 countries have a systemic crisis starting 2007 to 2013.
+
+**Not here:** the IMF *Systemic Banking Crises Database II* (Laeven and Valencia; fiscal cost and output loss of each crisis). The IMF site refuses automated downloads (HTTP 403 on `https://www.imf.org/-/media/Files/Publications/WP/2018/datasets/wp18206.ashx`), so it has to be downloaded by hand.

@@ -1,0 +1,36 @@
+sample,window,cause_group,outcome,effect,ci_low,ci_high,events,countries
+clean,30-240d,all causes,trust_index,-0.515,-3.519,2.489,20,11
+clean,30-240d,all causes,trust_gov,-0.119,-4.349,4.111,23,12
+clean,30-240d,all causes,trust_parl,-2.617,-5.295,0.06,20,11
+clean,30-240d,all causes,trust_parties,-0.749,-2.319,0.821,15,10
+clean,30-240d,all causes,swd,-2.558,-5.788,0.672,12,9
+clean,30-240d,coalition break-up,trust_index,-2.972,-5.534,-0.411,12,8
+clean,30-240d,coalition break-up,trust_gov,-3.845,-7.611,-0.079,13,9
+clean,30-240d,coalition break-up,trust_parl,-4.206,-7.397,-1.015,12,8
+clean,30-240d,coalition break-up,trust_parties,-0.685,-2.694,1.324,10,8
+clean,30-240d,coalition break-up,swd,-2.119,-7.127,2.889,7,6
+clean,30-240d,lost a vote,trust_index,5.851,-4.042,15.743,5,3
+clean,30-240d,lost a vote,trust_gov,5.904,-5.574,17.382,7,4
+clean,30-240d,lost a vote,trust_parl,1.778,-5.858,9.414,5,3
+clean,30-240d,lost a vote,trust_parties,2.955,,,3,2
+clean,30-240d,lost a vote,swd,0.379,,,3,2
+clean,30-240d,scandal or crisis,trust_index,-1.679,-10.592,7.233,3,3
+clean,30-240d,scandal or crisis,trust_gov,-1.734,-10.748,7.28,3,3
+clean,30-240d,scandal or crisis,trust_parl,-2.707,-13.061,7.648,3,3
+clean,30-240d,scandal or crisis,trust_parties,-2.87,,,2,2
+clean,30-240d,scandal or crisis,swd,-3.91,,,2,2
+all falls,30-240d,all causes,trust_index,1.89,-1.526,5.306,37,21
+all falls,30-240d,all causes,trust_gov,2.149,-1.661,5.959,40,22
+all falls,30-240d,all causes,trust_parl,1.036,-2.727,4.798,37,21
+all falls,30-240d,all causes,trust_parties,-0.104,-2.516,2.308,28,19
+all falls,30-240d,all causes,swd,-0.22,-3.424,2.983,22,16
+clean,240-420d,all causes,trust_index,0.31,-3.113,3.733,9,7
+clean,240-420d,all causes,trust_gov,-1.491,-5.924,2.942,10,8
+clean,240-420d,all causes,trust_parl,0.218,-3.643,4.08,9,7
+clean,240-420d,all causes,trust_parties,1.936,-0.72,4.592,8,6
+clean,240-420d,all causes,swd,1.269,-3.874,6.412,8,6
+"clean, placebo",wave before,all causes,trust_index,-0.977,-2.614,0.659,21,11
+"clean, placebo",wave before,all causes,trust_gov,-1.991,-3.607,-0.376,23,12
+"clean, placebo",wave before,all causes,trust_parl,-1.001,-2.913,0.911,21,11
+"clean, placebo",wave before,all causes,trust_parties,0.541,-1.382,2.463,15,9
+"clean, placebo",wave before,all causes,swd,-1.476,-3.331,0.38,13,9
