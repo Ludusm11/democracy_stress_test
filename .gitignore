@@ -13,3 +13,6 @@ data/raw/evs_wvs_joint_2017_2022_v5/EVS_WVS_Joint_Csv_v5_0.csv
 /data/raw/ess/*.csv
 /data/raw/ess/*.zip
 /data/processed/ess_respondents_slim.csv
+
+# GESIS Eurobarometer respondent files: terms of use bar redistribution, and some exceed GitHub's 100 MB limit
+/data/new/
